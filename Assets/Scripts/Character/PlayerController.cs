@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class PlayerController : CharacterController {
 
-    [SerializeField] protected Joystick joyStick = null;
-    [SerializeField] protected float moveSpeed;
-    protected void Update() {
-        Move();
-        FaceToEnemy(GameObjectManager.Instance.EnemyObject());
-        FlipToEnemy(GameObjectManager.Instance.EnemyObject());
+    [SerializeField] protected JoystickMovement joystickMovement;
+    private void Start()
+    {
+        joystickMovement.moveDirection.AddListener(Move);
     }
-    protected override void Move() {
-        Vector3 targetDirection = new Vector3(joyStick.Direction.x, joyStick.Direction.y, 0);
-        targetDirection.Normalize();
-        Vector3 newPosition = transform.position + targetDirection * moveSpeed * Time.deltaTime;
-        newPosition = GameManager.Instance.LimitPosition(newPosition);
-        transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * moveSpeed);
+    protected void Update() {
+     
+    }
+    protected override void Move(Vector3 newPosition) {
+        characterAnimator.SetMovement(joystickMovement.MoveType());
+        transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * joystickMovement.moveSpeed);
     }
     
     protected override void Attack() {
