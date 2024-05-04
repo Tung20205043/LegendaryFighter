@@ -16,10 +16,9 @@ public class JoystickMovement : MonoBehaviour
 
     protected void Update()
     {
-        if (joyStick.Direction != Vector2.zero)
-        {
-            UpdateNewPosition();
-        }
+        
+        UpdateNewPosition();
+        
         FaceToEnemy(GameObjectManager.Instance.EnemyObject());
         FlipToEnemy(GameObjectManager.Instance.EnemyObject());
     }
