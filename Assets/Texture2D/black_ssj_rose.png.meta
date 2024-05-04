@@ -1,0 +1,2591 @@
+fileFormatVersion: 2
+guid: ff84c50a67cba01459b0cc28f181b402
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 46
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: black_ssj_rose_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 441
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f81965977e8afc40960ac4939b58191
+      internalID: -2025564540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 386
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316013f46471c4643b9aa1fd4ad47622
+      internalID: 360698706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 424
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f373bcbdd8a942408e1709efd97aa3a
+      internalID: 566214341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 463
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5585746578a821a4ba9eec36e0ea79b1
+      internalID: -483818241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 423
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce5ba94b4f74e84dba9ce4d588659a0
+      internalID: 752780151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 435
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7897478313777374aabe1dd95504949c
+      internalID: -1789523843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 436
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693ed981b4b164349a20fb65367d8779
+      internalID: -336466949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 382
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbe837358734174ba7f0062847a360a
+      internalID: 163938256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_8
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 383
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f762ab443e023e459296ccd8a649b4a
+      internalID: -1051804800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 456
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3b15bf6e9600944a7d26a9bd5c9607
+      internalID: -1919490372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_10
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 437
+        width: 40
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dab70e31b48840488061a8f5f132126
+      internalID: 1721992529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_11
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 393
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265b89ff34abfa24c9bcbad51ea38fa5
+      internalID: 1284945988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_12
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 450
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d49694cde67e942be793302e6368a6
+      internalID: -1114758433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_13
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 368
+        width: 38
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5fabf71feb1dc4c91b46af3411ec54
+      internalID: -1614658091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_14
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 369
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495e43139a927c447832d7753c3ee41e
+      internalID: -968858571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 378
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b51e54e0f7c414b88cf34e575457bc
+      internalID: -274812067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_16
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 378
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606599f9e2996c041b05dfcda039557d
+      internalID: 1823804567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_17
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 386
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0abf0ec0c327e45a7ebefbdbdcb3be
+      internalID: 1302135363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_18
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 336
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc140cdd98e28af4dbdb546087431e17
+      internalID: 668725103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 334
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b7cea5f62afe5479dfbe1d0b8487d1
+      internalID: -1245633252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_20
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 345
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dc9b0cafd94414993c65086307e693
+      internalID: 523909915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 353
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7d8e5d9940b164790bda2010ffab3c
+      internalID: 1150564847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_22
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 364
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205fc1f8de1783a41b7f698557dc532d
+      internalID: 97494535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_23
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 368
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5da0dadd150444eb863f8e446768c2
+      internalID: -822988058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 331
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ab9066dc42c8e47879683c054b87a6
+      internalID: -1915240556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 321
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc82d7e5525173c4eb07955d36311f76
+      internalID: 1627392371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 328
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626da305813293e4f9bc05022b032985
+      internalID: 612603743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 324
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09ca8c52f33a8748847b88f3aee2a5d
+      internalID: 403342270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_28
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 326
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb7fe6c8975b8a429407bf4f4654bf7
+      internalID: 415964739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 326
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88015f76c3b48a94f8030400db0bdb7b
+      internalID: -350417422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_30
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 325
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c2988aa49d7f240bbe45e3d96682cf
+      internalID: 1419101821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_31
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 328
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c9843a1b8d70c45ad2dd02cd964efc
+      internalID: 522802753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_32
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 285
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b6c2c256f9cbc4f9b37c802ab96511
+      internalID: 1530824700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_33
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 312
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93effa3181e29fc4d88610872f7d3af0
+      internalID: -984780618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_34
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 313
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7bfe9bfddf7444c8dd0ef5ce1bb04c
+      internalID: 1922044847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_35
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 324
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0226b5e5cd1dea8498ce721fd6049053
+      internalID: 478509036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_36
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 311
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87eb9f998489c1444a11e8e2f2666f90
+      internalID: -219300341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_37
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 310
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d770fcffb40546a49825dbb79f0d90b8
+      internalID: -294974210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 277
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6429f480d484594ebde5a810c82000e
+      internalID: 1235565503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_39
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 271
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a44c47a885596498b8004e812c5c34
+      internalID: 803429052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_40
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 324
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f48a3b500054f478302d77d07a652e
+      internalID: -1885857204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_41
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 320
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7caeeb654b1e774f9d1bec845c081a5
+      internalID: 1880591952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_42
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 269
+        width: 87
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca220e10c089f884fa48cdc4fcf5bcde
+      internalID: 2134586524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_43
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 272
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25654d88716e69468fa3a058863f8f2
+      internalID: -1522570825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_44
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 271
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef9d296eb001cd4dbbc3d1ade7e1040
+      internalID: 211759215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_45
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 316
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d3b443f3324e14c83247a23c6a1951
+      internalID: -1225245514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_46
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 270
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd50b2e43711e8a4c95507e7aebe6b29
+      internalID: -317282714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_47
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 270
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19432c7be1eaf2c46b4fd132c00c5c50
+      internalID: -1641326575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_48
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 300
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f7e8695aca03647b6a4759fe76f850
+      internalID: -1378404878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 304
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f43ec12e93b23042bc97a93d3805612
+      internalID: -486837914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_50
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 281
+        width: 72
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be10382da133fc4daf39e643b0544fd
+      internalID: -286107337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_51
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 258
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f33731d8ac2e8468fb57cb5e2e429c
+      internalID: -1920890940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_52
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 250
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7092994a754df43b8612202052b803
+      internalID: -583206951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 296
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dce9af3597ead94d80f977d0f48e9e4
+      internalID: -1784036310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_54
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 276
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166343e21d55b5e428b68fe32e9a6028
+      internalID: 2102795604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_55
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 226
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4dea609a298ec48bd840585b7404f4
+      internalID: -2024311387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_56
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 232
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bc338ef167e3f4b8fdb3582b4f38e7
+      internalID: -170012251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_57
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 222
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa1e9745e42fe2468d7b69e4dc9a568
+      internalID: -1669668849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_58
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 223
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d19219d97a2a0d4dbbe7ae6d08e70ce
+      internalID: 188194691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_59
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 219
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742a5824d5870a444a4f8bc254be10f3
+      internalID: 1202405991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_60
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 215
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fc27fb863ce7e48a08dc6e9e5c4b76
+      internalID: -1503803851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_61
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 215
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e851537ff69844eabeb2b3317a3efd
+      internalID: -479823442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_62
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 219
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017f0144b483755428476169741d63ab
+      internalID: 355566846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_63
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 193
+        width: 36
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4c871b6c9cc694a8f6055d49274d29
+      internalID: -357154378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_64
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 215
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a4640bb52958a4b841a812943616be
+      internalID: 1518245273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_65
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 210
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94c48fd59909d744aff8a102cf9ee84
+      internalID: -2023142470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_66
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 240
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2528425bc5696f49855ce8815828351
+      internalID: 1739233064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_67
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 155
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dd4928c4a8f1c46b129528d60ec74c
+      internalID: -667306888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_68
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 228
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3ec5bfb0f4e9040a7e44ceebef8de0
+      internalID: -824155398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_69
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 170
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741b6efb232d2954499e4e4c0a085aa0
+      internalID: 1610672685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_70
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 220
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf9b5e3b012e7840aa48122b294f6ff
+      internalID: 313870563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_71
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 168
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fed9ec01e00344fbb8b36ede2c46b0
+      internalID: -1740490184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_72
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 168
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adeb71cf098d0f14abbf714a7cb2be39
+      internalID: -2067091353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_73
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 171
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4907b5548f0b244186eec0e6dfb0a52
+      internalID: 1765867157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_74
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 170
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32d926a9e0c04d45a9599425a82929e
+      internalID: -645737234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_75
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 159
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4298fc4152aefcf4c922406adfcb8469
+      internalID: 505797840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_76
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 164
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b61c3346b66494d8b52ab32f5bb8ac
+      internalID: -738439278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_77
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 188
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c1e9b857aeb4e4da1ddb9f65165e65
+      internalID: 630341980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_78
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 160
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94aa537497e8340409fe60cc1cd5ff8b
+      internalID: -1766432995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_79
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 158
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d0ab761460f164aa00d940e7742702
+      internalID: -2102624332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_80
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 176
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50aceb7f52e84643ab8ae79f380ea1f
+      internalID: -349483119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_81
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 116
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530a9354e4c89504bb53690d297c9fdc
+      internalID: 2114372922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_82
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 135
+        width: 4
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def3a5dced24dd04f812abccbd807f6d
+      internalID: 1142865615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_83
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 114
+        width: 5
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd484b65c42a324a8c7dcab017ab1ed
+      internalID: -479914649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_84
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 117
+        width: 11
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea227cdf87bcb6945b516d351a3415a9
+      internalID: -1471584730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_85
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 114
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdb10886f755c144bd51919acc15054
+      internalID: -1489195062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_86
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 128
+        width: 4
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9e398c20fcd20448957820911fdb0e
+      internalID: 202372589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_87
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 122
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3714d1cdbfcd09449e77fc40c894885
+      internalID: 1648988982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_88
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 110
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3621d43b0d1984790a6686bdbbe52a
+      internalID: -3143653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_89
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 117
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9550bb02fb5de43b8d2ba24077fdbc
+      internalID: -945248196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_90
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 116
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01dee7c2afa9d244b0286566dc409a0
+      internalID: -570623831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_91
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 100
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f887ac930c689b41ad5640867207655
+      internalID: -569400039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_92
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 153
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f056d9b0d57098469bdfcc0b062ae31
+      internalID: 1715464546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_93
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 108
+        width: 69
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2403a88907f2ac14e993a04b63ded9e2
+      internalID: 1119591354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_94
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 141
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8a404e882b6df46b9a58e764eca4a8
+      internalID: -1816159118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_95
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 56
+        width: 74
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bda659c6f10e049b9a3b76376c06ae
+      internalID: -290951479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_96
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 66
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b79ea41d024c6428b54e42e368e75d
+      internalID: -402309249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_97
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 65
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4986e4d4b214d4c8dd0a3caa20a2cf
+      internalID: 1745191961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_98
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 60
+        width: 47
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eea92bab59b4f8469730fd0dac28987
+      internalID: -2110972845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_99
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 54
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116a7dc38dbf31044a9935fca82db224
+      internalID: 926825899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_100
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 56
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c049a3859d57c924c9b8bce1b1c523a3
+      internalID: 27608162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_101
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 58
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2df7eb77ec20d43b1a6b27004f86cc
+      internalID: -1107787030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_102
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 52
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88234a30e6020344f9550517c8ec8e74
+      internalID: 735100177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_103
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 57
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e94b83b0f4675c4bbe3b912809683e9
+      internalID: 649799578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_104
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 93
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fb692cdf871d84ead20058acafed71
+      internalID: 1478011903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_105
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 70
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1eec49dc78177449c82f7c5612fb40
+      internalID: -138365400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_106
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 2
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe9552d9dbe2a344a0895c34585651c
+      internalID: 1663695323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_107
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 2
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2057d5fca45f4db458246c4980d1f218
+      internalID: 1319676697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_108
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 2
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0f91e8f5b087e449b514f268d714f9
+      internalID: 1268688750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_109
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 2
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e89c6eaceaf254f9b7fb0454d8ae94
+      internalID: 1223117573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_110
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab5d13725631ca4692229a4633802c5
+      internalID: -1284856882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_ssj_rose_111
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 2
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc12b45d9d17f942862574f32feb95d
+      internalID: -258003888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a83e5a1d8758ebe4391f6b899c25829a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      black_ssj_rose_0: -2025564540
+      black_ssj_rose_1: 360698706
+      black_ssj_rose_10: 1721992529
+      black_ssj_rose_100: 27608162
+      black_ssj_rose_101: -1107787030
+      black_ssj_rose_102: 735100177
+      black_ssj_rose_103: 649799578
+      black_ssj_rose_104: 1478011903
+      black_ssj_rose_105: -138365400
+      black_ssj_rose_106: 1663695323
+      black_ssj_rose_107: 1319676697
+      black_ssj_rose_108: 1268688750
+      black_ssj_rose_109: 1223117573
+      black_ssj_rose_11: 1284945988
+      black_ssj_rose_110: -1284856882
+      black_ssj_rose_111: -258003888
+      black_ssj_rose_12: -1114758433
+      black_ssj_rose_13: -1614658091
+      black_ssj_rose_14: -968858571
+      black_ssj_rose_15: -274812067
+      black_ssj_rose_16: 1823804567
+      black_ssj_rose_17: 1302135363
+      black_ssj_rose_18: 668725103
+      black_ssj_rose_19: -1245633252
+      black_ssj_rose_2: 566214341
+      black_ssj_rose_20: 523909915
+      black_ssj_rose_21: 1150564847
+      black_ssj_rose_22: 97494535
+      black_ssj_rose_23: -822988058
+      black_ssj_rose_24: -1915240556
+      black_ssj_rose_25: 1627392371
+      black_ssj_rose_26: 612603743
+      black_ssj_rose_27: 403342270
+      black_ssj_rose_28: 415964739
+      black_ssj_rose_29: -350417422
+      black_ssj_rose_3: -483818241
+      black_ssj_rose_30: 1419101821
+      black_ssj_rose_31: 522802753
+      black_ssj_rose_32: 1530824700
+      black_ssj_rose_33: -984780618
+      black_ssj_rose_34: 1922044847
+      black_ssj_rose_35: 478509036
+      black_ssj_rose_36: -219300341
+      black_ssj_rose_37: -294974210
+      black_ssj_rose_38: 1235565503
+      black_ssj_rose_39: 803429052
+      black_ssj_rose_4: 752780151
+      black_ssj_rose_40: -1885857204
+      black_ssj_rose_41: 1880591952
+      black_ssj_rose_42: 2134586524
+      black_ssj_rose_43: -1522570825
+      black_ssj_rose_44: 211759215
+      black_ssj_rose_45: -1225245514
+      black_ssj_rose_46: -317282714
+      black_ssj_rose_47: -1641326575
+      black_ssj_rose_48: -1378404878
+      black_ssj_rose_49: -486837914
+      black_ssj_rose_5: -1789523843
+      black_ssj_rose_50: -286107337
+      black_ssj_rose_51: -1920890940
+      black_ssj_rose_52: -583206951
+      black_ssj_rose_53: -1784036310
+      black_ssj_rose_54: 2102795604
+      black_ssj_rose_55: -2024311387
+      black_ssj_rose_56: -170012251
+      black_ssj_rose_57: -1669668849
+      black_ssj_rose_58: 188194691
+      black_ssj_rose_59: 1202405991
+      black_ssj_rose_6: -336466949
+      black_ssj_rose_60: -1503803851
+      black_ssj_rose_61: -479823442
+      black_ssj_rose_62: 355566846
+      black_ssj_rose_63: -357154378
+      black_ssj_rose_64: 1518245273
+      black_ssj_rose_65: -2023142470
+      black_ssj_rose_66: 1739233064
+      black_ssj_rose_67: -667306888
+      black_ssj_rose_68: -824155398
+      black_ssj_rose_69: 1610672685
+      black_ssj_rose_7: 163938256
+      black_ssj_rose_70: 313870563
+      black_ssj_rose_71: -1740490184
+      black_ssj_rose_72: -2067091353
+      black_ssj_rose_73: 1765867157
+      black_ssj_rose_74: -645737234
+      black_ssj_rose_75: 505797840
+      black_ssj_rose_76: -738439278
+      black_ssj_rose_77: 630341980
+      black_ssj_rose_78: -1766432995
+      black_ssj_rose_79: -2102624332
+      black_ssj_rose_8: -1051804800
+      black_ssj_rose_80: -349483119
+      black_ssj_rose_81: 2114372922
+      black_ssj_rose_82: 1142865615
+      black_ssj_rose_83: -479914649
+      black_ssj_rose_84: -1471584730
+      black_ssj_rose_85: -1489195062
+      black_ssj_rose_86: 202372589
+      black_ssj_rose_87: 1648988982
+      black_ssj_rose_88: -3143653
+      black_ssj_rose_89: -945248196
+      black_ssj_rose_9: -1919490372
+      black_ssj_rose_90: -570623831
+      black_ssj_rose_91: -569400039
+      black_ssj_rose_92: 1715464546
+      black_ssj_rose_93: 1119591354
+      black_ssj_rose_94: -1816159118
+      black_ssj_rose_95: -290951479
+      black_ssj_rose_96: -402309249
+      black_ssj_rose_97: 1745191961
+      black_ssj_rose_98: -2110972845
+      black_ssj_rose_99: 926825899
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
