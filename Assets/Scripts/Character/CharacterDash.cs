@@ -14,10 +14,9 @@ public class CharacterDash : MonoBehaviour
     private bool isDashing = false;
 
     [Header("Ghost Effect")]
-    public GameObject ghostEffect;
     public float ghostDelaySecond;
     private Coroutine dashEffectCoroutine;
-    [SerializeField] private Transform parentToSpawnGhostEffect;
+    [SerializeField] private ObjectPooling objectPooling;
 
     private Transform player;
     private Rigidbody2D rb;
@@ -59,18 +58,14 @@ public class CharacterDash : MonoBehaviour
     void StopDashEffect() {
         if (dashEffectCoroutine != null) StopCoroutine(dashEffectCoroutine);
     }
-    Vector3 ghostEffRotation;
     IEnumerator DashEffectCoroutine() {
-        while (true)
-        {
+        while (true) {
             if (DirectionToEnemy().x < 0) {
-                ghostEffRotation = new Vector3(0, player.rotation.eulerAngles.y, player.rotation.eulerAngles.z);
+                objectPooling.SpawnObject(1, player.position, player.rotation);
+            } else {
+                objectPooling.SpawnObject(0, player.position, player.rotation);
             }
-            else ghostEffRotation = new Vector3(0, player.rotation.eulerAngles.y, player.rotation.eulerAngles.z);
-            Quaternion rotationQuaternion = Quaternion.Euler(ghostEffRotation);
 
-            GameObject ghost = Instantiate(ghostEffect, player.position, player.rotation, parentToSpawnGhostEffect);
-            //Destroy(ghost,0.5f);
             yield return new WaitForSeconds(ghostDelaySecond);
         }
     }

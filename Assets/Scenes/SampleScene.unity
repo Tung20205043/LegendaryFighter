@@ -586,9 +586,8 @@ MonoBehaviour:
   dashForce: 25
   dashDuration: 0.4
   dashDelay: 0.1
-  ghostEffect: {fileID: 2594329022275330701, guid: 9a906b1fd5ec3b049826c1791bb86cae, type: 3}
   ghostDelaySecond: 0.04
-  parentToSpawnGhostEffect: {fileID: 1697513429}
+  objectPooling: {fileID: 1110629793}
   stopDashing:
     m_PersistentCalls:
       m_Calls: []
@@ -1025,6 +1024,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 1059090383}
   smoothnessFactor: 3
+--- !u!1 &1110629792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110629794}
+  - component: {fileID: 1110629793}
+  m_Layer: 0
+  m_Name: ObjectPooling
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1110629793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110629792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5af0e59953799458c6ba7d2e774ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn:
+  - {fileID: 2594329022275330701, guid: 9a906b1fd5ec3b049826c1791bb86cae, type: 3}
+  - {fileID: 5579425705957249891, guid: 01e0d36130560c448afdfb2a16c03f23, type: 3}
+  parentToSpawn: {fileID: 1697513429}
+  holder: {fileID: 1110629794}
+  poolObj: []
+--- !u!4 &1110629794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110629792}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197826021
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,6 +3008,7 @@ SceneRoots:
   - {fileID: 38252318}
   - {fileID: 646959575}
   - {fileID: 1197826023}
+  - {fileID: 1110629794}
   - {fileID: 1392996153}
   - {fileID: 1697513429}
   - {fileID: 643116597}

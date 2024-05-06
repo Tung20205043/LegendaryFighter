@@ -44,8 +44,8 @@ public class JoystickMovement : MonoBehaviour
 
     protected virtual void FlipToEnemy(GameObject targetAttack)
     {
-        //if (targetAttack == null) return;
-        //sprite.flipY = (DirectionToTarget().x < 0);
+        if (targetAttack == null) return;
+        sprite.flipY = (DirectionToTarget().x < 0);
 
     }
     protected Vector2 DirectionToTarget()
