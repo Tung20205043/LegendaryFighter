@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - EnemySkill
+  - PlayerPunch1
+  - PlayerPunch2
+  - PlayerPunch3
   layers:
   - Default
   - TransparentFX

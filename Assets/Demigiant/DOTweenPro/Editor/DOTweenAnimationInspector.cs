@@ -145,7 +145,7 @@ namespace DG.DOTweenEditor
 #if true // UI_MARKER
             "UIWidthHeight",
 #endif
-            "Punch/Position", "Punch/Rotation", "Punch/Scale",
+            "StartPunch/Position", "StartPunch/Rotation", "StartPunch/Scale",
             "Shake/Position", "Shake/Rotation", "Shake/Scale",
             "Camera/Aspect", "Camera/BackgroundColor", "Camera/FieldOfView", "Camera/OrthoSize", "Camera/PixelRect", "Camera/Rect"
         };

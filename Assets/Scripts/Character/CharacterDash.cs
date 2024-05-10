@@ -16,7 +16,6 @@ public class CharacterDash : MonoBehaviour
     [Header("Ghost Effect")]
     public float ghostDelaySecond;
     private Coroutine dashEffectCoroutine;
-    [SerializeField] private ObjectPooling objectPooling;
 
     private Transform player;
     private Rigidbody2D rb;
@@ -36,18 +35,19 @@ public class CharacterDash : MonoBehaviour
     }
     void DoDashing() {
         isDashing = true;
+        DashDistance(dashForce);
+        StartDashEffect();
+    }
+    public void DashDistance(float distance) {
         Vector2 direction = DirectionToEnemy();
         direction.Normalize();
         rb.velocity = Vector2.zero;
-        rb.AddForce(direction * dashForce, ForceMode2D.Impulse);
-
-        StartDashEffect();
+        rb.AddForce(direction * distance, ForceMode2D.Impulse);
     }
     void StopDash() {
         isDashing = false;
         rb.velocity = Vector2.zero;
         stopDashing?.Invoke();
-
         StopDashEffect();
     }
 
@@ -61,9 +61,9 @@ public class CharacterDash : MonoBehaviour
     IEnumerator DashEffectCoroutine() {
         while (true) {
             if (DirectionToEnemy().x < 0) {
-                objectPooling.SpawnObject(1, player.position, player.rotation);
+                ObjectPooling.Instance.SpawnObject(1, player.position, player.rotation);
             } else {
-                objectPooling.SpawnObject(0, player.position, player.rotation);
+                ObjectPooling.Instance.SpawnObject(0, player.position, player.rotation);
             }
 
             yield return new WaitForSeconds(ghostDelaySecond);

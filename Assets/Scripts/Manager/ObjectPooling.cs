@@ -5,6 +5,17 @@ using UnityEngine.UIElements;
 
 public class ObjectPooling : MonoBehaviour
 {
+    public static ObjectPooling Instance { get; private set; }
+
+    private void Awake() {
+        if (Instance != null) {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     [SerializeField] GameObject[] objectToSpawn;
     [SerializeField] Transform parentToSpawn;
     [SerializeField] Transform holder;
@@ -21,6 +32,7 @@ public class ObjectPooling : MonoBehaviour
                     this.poolObj.Remove(poolObj);
                     poolObj.transform.parent = parentToSpawn;
                     poolObj.transform.position = spawnPoin;
+                    poolObj.transform.rotation = spawnRotation;
                     poolObj.SetActive(true);
                     return;
                 }

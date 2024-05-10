@@ -25,7 +25,6 @@ public class JoystickMovement : MonoBehaviour
         Vector3 targetDirection = new Vector3(joyStick.Direction.x, joyStick.Direction.y, 0);
         targetDirection.Normalize();
         moveDirection?.Invoke(targetDirection);
-
     }
     public MovementType MoveType() {
         if (joyStick.Direction.x * DirectionToTarget().x < 0) return MovementType.Backward;

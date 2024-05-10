@@ -13,8 +13,7 @@ public abstract class CharacterController : MonoBehaviour {
 
     protected abstract void Move(Vector3 position);
     protected abstract void BuffMana(bool buff);
-    protected abstract void Attack();
-    protected abstract void TakeDamage();
+    protected abstract void Attack(AttackType type);
     protected abstract void Die();
 
 }

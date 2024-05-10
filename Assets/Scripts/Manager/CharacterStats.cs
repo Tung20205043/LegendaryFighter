@@ -54,6 +54,18 @@ public class CharacterStats : MonoBehaviour
     public void ChangeBuffManaState(bool onBuff) {
         isBuff = onBuff;
     }
+    public void TakeDamage(Character character, float amount) {
+        switch (character) {
+            case Character.Player:
+                playerHp -= amount;
+                if (playerHp < 0) playerHp = 0;
+                break;
+            case Character.Enemy:
+                enemyHp -= amount;
+                if (enemyHp < 0) enemyHp = 0;
+                break;
+        }
+    }
     public bool IsMaxMana() {
         return playerMana >= maxPlayerMana;
     }
