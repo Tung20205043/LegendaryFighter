@@ -20,6 +20,19 @@ public class PunchCombo : MonoBehaviour {
     void Update() {
         if (Mathf.Abs(DirectionToEnemy().x) < GameConstant.attackRange && characterAnimator.currentAnimationState == AnimationState.Attack)
             StopDash();
+        if (characterAnimator.currentAnimationState == AnimationState.Attack
+            && characterAnimator.currentAttackType == AttackType.Punch && comboCount == 1) { 
+            punchCollider[0].SetActive(true);
+        }
+        else punchCollider[0].SetActive(false);
+        if (characterAnimator.currentAnimationState == AnimationState.Attack
+            && characterAnimator.currentAttackType == AttackType.Punch && comboCount == 2) {
+            punchCollider[1].SetActive(true);
+        } else punchCollider[1].SetActive(false);
+        if (characterAnimator.currentAnimationState == AnimationState.Attack
+            && characterAnimator.currentAttackType == AttackType.Punch && comboCount == 0) {
+            punchCollider[2].SetActive(true);
+        } else punchCollider[2].SetActive(false);
     }
     public void StartPunch() {
         if (Time.time - lastComboEnd > 0.2f && comboCount <= combo.Count) {

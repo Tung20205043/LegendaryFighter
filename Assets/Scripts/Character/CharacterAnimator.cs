@@ -75,7 +75,10 @@ public class CharacterAnimator : MonoBehaviour
         SetBool("TakeDamage", false);
         SetIdle();
     }
-    
+    public void SetDie() {
+        SetTrigger("Die");
+        currentAnimationState = AnimationState.Die;
+    }
     //--------------------------------------------------
     public void SetTrigger(string parameters) {
         Animator.SetTrigger(parameters);

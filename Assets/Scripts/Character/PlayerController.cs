@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : CharacterController {
 
+    [SerializeField] protected PlayerAttack playerAttack;
     [SerializeField] protected JoystickMovement joystickMovement;
     [SerializeField] protected TakeInputButton inputButton;
     [SerializeField] private GameObject auraBuff;
@@ -44,8 +45,10 @@ public class PlayerController : CharacterController {
         auraBuff.SetActive(onBuff);
     }
     void Dash() {
-        characterDash.Dash();
-        characterAnimator.SetDash();
+        if (CanCastSkill(Character.Player, GameConstant.SkillUseMana.Dash)) {
+            characterDash.Dash();
+            characterAnimator.SetDash();
+        }
     }
     void StopDash() {
         characterAnimator.SetIdle();
@@ -59,11 +62,17 @@ public class PlayerController : CharacterController {
                 punchCombo.StartPunch();
                 break;
             case AttackType.Skill:
-                characterAnimator.SetSkill(AttackType.Skill);
+                DoCastSkill();
                 break;
             case AttackType.UltimateSkill:
                 characterAnimator.SetSkill(AttackType.UltimateSkill);
                 break;
+        }
+    }
+    void DoCastSkill() {
+        if (CanCastSkill(Character.Player, GameConstant.SkillUseMana.Skill)){
+            characterAnimator.SetSkill(AttackType.Skill);
+            playerAttack.SpawnSkill(AttackType.Skill, transform.position);
         }
     }
     void Defend(bool defending) {

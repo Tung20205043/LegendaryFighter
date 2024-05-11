@@ -27,10 +27,24 @@ public class JoystickMovement : MonoBehaviour
         moveDirection?.Invoke(targetDirection);
     }
     public MovementType MoveType() {
-        if (joyStick.Direction.x * DirectionToTarget().x < 0) return MovementType.Backward;
-        else if (joyStick.Direction.x * DirectionToTarget().x > 0) return MovementType.Forward;
-        else return default;
+        float xDirection = joyStick.Direction.x;
+        float yDirection = joyStick.Direction.y;
+        Vector3 targetDirection = DirectionToTarget();
+
+        if (Mathf.Abs(xDirection) > 0.4f) {
+            if (xDirection * targetDirection.x < 0) 
+                return MovementType.Backward;       
+            else
+                return MovementType.Forward;       
+        } 
+        else {
+            if (yDirection * targetDirection.y < 0)
+                return MovementType.Up;                  
+            else
+                return MovementType.Down;
+        }
     }
+
 
     protected virtual void FaceToEnemy(GameObject targetAttack)
     {

@@ -61,9 +61,9 @@ public class CharacterDash : MonoBehaviour
     IEnumerator DashEffectCoroutine() {
         while (true) {
             if (DirectionToEnemy().x < 0) {
-                ObjectPooling.Instance.SpawnObject(1, player.position, player.rotation);
+                ObjectPooling.Instance.SpawnObject(1, player.position, player.rotation, 0);
             } else {
-                ObjectPooling.Instance.SpawnObject(0, player.position, player.rotation);
+                ObjectPooling.Instance.SpawnObject(0, player.position, player.rotation, 0);
             }
 
             yield return new WaitForSeconds(ghostDelaySecond);
