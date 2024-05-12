@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba1983fc420851246b18ec3cc3e2d62b
+guid: a917726de7b414649aae85b5d3d45116
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +7,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -30,11 +30,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: 45
+  textureFormat: 47
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -45,12 +45,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -83,13 +83,13 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    resizeAlgorithm: 1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -110,127 +110,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DARK_BALL_PACK_0
+      name: ki_blast_big_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 225
-        width: 160
-        height: 156
+        x: 0
+        y: 388
+        width: 113
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77004c591fae1d444b5d63d72875bb64
-      internalID: 1519849036
+      spriteID: 2fc4135458f868c4c8db8c83f39835b2
+      internalID: 282649852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_1
+      name: ki_blast_big_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 21
-        width: 155
-        height: 157
+        x: 118
+        y: 453
+        width: 112
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e82e6433abe8e40ae633d8d7a3c56e
-      internalID: 754431695
+      spriteID: 1dd64179405a68b418172946b83658ab
+      internalID: -1412784129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_2
+      name: ki_blast_big_2
       rect:
         serializedVersion: 2
-        x: 225
-        y: 222
-        width: 160
-        height: 160
+        x: 115
+        y: 394
+        width: 113
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537659abe4ce9cb44b2919cea9bafc07
-      internalID: -435872127
+      spriteID: 88ee7deae25531f4b819b9eaabb593a0
+      internalID: -1571234565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_3
+      name: ki_blast_big_4
       rect:
         serializedVersion: 2
-        x: 233
-        y: 18
-        width: 153
-        height: 158
+        x: 2
+        y: 327
+        width: 108
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce1107aee85dd6b42b776c1d21678748
-      internalID: -638081014
+      spriteID: 57030906f628508418f6e409926f7d4d
+      internalID: -1622118670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_4
+      name: ki_blast_big_5
       rect:
         serializedVersion: 2
-        x: 438
-        y: 24
-        width: 143
-        height: 149
+        x: 116
+        y: 336
+        width: 108
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78ff966dfe6b7064fa446db5b97c3574
-      internalID: -1833304300
+      spriteID: 6dea1e423f8703340bff59cd83192d4c
+      internalID: 27458973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_5
+      name: ki_blast_big_6
       rect:
         serializedVersion: 2
-        x: 422
-        y: 219
-        width: 166
-        height: 162
+        x: 4
+        y: 265
+        width: 99
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cbbc1cce46f67e44995e2b20635a2c6
-      internalID: -1731365001
+      spriteID: 8b093d3943ad8e144ba07f063c25f08b
+      internalID: -1663296277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_blast_big_7
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 273
+        width: 102
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647ea0db0a6176d4dbe2787c835cdc1b
+      internalID: 5999447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_blast_big_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 204
+        width: 89
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1185a41abe8c442429c559ba5380467f
+      internalID: -1165741431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_blast_big_9
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 212
+        width: 92
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c735a354500c6504da87fa6b3cd8e206
+      internalID: -918891909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_blast_big_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 113
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6701fd81fc71542acbd70aa2f70f41
+      internalID: -459169611
       vertices: []
       indices: 
       edges: []
@@ -238,7 +322,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b1a52d6bc1731cb47b74c38f0bae7c02
+    spriteID: 2b7360511cda1db498f210498326250b
     internalID: 0
     vertices: []
     indices: 
@@ -246,12 +330,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DARK_BALL_PACK_0: 1519849036
-      DARK_BALL_PACK_1: 754431695
-      DARK_BALL_PACK_2: -435872127
-      DARK_BALL_PACK_3: -638081014
-      DARK_BALL_PACK_4: -1833304300
-      DARK_BALL_PACK_5: -1731365001
+      ki_blast_big_0: 282649852
+      ki_blast_big_1: -1412784129
+      ki_blast_big_10: -459169611
+      ki_blast_big_2: -1571234565
+      ki_blast_big_3: -1967032701
+      ki_blast_big_4: -1622118670
+      ki_blast_big_5: 27458973
+      ki_blast_big_6: -1663296277
+      ki_blast_big_7: 5999447
+      ki_blast_big_8: -1165741431
+      ki_blast_big_9: -918891909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

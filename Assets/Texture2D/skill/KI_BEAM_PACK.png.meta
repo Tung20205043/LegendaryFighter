@@ -1,0 +1,581 @@
+fileFormatVersion: 2
+guid: f8b7efcf44d22dd44849a7db41237715
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 25
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_0
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 164
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedbec3c46d6bf844b5ab156eb9f6972
+      internalID: 1513389090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 192
+        width: 76
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bced927188cc2d4a8e0d20d65e02c4e
+      internalID: 1773662387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 163
+        width: 74
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b8cf7206f27a843a8d5d3c36e18f4c
+      internalID: -646597068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 105
+        width: 40
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a080443ccd5cc1149b435dc70db37fac
+      internalID: -845800413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_9
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 102
+        width: 112
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4a1f7330b17294d98c8b5e366d9765
+      internalID: 1956222974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_10
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 100
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37478cf3e5d2aa64a9e4e56e5a6beeef
+      internalID: -500977530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 83
+        width: 22
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f95e1ac4222b2543bb9f74ec8e96279
+      internalID: -1540821002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 91
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ab0fd17d571824595d2d1e4ad70c1c
+      internalID: -1080675164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_15
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 41
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e313e6dd089f3e74491276f9c48bf9e9
+      internalID: 1018945534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 100
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6eaf51f3020be4ba3c43c271040701
+      internalID: -2008436849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_17
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 91
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4eae9f8297bbd24198e82cfbf1e237b
+      internalID: 1387607994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_18
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 37
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ae47e55226ca3488e3e355f0065e64
+      internalID: -87784689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 18
+        width: 16
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0bbaa478d067b45bbc429c776d1998
+      internalID: -2063687923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 22
+        width: 16
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb85d8d4653f8d48bb2fd6598639e35
+      internalID: -1663253437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_23
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 2
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563b473b418904a4fbad2763aae9a26d
+      internalID: 411242524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_24
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef80864f99f64cd4b9fa29f53b3b9554
+      internalID: 75821563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_25
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 66
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bff66d3dd6905c4592062500c424f5a
+      internalID: -1296688085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_28
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee16de6c5a06e20479fa792f8adf5719
+      internalID: 2039806376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f317a43279129f94890b55689d716a80
+      internalID: 1039503365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KI_BEAM_PACK_33
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 65
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0adb9d9df104c942870d76d43deed8e
+      internalID: -1740746857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a4aed31ce839a1e4f8ff7746ca820239
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KI_BEAM_PACK_0: 1513389090
+      KI_BEAM_PACK_1: -1776126126
+      KI_BEAM_PACK_10: -500977530
+      KI_BEAM_PACK_11: 2125034317
+      KI_BEAM_PACK_12: -1540821002
+      KI_BEAM_PACK_13: -1080675164
+      KI_BEAM_PACK_14: 1657473821
+      KI_BEAM_PACK_15: 1018945534
+      KI_BEAM_PACK_16: -2008436849
+      KI_BEAM_PACK_17: 1387607994
+      KI_BEAM_PACK_18: -87784689
+      KI_BEAM_PACK_19: 781968269
+      KI_BEAM_PACK_2: 2025744092
+      KI_BEAM_PACK_20: -2063687923
+      KI_BEAM_PACK_21: 1474317739
+      KI_BEAM_PACK_22: -1663253437
+      KI_BEAM_PACK_23: 411242524
+      KI_BEAM_PACK_24: 75821563
+      KI_BEAM_PACK_25: -1296688085
+      KI_BEAM_PACK_26: 1835213145
+      KI_BEAM_PACK_27: 1990157361
+      KI_BEAM_PACK_28: 2039806376
+      KI_BEAM_PACK_29: -1823236402
+      KI_BEAM_PACK_3: 1773662387
+      KI_BEAM_PACK_30: 518693943
+      KI_BEAM_PACK_31: 1039503365
+      KI_BEAM_PACK_32: 210912621
+      KI_BEAM_PACK_33: -1740746857
+      KI_BEAM_PACK_4: -2063193508
+      KI_BEAM_PACK_5: -646597068
+      KI_BEAM_PACK_6: -251744084
+      KI_BEAM_PACK_7: 816266933
+      KI_BEAM_PACK_8: -845800413
+      KI_BEAM_PACK_9: 1956222974
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

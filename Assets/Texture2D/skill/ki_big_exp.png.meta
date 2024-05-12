@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: a2944653c7ac2b246876fc4f85e71649
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ki_big_exp_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 643
+        width: 106
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825ce8906675fc94fb3eea11ef871754
+      internalID: 1188455531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 639
+        width: 86
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28aa1b18f4c7b624db534640e5582e69
+      internalID: 588490914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 523
+        width: 111
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ae6d0b14ea6694081044a523721570
+      internalID: 1460040449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 524
+        width: 109
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d961c98f5e230374ab33393533e94255
+      internalID: -711849363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_4
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 524
+        width: 107
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e253d47bf6e204fbe3414abc50aff3
+      internalID: -579437476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 474
+        width: 112
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5c961fce205a047bb6edd552670204
+      internalID: -459367139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 479
+        width: 109
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6135d90296dd742a45e256564f7b66
+      internalID: 1342190512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 403
+        width: 115
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b3013b398b254409dcf8affc91b0fc
+      internalID: -832207831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_9
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 204
+        width: 164
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0323fb2393b426459c38a803eebbe16
+      internalID: -1544048693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_10
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 401
+        width: 109
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d711af7269563d34b9bf6e38a1dab877
+      internalID: -1149742558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_11
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 401
+        width: 109
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce281b540f428541b5b533e6e50b918
+      internalID: -262081710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_12
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 331
+        width: 133
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f334dedcea46d0b43aef6e23fbe6be54
+      internalID: -1618196691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_13
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 344
+        width: 132
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3883d5572aade0744b1f0086803cd39f
+      internalID: 1704515321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_14
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 343
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72a6c809f4546641aca27db9a7a122f
+      internalID: -673386717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 206
+        width: 174
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243a715b9a239214e9ae169ad1cd46d5
+      internalID: -376634840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_18
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 195
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdb498aebcb18c4dba6afb886b02bc5
+      internalID: -430124136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_19
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 188
+        width: 143
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ed49845d4c5d34493cf7b931d23a1e
+      internalID: 1210250057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_21
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 178
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9316f9f9faad84183054ba984c6607
+      internalID: 497223035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_22
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 191
+        width: 116
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f9eb35e25f9194aabebd523df9a644
+      internalID: 2026276973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 148
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8cf2cd8592d3e45a40fd901fb8f0ad
+      internalID: -1585576030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_26
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4aa69a87c658d48aae25a0717ef77f
+      internalID: -1681143261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_27
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2
+        width: 165
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86236c154544c49458679d34e7760f14
+      internalID: -1194777045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_28
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 0
+        width: 173
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f208274e35ee0af43a71ac75833fcd00
+      internalID: -167106929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_big_exp_29
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2
+        width: 154
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60fbc7124a993e438f5477901efb7fe
+      internalID: -1654223284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ce146bb386ea7d244b0856bd171cf554
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ki_big_exp_0: 1188455531
+      ki_big_exp_1: 588490914
+      ki_big_exp_10: -1149742558
+      ki_big_exp_11: -262081710
+      ki_big_exp_12: -1618196691
+      ki_big_exp_13: 1704515321
+      ki_big_exp_14: -673386717
+      ki_big_exp_15: -376634840
+      ki_big_exp_16: 1557447062
+      ki_big_exp_17: 1185814209
+      ki_big_exp_18: -430124136
+      ki_big_exp_19: 1210250057
+      ki_big_exp_2: 1460040449
+      ki_big_exp_20: 1225734592
+      ki_big_exp_21: 497223035
+      ki_big_exp_22: 2026276973
+      ki_big_exp_23: 907373299
+      ki_big_exp_24: 1002637713
+      ki_big_exp_25: -1585576030
+      ki_big_exp_26: -1681143261
+      ki_big_exp_27: -1194777045
+      ki_big_exp_28: -167106929
+      ki_big_exp_29: -1654223284
+      ki_big_exp_3: -711849363
+      ki_big_exp_30: 641958049
+      ki_big_exp_31: -1373374363
+      ki_big_exp_32: -569175374
+      ki_big_exp_33: -890720583
+      ki_big_exp_34: 1168335509
+      ki_big_exp_35: 836305153
+      ki_big_exp_36: -348365803
+      ki_big_exp_37: -288998548
+      ki_big_exp_38: -145259832
+      ki_big_exp_39: 1281640969
+      ki_big_exp_4: -579437476
+      ki_big_exp_40: 1168573361
+      ki_big_exp_41: 1103835006
+      ki_big_exp_42: 890939496
+      ki_big_exp_43: 1604344740
+      ki_big_exp_44: -1324732520
+      ki_big_exp_45: 579140917
+      ki_big_exp_46: -1285573422
+      ki_big_exp_47: -120204711
+      ki_big_exp_5: -459367139
+      ki_big_exp_6: 1342190512
+      ki_big_exp_7: -832207831
+      ki_big_exp_8: 579565370
+      ki_big_exp_9: -1544048693
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba1983fc420851246b18ec3cc3e2d62b
+guid: 51c5f24be1372df48908992762ccf92a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +7,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -30,11 +30,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: 45
+  textureFormat: 47
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -45,12 +45,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -83,13 +83,13 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    resizeAlgorithm: 1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DARK_BALL_PACK_0
+      name: DEAD_BALL_PACK_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 225
-        width: 160
-        height: 156
+        x: 2
+        y: 340
+        width: 155
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +124,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77004c591fae1d444b5d63d72875bb64
-      internalID: 1519849036
+      spriteID: 054c18ac1771a9b4dbad69125cfec519
+      internalID: -1638056363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_1
+      name: DEAD_BALL_PACK_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 21
-        width: 155
+        x: 329
+        y: 336
+        width: 173
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdd8c0e11909d84795afb4b0a6d6d2c
+      internalID: 1809544338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DEAD_BALL_PACK_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 333
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7c3851e6ebbac44a15e16bb7fde78b
+      internalID: 1601538822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DEAD_BALL_PACK_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 171
+        width: 161
         height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e82e6433abe8e40ae633d8d7a3c56e
-      internalID: 754431695
+      spriteID: 950aae08c322772438407a769d4c1fc9
+      internalID: -1080550281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_2
+      name: DEAD_BALL_PACK_4
       rect:
         serializedVersion: 2
-        x: 225
-        y: 222
-        width: 160
-        height: 160
+        x: 336
+        y: 0
+        width: 176
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,71 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537659abe4ce9cb44b2919cea9bafc07
-      internalID: -435872127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DARK_BALL_PACK_3
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 18
-        width: 153
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce1107aee85dd6b42b776c1d21678748
-      internalID: -638081014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DARK_BALL_PACK_4
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 24
-        width: 143
-        height: 149
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78ff966dfe6b7064fa446db5b97c3574
-      internalID: -1833304300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DARK_BALL_PACK_5
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 219
-        width: 166
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cbbc1cce46f67e44995e2b20635a2c6
-      internalID: -1731365001
+      spriteID: 02e9a6a151ef03d40bca1b11d3311bf9
+      internalID: -1841201744
       vertices: []
       indices: 
       edges: []
@@ -238,7 +217,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b1a52d6bc1731cb47b74c38f0bae7c02
+    spriteID: 20937d3d485bbac4aa9de27bba072fed
     internalID: 0
     vertices: []
     indices: 
@@ -246,12 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DARK_BALL_PACK_0: 1519849036
-      DARK_BALL_PACK_1: 754431695
-      DARK_BALL_PACK_2: -435872127
-      DARK_BALL_PACK_3: -638081014
-      DARK_BALL_PACK_4: -1833304300
-      DARK_BALL_PACK_5: -1731365001
+      DEAD_BALL_PACK_0: -1638056363
+      DEAD_BALL_PACK_1: 1809544338
+      DEAD_BALL_PACK_2: 1601538822
+      DEAD_BALL_PACK_3: -1080550281
+      DEAD_BALL_PACK_4: -1841201744
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

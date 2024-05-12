@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba1983fc420851246b18ec3cc3e2d62b
+guid: ab0cffe5677197e4db339b004febc5c9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +7,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -30,11 +30,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: 45
+  textureFormat: 47
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -45,12 +45,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -83,13 +83,13 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    resizeAlgorithm: 1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DARK_BALL_PACK_0
+      name: genki_ball_atlas_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 225
-        width: 160
-        height: 156
+        x: 2
+        y: 125
+        width: 117
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77004c591fae1d444b5d63d72875bb64
-      internalID: 1519849036
+      spriteID: 136a07fed546ad6409f432dc64d29b64
+      internalID: 2006113206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_1
+      name: genki_ball_atlas_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 21
-        width: 155
-        height: 157
+        x: 125
+        y: 124
+        width: 119
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e82e6433abe8e40ae633d8d7a3c56e
-      internalID: 754431695
+      spriteID: 231ebcbbf48c03044b86d061479d060b
+      internalID: 1913786437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_2
+      name: genki_ball_atlas_2
       rect:
         serializedVersion: 2
-        x: 225
-        y: 222
-        width: 160
-        height: 160
+        x: 1
+        y: 1
+        width: 119
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537659abe4ce9cb44b2919cea9bafc07
-      internalID: -435872127
+      spriteID: 5589e00ae71e51245ab4e3307202b18b
+      internalID: -195119831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DARK_BALL_PACK_3
+      name: genki_ball_atlas_3
       rect:
         serializedVersion: 2
-        x: 233
-        y: 18
-        width: 153
-        height: 158
+        x: 126
+        y: 1
+        width: 117
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,50 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce1107aee85dd6b42b776c1d21678748
-      internalID: -638081014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DARK_BALL_PACK_4
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 24
-        width: 143
-        height: 149
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78ff966dfe6b7064fa446db5b97c3574
-      internalID: -1833304300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DARK_BALL_PACK_5
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 219
-        width: 166
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cbbc1cce46f67e44995e2b20635a2c6
-      internalID: -1731365001
+      spriteID: 26f86bb894b6b804ebba0784b58f7089
+      internalID: 1501617358
       vertices: []
       indices: 
       edges: []
@@ -238,7 +196,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b1a52d6bc1731cb47b74c38f0bae7c02
+    spriteID: 529e35b91f7045b40ac9d95d17bc0d21
     internalID: 0
     vertices: []
     indices: 
@@ -246,12 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DARK_BALL_PACK_0: 1519849036
-      DARK_BALL_PACK_1: 754431695
-      DARK_BALL_PACK_2: -435872127
-      DARK_BALL_PACK_3: -638081014
-      DARK_BALL_PACK_4: -1833304300
-      DARK_BALL_PACK_5: -1731365001
+      genki_ball_atlas_0: 2006113206
+      genki_ball_atlas_1: 1913786437
+      genki_ball_atlas_2: -195119831
+      genki_ball_atlas_3: 1501617358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,766 @@
+fileFormatVersion: 2
+guid: b3f53f2a3bf81e0438636c63648e32f0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 25
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ki_beam_charge_0
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 488
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063cc085a5f8e434981bef0a8c3c2cfd
+      internalID: 1669854711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb6c48c533e2fa49bda9f376b0a3f50
+      internalID: -684454614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 412
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929bc7d74050e294aa774ee8334c9351
+      internalID: -1780273480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 416
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b64586a2884ed84e857740755471b2f
+      internalID: -2001427286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 414
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8770e8058b137e34e959165900cb911b
+      internalID: -218884186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 347
+        width: 46
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf427c7a0d614742a3c812939b6b2b4
+      internalID: 2145353224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_14
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 345
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9bdbacc80467a4a80635bf2a53bc38
+      internalID: -1916907902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 346
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca994089d20570547a00705bc815592d
+      internalID: 1652737470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 277
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485df57a452fca7478eeaa7ba929cd90
+      internalID: -572939103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_20
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 283
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d812bef6f7b6c5439f6c8bbacc7301d
+      internalID: 262465657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 271
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4579715ad1e2fa45b35677e864d0192
+      internalID: 1199927868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979033808129cf64abaf93f57f599ab5
+      internalID: -1362573264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_32
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 221
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5531b372a1296fc458a74ca659160165
+      internalID: 1917938519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 206
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5daaeb08c697a54da15987a395c2480
+      internalID: -2010519485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_40
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 150
+        width: 61
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc9b1b071c16dd468a57601104aa748
+      internalID: -127148131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_42
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 158
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa9574d2563e6644817829274c1b8c2
+      internalID: -92496324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_43
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 137
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11eeeea41af8ab249b9532bacc285c55
+      internalID: -1987274819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_45
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 150
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb8b481a0556fe4bb6c9764c952fcdd
+      internalID: 751278056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_50
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d04e3149036564db39ee83120ef1ef
+      internalID: 450021689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_51
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 83
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2114ab5a55e4748b3ba5b9e9feec83
+      internalID: 1820540807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_54
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 72
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9026b7e16752d4e9299b3cf70a9a8b
+      internalID: -1925238293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_60
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a6d8a6e8f7dbf498702dccc7d6c4fe
+      internalID: 347216683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 80
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43d1f8aab411444ab989f8ed2b1c578
+      internalID: -37295101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_63
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2
+        width: 59
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5378c82a29c1b478f2ed1c3ebf6ffc
+      internalID: -1554978456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_66
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca9f54c58132034bb94eec0530ca3c2
+      internalID: 949751468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_67
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 18
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3e7cfe4a7631243b734e0741fc3bc3
+      internalID: -221350901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ki_beam_charge_71
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 5
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dc6ff5e9c09914f88009370eb6bff2
+      internalID: -656122127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e22fd778241a55d428fad1f1747c5c20
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ki_beam_charge_0: 1669854711
+      ki_beam_charge_1: -117907217
+      ki_beam_charge_10: 1389915476
+      ki_beam_charge_11: -652976960
+      ki_beam_charge_12: 2145353224
+      ki_beam_charge_13: 34443023
+      ki_beam_charge_14: -1916907902
+      ki_beam_charge_15: 1748305304
+      ki_beam_charge_16: 1652737470
+      ki_beam_charge_17: 388189066
+      ki_beam_charge_18: -572939103
+      ki_beam_charge_19: 1530877463
+      ki_beam_charge_2: 659501297
+      ki_beam_charge_20: 262465657
+      ki_beam_charge_21: 1199927868
+      ki_beam_charge_22: -1693272456
+      ki_beam_charge_23: -288804795
+      ki_beam_charge_24: -1415270636
+      ki_beam_charge_25: 822686776
+      ki_beam_charge_26: -660072281
+      ki_beam_charge_27: 1227667710
+      ki_beam_charge_28: -1132221348
+      ki_beam_charge_29: 1980268730
+      ki_beam_charge_3: -684454614
+      ki_beam_charge_30: -1362573264
+      ki_beam_charge_31: 1576196256
+      ki_beam_charge_32: 1917938519
+      ki_beam_charge_33: 411188882
+      ki_beam_charge_34: -2010519485
+      ki_beam_charge_35: -764973278
+      ki_beam_charge_36: -2049613570
+      ki_beam_charge_37: 424104080
+      ki_beam_charge_38: -545601276
+      ki_beam_charge_39: -1984050001
+      ki_beam_charge_4: -1288973880
+      ki_beam_charge_40: -127148131
+      ki_beam_charge_41: 480749636
+      ki_beam_charge_42: -92496324
+      ki_beam_charge_43: -1987274819
+      ki_beam_charge_44: 42239316
+      ki_beam_charge_45: 751278056
+      ki_beam_charge_46: 1509578886
+      ki_beam_charge_47: -817705790
+      ki_beam_charge_48: 129851329
+      ki_beam_charge_49: 226053959
+      ki_beam_charge_5: -870038998
+      ki_beam_charge_50: 450021689
+      ki_beam_charge_51: 1820540807
+      ki_beam_charge_52: -1206709393
+      ki_beam_charge_53: -1627452780
+      ki_beam_charge_54: -1925238293
+      ki_beam_charge_55: -184820208
+      ki_beam_charge_56: -836932294
+      ki_beam_charge_57: -2119580902
+      ki_beam_charge_58: 135674331
+      ki_beam_charge_59: -1666726168
+      ki_beam_charge_6: -1780273480
+      ki_beam_charge_60: 347216683
+      ki_beam_charge_61: -1743811077
+      ki_beam_charge_62: -37295101
+      ki_beam_charge_63: -1554978456
+      ki_beam_charge_64: -1032412451
+      ki_beam_charge_65: 1740680278
+      ki_beam_charge_66: 949751468
+      ki_beam_charge_67: -221350901
+      ki_beam_charge_68: -1805853235
+      ki_beam_charge_69: -1825494752
+      ki_beam_charge_7: 1431457891
+      ki_beam_charge_70: 2000579207
+      ki_beam_charge_71: -656122127
+      ki_beam_charge_8: -2001427286
+      ki_beam_charge_9: -218884186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
