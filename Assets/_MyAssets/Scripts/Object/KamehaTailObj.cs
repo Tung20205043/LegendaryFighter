@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class UltSkillObj : MonoBehaviour, ISkillObj
-{
+public class KamehaTailObj : MonoBehaviour, ISkillObj {
+    [SerializeField] GameObject kamehaObj;
     private void OnEnable() {
     }
     public float speed = 10f;
     private void Update() {
-        if (!SpawnUltSkill.ultSkillCanMove) return;
         Move();
         if (GameUltis.ExitScreen(this.transform.position)) {
             DeSpawn();
@@ -19,7 +19,7 @@ public class UltSkillObj : MonoBehaviour, ISkillObj
         transform.position = Vector3.MoveTowards(transform.position, GameObjectManager.Instance.EnemyObject().transform.position, step);
     }
     public void DeSpawn() {
-        ObjectPooling.Instance.DeSpawn(this.gameObject);
+        ObjectPooling.Instance.DeSpawn(kamehaObj);
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Enemy")) {

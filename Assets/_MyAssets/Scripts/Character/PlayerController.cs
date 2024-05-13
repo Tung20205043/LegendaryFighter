@@ -9,6 +9,7 @@ public class PlayerController : CharacterController {
     [SerializeField] protected TakeInputButton inputButton;
     [SerializeField] private GameObject auraBuff;
     [SerializeField] private PunchCombo punchCombo;
+    [SerializeField] private CheckForCombo checkForCombo;
     public float moveSpeed;
     private void Start()
     {
@@ -59,13 +60,15 @@ public class PlayerController : CharacterController {
     protected override void Attack(AttackType type) {
         if (type == AttackType.Punch) {
             punchCombo.StartPunch();
+            return;
         }
-        else DoCastSkill(type);
+        if (characterAnimator.currentAnimationState != AnimationState.Idle) return;
+        DoCastSkill(type);
     }
     void DoCastSkill(AttackType type) {
         if (CanCastSkill(Character.Player, type, false)){
             characterAnimator.SetSkill(type);
-            playerAttack.DoSpawnSkill(type, transform.position);
+            playerAttack.DoSpawnSkill(type, transform.position, transform.forward, transform.up);
         }
     }
     
@@ -95,6 +98,7 @@ public class PlayerController : CharacterController {
         characterDash.stopDashing.AddListener(StopDash);
         inputButton.attacking.AddListener(Attack);
         inputButton.isDefending.AddListener(Defend);
+        checkForCombo.specialAttack.AddListener(Attack);
     }
     
 }

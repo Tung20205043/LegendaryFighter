@@ -6,13 +6,17 @@ public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] SpawnSkill1 spawnSkill1;
     [SerializeField] SpawnUltSkill spawnUlt;
-    public void DoSpawnSkill(AttackType type, Vector3 playerPosition) {
+    [SerializeField] SpawnKameha spawnKameha;
+    public void DoSpawnSkill(AttackType type, Vector3 playerPosition, Vector3 forward, Vector3 up) {
         switch (type) {
             case AttackType.Skill:
-                spawnSkill1.DoSpawnSkill1(playerPosition);
+                spawnSkill1.DoSpawnSkill1(playerPosition, forward, up);
                 break;
             case AttackType.UltimateSkill:
-                spawnUlt.DoSpawnUltSkill(playerPosition);
+                spawnUlt.DoUltSkill(playerPosition, forward, up);
+                break;
+            case AttackType.Kameha:
+                spawnKameha.DoSpawnKameha(playerPosition, forward, up);
                 break;
             default:
                 break;

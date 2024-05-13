@@ -17,6 +17,8 @@ public class TakeInputButton : MonoBehaviour
     public UnityEvent<bool> isDefending;
     public UnityEvent isDashing;
     public UnityEvent<AttackType> attacking;
+    public UnityEvent<string> firstComboInputEvent;
+    public UnityEvent<string> secondComboInputEvent;
     private void Awake() {
         dashButton.onClick.AddListener(Dashing);
         attackButton[0].onClick.AddListener(() => Attacking(AttackType.Punch));
@@ -26,6 +28,7 @@ public class TakeInputButton : MonoBehaviour
     //---------------------------------
     public void BuffingMana() {
         isBuffingMana?.Invoke(true);
+        firstComboInputEvent?.Invoke("Q");
     }
     public void StopBuffMana() { 
         isBuffingMana?.Invoke(false);
@@ -39,9 +42,13 @@ public class TakeInputButton : MonoBehaviour
     }
     //---------------------------------
     public void Attacking(AttackType type) {
-        attacking?.Invoke(type);
+        if (!CheckForCombo.isSpecialAttack) {
+            attacking?.Invoke(type);
+        } else
+            secondComboInputEvent?.Invoke(GameConstant.AttackCode[(int)type]);
     }
     public void Dashing() {
         isDashing?.Invoke();
+        secondComboInputEvent?.Invoke("D");
     }
 }

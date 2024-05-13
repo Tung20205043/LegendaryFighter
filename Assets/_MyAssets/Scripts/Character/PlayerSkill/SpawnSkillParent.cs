@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SpawnSkillParent : MonoBehaviour
+{
+    public IEnumerator SpawnFromPooling(Vector3 playPosition, Vector3 forward, Vector3 up, Vector2 distanceToSpawn, float timeDelayToSpawn, int value) {
+        yield return new WaitForSeconds(timeDelayToSpawn);
+        ObjectPooling.Instance.SpawnObject(value, SpawnPosition(playPosition, forward, up, distanceToSpawn), SpawmQuaternion(GameObjectManager.Instance.EnemyObject()), 1);
+    }
+    public Vector3 SpawnPosition(Vector3 playerPosition, Vector3 forward, Vector3 up, Vector2 distanceToSpawn) {
+        if (GameObjectManager.Instance.DirectionToEnemy().x < 0) {
+            return playerPosition + forward * distanceToSpawn.x - up * distanceToSpawn.y;
+        } 
+        else return playerPosition + forward * distanceToSpawn.x + up * distanceToSpawn.y;
+    }
+    protected Quaternion SpawmQuaternion(GameObject targetAttack) {
+        if (targetAttack == null) return new Quaternion();
+        Vector2 direction = GameObjectManager.Instance.DirectionToEnemy();
+        direction.Normalize();
+        float angel = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        return Quaternion.Euler(Vector3.forward * angel);
+    }
+}
