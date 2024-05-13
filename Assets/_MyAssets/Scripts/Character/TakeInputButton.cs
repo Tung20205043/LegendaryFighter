@@ -47,8 +47,13 @@ public class TakeInputButton : MonoBehaviour
         } else
             secondComboInputEvent?.Invoke(GameConstant.AttackCode[(int)type]);
     }
-    public void Dashing() {
-        isDashing?.Invoke();
-        secondComboInputEvent?.Invoke("D");
+    public void Dashing() {     
+        if (!CheckForCombo.isSpecialAttack) {
+            isDashing?.Invoke();
+        } else
+            secondComboInputEvent?.Invoke("D");
     }
+
+
+
 }

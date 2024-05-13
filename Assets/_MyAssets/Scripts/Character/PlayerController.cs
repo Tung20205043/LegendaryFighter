@@ -24,7 +24,9 @@ public class PlayerController : CharacterController {
     }
     #region Move Funcion
     protected override void Move(Vector3 targetPosition) {
-        if (!CanMove()) return;
+        if (!CanMove()) {
+            return; 
+        }
         if (targetPosition == default) {
             characterAnimator.StopMovement();
             return;
@@ -62,8 +64,14 @@ public class PlayerController : CharacterController {
             punchCombo.StartPunch();
             return;
         }
-        if (characterAnimator.currentAnimationState != AnimationState.Idle) return;
-        DoCastSkill(type);
+        if (CanAttack()) {  
+            DoCastSkill(type);
+        }
+    }
+    bool CanAttack() {
+        return (characterAnimator.currentAnimationState == AnimationState.Idle ||
+            characterAnimator.currentAnimationState == AnimationState.Movement ||
+            characterAnimator.currentAnimationState == AnimationState.BuffMana);
     }
     void DoCastSkill(AttackType type) {
         if (CanCastSkill(Character.Player, type, false)){

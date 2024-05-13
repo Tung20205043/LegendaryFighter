@@ -51,11 +51,9 @@ public class CheckForCombo : MonoBehaviour {
                 playerActions.Clear();
         }
     }
-
     void RecordAction(string action) {
         playerActions.Add(action);
     }
-
     void CheckComboString() {
         string currentActionSequence = string.Join("", playerActions);
         foreach (string combo in requiredCombos) {
@@ -67,10 +65,11 @@ public class CheckForCombo : MonoBehaviour {
         }
         playerActions.Clear();
     }
-
     void ExecuteCombo(string combo) {
         Debug.Log("Combo executed: " + combo);
         if (combo == "QS")
             specialAttack?.Invoke(AttackType.Kameha);
+        else if (combo == "QD")
+            specialAttack?.Invoke(AttackType.Teleport);
     }
 }

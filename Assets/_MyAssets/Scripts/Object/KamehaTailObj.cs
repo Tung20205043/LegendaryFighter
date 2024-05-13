@@ -10,9 +10,6 @@ public class KamehaTailObj : MonoBehaviour, ISkillObj {
     public float speed = 10f;
     private void Update() {
         Move();
-        if (GameUltis.ExitScreen(this.transform.position)) {
-            DeSpawn();
-        }
     }
     public void Move() {
         float step = speed * Time.deltaTime;
