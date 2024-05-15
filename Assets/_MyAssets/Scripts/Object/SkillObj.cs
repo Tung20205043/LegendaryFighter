@@ -21,7 +21,7 @@ public class SkillObj : MonoBehaviour, ISkillObj
 
 
     public void DeSpawn() {
-        ObjectPooling.Instance.DeSpawn(this.gameObject);
+        ObjectPoolingForGoku.Instance.DeSpawn(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {

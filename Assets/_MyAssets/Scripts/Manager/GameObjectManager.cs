@@ -17,8 +17,8 @@ public class GameObjectManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        enemyObj = GameObject.Find("Enemy");
-        playerObj = GameObject.Find("Player");
+        enemyObj = GameObject.FindWithTag("Enemy");
+        playerObj = GameObject.FindWithTag("Player");
     }
     public GameObject PlayerObject() {
         return playerObj;

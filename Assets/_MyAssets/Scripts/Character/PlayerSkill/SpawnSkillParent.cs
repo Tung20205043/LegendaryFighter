@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SpawnSkillParent : MonoBehaviour
 {
-    public IEnumerator SpawnFromPooling(Vector3 playPosition, Vector3 forward, Vector3 up, Vector2 distanceToSpawn, float timeDelayToSpawn, int value) {
+    public IEnumerator SpawnFromPooling(Vector3 playPosition, Vector3 forward, Vector3 up, Vector2 distanceToSpawn, float timeDelayToSpawn, ObjectPoolingForGoku.ObjectToSpawn objType) {
         yield return new WaitForSeconds(timeDelayToSpawn);
-        ObjectPooling.Instance.SpawnObject(value, SpawnPosition(playPosition, forward, up, distanceToSpawn), SpawmQuaternion(GameObjectManager.Instance.EnemyObject()), 1);
+        ObjectPoolingForGoku.Instance.SpawnObject(objType, SpawnPosition(playPosition, forward, up, distanceToSpawn), SpawmQuaternion(GameObjectManager.Instance.EnemyObject()));
     }
     public Vector3 SpawnPosition(Vector3 playerPosition, Vector3 forward, Vector3 up, Vector2 distanceToSpawn) {
         if (GameObjectManager.Instance.DirectionToEnemy().x < 0) {

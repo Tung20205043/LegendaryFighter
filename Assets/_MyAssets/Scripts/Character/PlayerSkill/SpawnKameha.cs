@@ -7,6 +7,6 @@ public class SpawnKameha : SpawnSkillParent
     public Vector2 distanceToSpawn;
     public float timeDelayToSpawn;
     public void DoSpawnKameha(Vector3 playerPosition, Vector3 forward, Vector3 up) {
-        StartCoroutine(SpawnFromPooling(playerPosition, forward, up, distanceToSpawn, timeDelayToSpawn, 4));
+        StartCoroutine(SpawnFromPooling(playerPosition, forward, up, distanceToSpawn, timeDelayToSpawn, ObjectPoolingForGoku.ObjectToSpawn.Kameha));
     }
 }

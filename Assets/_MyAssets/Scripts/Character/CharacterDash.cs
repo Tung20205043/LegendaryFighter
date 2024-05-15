@@ -61,9 +61,9 @@ public class CharacterDash : MonoBehaviour
     IEnumerator DashEffectCoroutine() {
         while (true) {
             if (DirectionToEnemy().x < 0) {
-                ObjectPooling.Instance.SpawnObject(1, player.position, player.rotation, 0);
+                ObjectPoolingForGoku.Instance.SpawnObject(ObjectPoolingForGoku.ObjectToSpawn.GhostEffect1, player.position, player.rotation);
             } else {
-                ObjectPooling.Instance.SpawnObject(0, player.position, player.rotation, 0);
+                ObjectPoolingForGoku.Instance.SpawnObject(ObjectPoolingForGoku.ObjectToSpawn.GhostEffect, player.position, player.rotation);
             }
 
             yield return new WaitForSeconds(ghostDelaySecond);

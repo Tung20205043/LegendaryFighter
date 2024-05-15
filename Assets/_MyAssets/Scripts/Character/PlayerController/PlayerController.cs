@@ -6,11 +6,18 @@ public class PlayerController : CharacterController {
 
     [SerializeField] protected PlayerAttack playerAttack;
     [SerializeField] protected JoystickMovement joystickMovement;
-    [SerializeField] protected TakeInputButton inputButton;
     [SerializeField] private GameObject auraBuff;
     [SerializeField] private PunchCombo punchCombo;
-    [SerializeField] private CheckForCombo checkForCombo;
+
+    protected TakeInputButton inputButton;
+    private CheckForCombo checkForCombo;
+    private GameObject inputButtonObj;
     public float moveSpeed;
+    private void Awake() {
+        inputButtonObj = GameObject.Find("ButtonInput");
+        inputButton = inputButtonObj.GetComponent<TakeInputButton>();
+        checkForCombo = inputButtonObj.GetComponentInChildren<CheckForCombo>();
+    }
     private void Start()
     {
         AddListener();

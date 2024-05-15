@@ -9,6 +9,6 @@ public class DespawnGhoshtEff : MonoBehaviour
     }
     IEnumerator DespawnThisGameObj() { 
         yield return new WaitForSeconds(1.5f);
-        ObjectPooling.Instance.DeSpawn(this.gameObject);
+        ObjectPoolingForGoku.Instance.DeSpawn(this.gameObject);
     }
 }

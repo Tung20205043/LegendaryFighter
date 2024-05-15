@@ -5,15 +5,16 @@ using UnityEngine.Events;
 
 public class JoystickMovement : MonoBehaviour
 {
-
-    [SerializeField] protected Joystick joyStick = null;
+    GameObject joyObj;
+    protected Joystick joyStick = null;
     public UnityEvent<Vector3> moveDirection = null;
     private SpriteRenderer sprite;
-    private void Awake()
+    protected void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
+        joyObj = GameObject.Find("Variable Joystick");
+        joyStick = joyObj.GetComponent<Joystick>();
     }
-
     protected void Update()
     {
         FaceToEnemy(GameObjectManager.Instance.EnemyObject());
