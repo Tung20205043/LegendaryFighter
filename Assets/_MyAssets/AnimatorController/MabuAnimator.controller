@@ -183,10 +183,10 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: 390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2511569476348159698}
-    m_Position: {x: 360, y: 170, z: 0}
+    m_Position: {x: 360, y: 160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2164211245099678608}
-    m_Position: {x: 450, y: 260, z: 0}
+    m_Position: {x: 450, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7738786201958149073}
     m_Position: {x: 170, y: 50, z: 0}
@@ -251,10 +251,18 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: MovementType
     m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: d59e2e50119cdbd48b02d84268cd433c, type: 2}
+    m_Threshold: 5
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: MovementType
+    m_Mirror: 0
   m_BlendParameter: SkillType
   m_BlendParameterY: MovementType
   m_MinThreshold: 1
-  m_MaxThreshold: 4
+  m_MaxThreshold: 5
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetTelePosition : MonoBehaviourSingleton<GetTelePosition>
+public class GetPlayerTelePosition : MonoBehaviourSingleton<GetPlayerTelePosition> 
 {
     [SerializeField] private Transform forwardTransform;
     [SerializeField] private Transform backTransform;

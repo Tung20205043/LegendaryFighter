@@ -11,6 +11,6 @@ public static class GameConstant
     //  AttackType { Punch, Skill, UltimateSkill, Kameha, Teleport, HeavyPunch, Defaut }
     public static float[] timeUseSkill = { 0, 0.2f, 1.5f, 3f, 0.2f, 0.5f };
     public static float[] manaToCastSkill = {0, 5, 50, 40, 10, 20, 0 };
-    public static string[] AttackCode = { "P", "S", "U", default };
+    public static string[] AttackCode = { "P", "S", "U", default, default };
 }
 

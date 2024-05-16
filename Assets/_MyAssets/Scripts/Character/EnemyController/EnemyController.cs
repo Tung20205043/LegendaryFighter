@@ -7,6 +7,7 @@ public class EnemyController : CharacterController
     private TakeInputButton inputButton;
     [SerializeField] GameObject inputButtonObj;
     [SerializeField] CharacterController player;
+    [SerializeField] PunchComboAI punchComboAI;
     private void Awake() {
         inputButtonObj = GameObject.Find("ButtonInput");
         inputButton = inputButtonObj.GetComponent<TakeInputButton>();

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerTeleport : MonoBehaviour
 {
-    public Vector2 distanceToTele = new Vector2(10f, 0f);
     public float timeToTele = 0.2f;
     private GameObject playerObj;
     public void DoTeleport() {
@@ -17,7 +16,7 @@ public class PlayerTeleport : MonoBehaviour
     }
     public Vector3 TelePosition()
     {
-        return GetTelePosition.Instance.BackTransform;
+        return GetEnemyTelePosition.Instance.BackTransform;
     }
 }
     
