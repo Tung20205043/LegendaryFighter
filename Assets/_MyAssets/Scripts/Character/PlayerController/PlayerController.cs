@@ -23,7 +23,7 @@ public class PlayerController : CharacterController {
         AddListener();
     }
     protected void Update() {
-        if (CharacterStats.Instance.IsMaxMana() && characterAnimator.currentAnimationState == AnimationState.BuffMana) {
+        if (CharacterStats.Instance.IsMaxMana(Character.Player) && characterAnimator.currentAnimationState == AnimationState.BuffMana) {
             BuffMana(false);
         }
         punchCombo.ExitPunchCombo();
@@ -50,7 +50,7 @@ public class PlayerController : CharacterController {
 
     #region Buff Mana + Dash
     protected override void BuffMana(bool onBuff) {
-        CharacterStats.Instance.ChangeBuffManaState(onBuff);
+        CharacterStats.Instance.ChangeBuffManaState(onBuff, Character.Player);
         characterAnimator.SetBuffMana(onBuff);
         auraBuff.SetActive(onBuff);
     }
@@ -87,7 +87,7 @@ public class PlayerController : CharacterController {
         }
     }
     
-    void Defend(bool defending) {
+    protected override void Defend(bool defending) {
         characterAnimator.SetDefend(defending);
     }
     #endregion

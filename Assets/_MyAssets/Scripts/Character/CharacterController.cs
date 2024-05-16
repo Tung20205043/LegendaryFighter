@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class CharacterController : MonoBehaviour {
-    [SerializeField] protected CharacterAnimator characterAnimator = null;
+    [SerializeField] public CharacterAnimator characterAnimator = null;
     [SerializeField] protected CharacterDash characterDash = null;
     [SerializeField] protected CharacterTakeDamage characterTakeDamage = null;
     protected virtual void OnEnable() {
@@ -13,6 +13,7 @@ public abstract class CharacterController : MonoBehaviour {
     protected abstract void Move(Vector3 position);
     protected abstract void BuffMana(bool buff);
     protected abstract void Attack(AttackType type);
+    protected abstract void Defend(bool defending);
     protected abstract void Die();
 
     protected bool CanCastSkill(Character character, AttackType type, bool isDash) {

@@ -47,9 +47,17 @@ public class CharacterStats : MonoBehaviour
     [Header("")]
     public float startCharacterAtk = 10f;
     public float startHp = 100f;
-    private bool  isBuff;
+    private bool  isPlayerBuff;
+    private bool isEnemyBuff;
     private void Update() {
-        if (isBuff) { playerMana += 15 * Time.deltaTime; }
+        if (isPlayerBuff) {
+            if (IsMaxMana(Character.Player)) return;
+            playerMana += 15 * Time.deltaTime; 
+        }
+        if (isEnemyBuff) {
+            if (IsMaxMana(Character.Enemy)) return;
+            enemyMana += 15 * Time.deltaTime; 
+        }
     }
     public void StartGame() {
         playerMana = 50;
@@ -57,8 +65,12 @@ public class CharacterStats : MonoBehaviour
         playerHp = maxPlayerHp;
         enemyHp = maxEnemyHp;
     }
-    public void ChangeBuffManaState(bool onBuff) {
-        isBuff = onBuff;
+    public void ChangeBuffManaState(bool onBuff, Character character) {
+        if (character == Character.Player) {
+            isPlayerBuff = onBuff;
+        } else if (character == Character.Enemy) {
+            isEnemyBuff = onBuff;
+        }
     }
     public void TakeDamage(Character character, float amount) {
         switch (character) {
@@ -84,8 +96,8 @@ public class CharacterStats : MonoBehaviour
                 break;
         }
     }
-    public bool IsMaxMana() {
-        return playerMana >= maxPlayerMana;
+    public bool IsMaxMana(Character character) {
+        return (character == Character.Player) ? playerMana >= maxPlayerMana : enemyMana >= maxEnemyMana;
     }
     
 }
