@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dash
+  m_Name: SkillHeavyPunch
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1244330079, guid: b794982166d4bee46bdf07e054c9eadf, type: 3}
+      value: {fileID: -567842411, guid: b794982166d4bee46bdf07e054c9eadf, type: 3}
+    - time: 0.3
+      value: {fileID: 692254115, guid: b794982166d4bee46bdf07e054c9eadf, type: 3}
+    - time: 0.36666667
+      value: {fileID: -1660090833, guid: b794982166d4bee46bdf07e054c9eadf, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,13 +48,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1244330079, guid: b794982166d4bee46bdf07e054c9eadf, type: 3}
+    - {fileID: -567842411, guid: b794982166d4bee46bdf07e054c9eadf, type: 3}
+    - {fileID: 692254115, guid: b794982166d4bee46bdf07e054c9eadf, type: 3}
+    - {fileID: -1660090833, guid: b794982166d4bee46bdf07e054c9eadf, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.38333336
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

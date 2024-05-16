@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class ObjectPoolingForGoku : ObjectPooling{
-    public static ObjectPoolingForGoku Instance { get; private set; }
+public class ObjectPoolingForCharacter : ObjectPooling{
+    public static ObjectPoolingForCharacter Instance { get; private set; }
 
-    public enum ObjectToSpawn {GhostEffect, GhostEffect1, GokuSkill, GokuUltSkill, Kameha }
+    public enum ObjectToSpawn {GhostEffect, GhostEffect1, GokuSkill, GokuUltSkill, Kameha, TakeDamageGhost, TakeDamageGhost1 }
     [System.Serializable]
     public struct SpawnableObject {
         public ObjectToSpawn key;

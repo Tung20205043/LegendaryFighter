@@ -68,7 +68,7 @@ public class CharacterAnimator : MonoBehaviour
         SetBool("TakeDamage", true);
         SetFloat("TakeDamageType", (int)type);
         currentAnimationState = AnimationState.TakeDamage;
-        StartCoroutine(StopTakeDmgAnim(GameConstant.takeDmgTime));
+        StartCoroutine(StopTakeDmgAnim(GameConstant.takeDmgTime[(int)type]));
     }
     IEnumerator StopTakeDmgAnim(float time) { 
         yield return new WaitForSeconds(time);

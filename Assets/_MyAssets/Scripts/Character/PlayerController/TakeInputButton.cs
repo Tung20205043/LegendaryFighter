@@ -24,6 +24,7 @@ public class TakeInputButton : MonoBehaviour
         attackButton[0].onClick.AddListener(() => Attacking(AttackType.Punch));
         attackButton[1].onClick.AddListener(() => Attacking(AttackType.Skill));
         attackButton[2].onClick.AddListener(() => Attacking(AttackType.UltimateSkill));
+        attackButton[3].onClick.AddListener(() => Attacking(AttackType.HeavyPunch));
     }
     //---------------------------------
     public void BuffingMana() {

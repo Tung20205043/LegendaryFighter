@@ -16,7 +16,7 @@ public class UltSkillObj : MonoBehaviour, ISkillObj
         transform.position = Vector3.MoveTowards(transform.position, GameObjectManager.Instance.EnemyObject().transform.position, step);
     }
     public void DeSpawn() {
-        ObjectPoolingForGoku.Instance.DeSpawn(this.gameObject);
+        ObjectPoolingForCharacter.Instance.DeSpawn(this.gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Enemy")) {

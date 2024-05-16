@@ -6,6 +6,7 @@ public class EnemyController : CharacterController
 {
     private void Update() {
         Die();
+        CannotExitScreen();
     }
     protected override void Move(Vector3 position) {
         throw new System.NotImplementedException();
@@ -19,18 +20,15 @@ public class EnemyController : CharacterController
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("PlayerPunch1")) {
             characterAnimator.SetTakeDamage(TakeDamageType.Type1);
-            CharacterStats.Instance.TakeDamage(Character.Enemy,
-                CharacterStats.Instance.PlayerAtk);
+            characterTakeDamage.DoTakeDamage(TakeDamageType.Type1);
         }
         if (collision.CompareTag("PlayerPunch2")) {
             characterAnimator.SetTakeDamage(TakeDamageType.Type2);
-            CharacterStats.Instance.TakeDamage(Character.Enemy,
-                CharacterStats.Instance.PlayerAtk);
+            characterTakeDamage.DoTakeDamage(TakeDamageType.Type2);
         }
         if (collision.CompareTag("PlayerPunch3")) {
             characterAnimator.SetTakeDamage(TakeDamageType.Type3);
-            CharacterStats.Instance.TakeDamage(Character.Enemy,
-                CharacterStats.Instance.PlayerAtk);
+            characterTakeDamage.DoTakeDamage(TakeDamageType.Type3);
         }
     }
     protected override void Die() {

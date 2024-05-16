@@ -16,7 +16,7 @@ public class KamehaTailObj : MonoBehaviour, ISkillObj {
         transform.position = Vector3.MoveTowards(transform.position, GameObjectManager.Instance.EnemyObject().transform.position, step);
     }
     public void DeSpawn() {
-        ObjectPoolingForGoku.Instance.DeSpawn(kamehaObj);
+        ObjectPoolingForCharacter.Instance.DeSpawn(kamehaObj);
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Enemy")) {

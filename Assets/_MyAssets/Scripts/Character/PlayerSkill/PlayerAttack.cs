@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] SpawnUltSkill spawnUlt;
     [SerializeField] SpawnKameha spawnKameha;
     [SerializeField] PlayerTeleport playerTeleport;
+    [SerializeField] PlayerHeavyPunch playerHeavyPunch;
     public void DoSpawnSkill(AttackType type, Vector3 playerPosition, Vector3 forward, Vector3 up) {
         switch (type) {
             case AttackType.Skill:
@@ -21,6 +22,9 @@ public class PlayerAttack : MonoBehaviour
                 break;
             case AttackType.Teleport:
                 playerTeleport.DoTeleport();
+                break;
+            case AttackType.HeavyPunch:
+                playerHeavyPunch.DoTeleport();
                 break;
             default:
                 break;

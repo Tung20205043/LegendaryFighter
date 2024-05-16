@@ -15,7 +15,7 @@ public class SpawnUltSkill : SpawnSkillParent
     public void DoUltSkill(Vector3 playerPos, Vector3 forward, Vector3 up) {
         ultSkillCanMove = false;
         StartCoroutine(SwitchCamera());
-        StartCoroutine(SpawnFromPooling(playerPos, forward, up, distanceToSpawn, timeDelayToSpawn, ObjectPoolingForGoku.ObjectToSpawn.GokuUltSkill));
+        StartCoroutine(SpawnFromPooling(playerPos, forward, up, distanceToSpawn, timeDelayToSpawn, ObjectPoolingForCharacter.ObjectToSpawn.GokuUltSkill));
     }
     IEnumerator SwitchCamera() { 
         switchCameraController.SetActive(true);

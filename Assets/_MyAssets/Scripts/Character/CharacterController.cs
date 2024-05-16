@@ -5,9 +5,9 @@ using UnityEngine;
 public abstract class CharacterController : MonoBehaviour {
     [SerializeField] protected CharacterAnimator characterAnimator = null;
     [SerializeField] protected CharacterDash characterDash = null;
-    private Vector3 currentScale;
+    [SerializeField] protected CharacterTakeDamage characterTakeDamage = null;
     protected virtual void OnEnable() {
-        currentScale = transform.localScale;
+
     }
 
     protected abstract void Move(Vector3 position);
@@ -41,6 +41,9 @@ public abstract class CharacterController : MonoBehaviour {
             }
         }
         return false;
+    }
+    protected void CannotExitScreen() {
+        this.transform.position = GameManager.Instance.LimitPosition(transform.position);
     }
 
 }

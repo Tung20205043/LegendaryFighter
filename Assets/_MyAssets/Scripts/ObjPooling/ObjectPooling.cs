@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static ObjectPoolingForGoku;
+using static ObjectPoolingForCharacter;
 
 public class ObjectPooling : MonoBehaviour
 {
     [SerializeField] Transform holder;
     [SerializeField] protected List<GameObject> poolObj;
     [SerializeField] protected Transform parentToSpawn;
-    protected void GetObjectFromBool(GameObject _poolObj, Vector3 spawnPoin, Quaternion spawnRotation) {
+    public void GetObjectFromBool(GameObject _poolObj, Vector3 spawnPoin, Quaternion spawnRotation) {
         if (poolObj.Count > 0) {
             foreach (GameObject poolObj in poolObj) {
                 if (poolObj.name == _poolObj.name) {

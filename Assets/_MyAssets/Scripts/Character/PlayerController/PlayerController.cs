@@ -43,9 +43,9 @@ public class PlayerController : CharacterController {
         characterAnimator.SetMovement(joystickMovement.MoveType());
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * moveSpeed);
     }
-    void CannotExitScreen() {
-        this.transform.position = GameManager.Instance.LimitPosition(transform.position);
-    }
+    //void CannotExitScreen() {
+    //    this.transform.position = GameManager.Instance.LimitPosition(transform.position);
+    //}
     #endregion
 
     #region Buff Mana + Dash
