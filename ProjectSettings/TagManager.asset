@@ -9,6 +9,7 @@ TagManager:
   - PlayerPunch2
   - PlayerPunch3
   - Enemy
+  - EnemyForward
   layers:
   - Default
   - TransparentFX

@@ -25,7 +25,7 @@ public class EnemyController : CharacterController
         if (player.characterAnimator.currentAnimationState != AnimationState.Defend) {
             //Debug.Log("Attack Player");
         }
-        Debug.Log(CantBuffMana());
+        //Debug.Log(CantBuffMana());
     }
     bool CantBuffMana() { 
         return (CharacterStats.Instance.IsMaxMana(Character.Enemy)) ;
@@ -42,7 +42,7 @@ public class EnemyController : CharacterController
         characterAnimator.SetBuffMana(buff);
     }
     void CallDefend(AttackType type) {
-        Defend(true);
+        //Defend(true);
     }
     protected override void Defend(bool defending) {
         characterAnimator.SetDefend(defending);
@@ -50,14 +50,17 @@ public class EnemyController : CharacterController
     private void OnTriggerEnter2D(Collider2D collision) {
         if (characterAnimator.currentAnimationState == AnimationState.Defend) return;
         if (collision.CompareTag("PlayerPunch1")) {
+            Debug.Log("take damage 1");
             characterAnimator.SetTakeDamage(TakeDamageType.Type1);
             characterTakeDamage.DoTakeDamage(TakeDamageType.Type1);
         }
         if (collision.CompareTag("PlayerPunch2")) {
+            Debug.Log("take damage 2");
             characterAnimator.SetTakeDamage(TakeDamageType.Type2);
             characterTakeDamage.DoTakeDamage(TakeDamageType.Type2);
         }
         if (collision.CompareTag("PlayerPunch3")) {
+            Debug.Log("take damage 3");
             characterAnimator.SetTakeDamage(TakeDamageType.Type3);
             characterTakeDamage.DoTakeDamage(TakeDamageType.Type3);
         }

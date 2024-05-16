@@ -2,21 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameObjectManager : MonoBehaviour
+public class GameObjectManager : MonoBehaviourSingleton<GameObjectManager>
 {
     private GameObject enemyObj;
     private GameObject playerObj;
 
-    public static GameObjectManager Instance { get; private set; }
-
     private void Awake() {
-        if (Instance != null) {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-
         enemyObj = GameObject.FindWithTag("Enemy");
         playerObj = GameObject.FindWithTag("Player");
     }

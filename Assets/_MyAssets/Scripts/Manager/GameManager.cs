@@ -2,18 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviourSingleton<GameManager> 
 {
-    public static GameManager Instance { get; private set; }
-
-    private void Awake() {
-        if (Instance != null) {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
     public Transform[] limitedPoint;
     public float LimitedLeft() { return limitedPoint[0].position.x; }
     public float LimitedRight() { return limitedPoint[1].position.x; }

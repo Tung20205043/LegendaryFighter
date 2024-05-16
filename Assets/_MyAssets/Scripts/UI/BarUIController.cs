@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static CharacterStats;
 
 public class BarUIController : MonoBehaviour {
     [SerializeField] Image playerHealth;
@@ -14,15 +13,20 @@ public class BarUIController : MonoBehaviour {
     [SerializeField] TextMeshProUGUI playerManaText;
     [SerializeField] TextMeshProUGUI enemyHealthText;
     [SerializeField] TextMeshProUGUI enemyManaText;
+    CharacterStats stats;
+    private void Start()
+    {
+        stats = CharacterStats.Instance; 
+    }
     private void Update() {
         UpdateImage();
         UpdateTexts();
     }
     private void UpdateTexts() {
-        UpdateText(playerHealthText, Instance.PlayerHp, Instance.maxPlayerHp);
-        UpdateText(enemyHealthText, Instance.EnemyHp, Instance.maxEnemyHp);
-        UpdateText(playerManaText, Instance.PlayerMana, Instance.maxPlayerMana, true);
-        UpdateText(enemyManaText, Instance.EnemyMana, Instance.maxEnemyMana, true);
+        UpdateText(playerHealthText, stats.PlayerHp, stats.maxPlayerHp);
+        UpdateText(enemyHealthText, stats.EnemyHp, stats.maxEnemyHp);
+        UpdateText(playerManaText, stats.PlayerMana, stats.maxPlayerMana, true);
+        UpdateText(enemyManaText, stats.EnemyMana, stats.maxEnemyMana, true);
     }
 
     private void UpdateText(TextMeshProUGUI text, float currentValue, float maxValue) {
@@ -38,10 +42,10 @@ public class BarUIController : MonoBehaviour {
     }
 
     void UpdateImage() {
-        UpdateStatusBar(playerHealth, Instance.PlayerHp, Instance.maxPlayerHp);
-        UpdateStatusBar(playerMana, Instance.PlayerMana, Instance.maxPlayerMana);
-        UpdateStatusBar(enemyHealth, Instance.EnemyHp, Instance.maxEnemyHp);
-        UpdateStatusBar(enemyMana, Instance.EnemyMana, Instance.maxEnemyMana);
+        UpdateStatusBar(playerHealth, stats.PlayerHp, stats.maxPlayerHp);
+        UpdateStatusBar(playerMana, stats.PlayerMana, stats.maxPlayerMana);
+        UpdateStatusBar(enemyHealth, stats.EnemyHp, stats.maxEnemyHp);
+        UpdateStatusBar(enemyMana, stats.EnemyMana, stats.maxEnemyMana);
     }
     private void UpdateStatusBar(Image statusBar, float currentValue, float maxValue) {
         float fillAmountRatio = currentValue / maxValue;

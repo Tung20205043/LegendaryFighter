@@ -41,13 +41,4 @@ public class KamehaBodyObj : MonoBehaviour {
             spriteRenderer.size = originalSize;
         }
     }
-    public float speed = 10f;
-    private void Update() {
-        Move();
-    }
-    public void Move() {
-        float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, GameObjectManager.Instance.EnemyObject().transform.position, step);
-    }
-
 }

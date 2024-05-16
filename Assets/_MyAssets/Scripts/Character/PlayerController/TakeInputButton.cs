@@ -7,11 +7,11 @@ using UnityEngine.UI;
 
 public class TakeInputButton : MonoBehaviour
 {
-    [SerializeField] Button buffManaButton;
+    [SerializeField] HoldButton buffManaButton;
     [SerializeField] Button levelUpButton;
     [SerializeField] Button[] attackButton;
     [SerializeField] Button dashButton;
-    [SerializeField] Button defendButton;
+    [SerializeField] HoldButton defendButton;
 
     public UnityEvent<bool> isBuffingMana;
     public UnityEvent<bool> isDefending;
@@ -25,18 +25,21 @@ public class TakeInputButton : MonoBehaviour
         attackButton[1].onClick.AddListener(() => Attacking(AttackType.Skill));
         attackButton[2].onClick.AddListener(() => Attacking(AttackType.UltimateSkill));
         attackButton[3].onClick.AddListener(() => Attacking(AttackType.HeavyPunch));
+
+        buffManaButton.holdButton.AddListener(BuffingMana);
+        defendButton.holdButton.AddListener(Defending);
     }
     //---------------------------------
-    public void BuffingMana() {
-        isBuffingMana?.Invoke(true);
+    public void BuffingMana(bool state) {
+        isBuffingMana?.Invoke(state);
         firstComboInputEvent?.Invoke("Q");
     }
     public void StopBuffMana() { 
         isBuffingMana?.Invoke(false);
     }
     //---------------------------------
-    public void Defending() {
-        isDefending?.Invoke(true);
+    public void Defending(bool state) {
+        isDefending?.Invoke(state);
     }
     public void StopDefending() { 
         isDefending?.Invoke(false);
@@ -54,7 +57,4 @@ public class TakeInputButton : MonoBehaviour
         } else
             secondComboInputEvent?.Invoke("D");
     }
-
-
-
 }

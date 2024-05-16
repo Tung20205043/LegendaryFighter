@@ -2,18 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterStats : MonoBehaviour
+public class CharacterStats : MonoBehaviourSingleton<CharacterStats> 
 {
-    public static CharacterStats Instance { get; private set; }
-
-    private void Awake() {
-        if (Instance != null) {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
 
     [Header("Player Stat")]
     [SerializeField] private int playerLevel = 1;
