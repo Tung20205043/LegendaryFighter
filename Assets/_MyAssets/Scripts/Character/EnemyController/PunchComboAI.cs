@@ -14,7 +14,7 @@ public class PunchComboAI : MonoBehaviour
     public UnityEvent endPunchCombo;
     void Start() {
         player = GameObjectManager.Instance.PlayerObject().transform;
-        StartCoroutine(DoPunch());
+        //StartCoroutine(DoPunch());
     }
     void Update() {
 

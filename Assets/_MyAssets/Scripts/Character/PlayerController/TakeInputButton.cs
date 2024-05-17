@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class TakeInputButton : MonoBehaviour
@@ -29,10 +27,29 @@ public class TakeInputButton : MonoBehaviour
         buffManaButton.holdButton.AddListener(BuffingMana);
         defendButton.holdButton.AddListener(Defending);
     }
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Q)) {
+            BuffingMana(true);
+        }
+        if (Input.GetKeyUp(KeyCode.Q)) {
+            BuffingMana(false);
+        }
+        if (Input.GetKeyDown(KeyCode.S)) {
+            Attacking(AttackType.Skill);
+        }
+        if (Input.GetKeyDown(KeyCode.D)) {
+            Dashing();
+        }
+        if (Input.GetKeyDown(KeyCode.P)) {
+            Attacking(AttackType.Punch);
+        }
+    }
     //---------------------------------
     public void BuffingMana(bool state) {
         isBuffingMana?.Invoke(state);
-        firstComboInputEvent?.Invoke("Q");
+        if (state) {
+            firstComboInputEvent?.Invoke("Q");
+        }
     }
     public void StopBuffMana() { 
         isBuffingMana?.Invoke(false);

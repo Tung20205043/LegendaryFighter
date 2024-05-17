@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : CharacterController
@@ -8,6 +6,7 @@ public class EnemyController : CharacterController
     [SerializeField] GameObject inputButtonObj;
     [SerializeField] CharacterController player;
     [SerializeField] PunchComboAI punchComboAI;
+    [SerializeField] EnemyTakeDamage enemyTakeDamage;
     private void Awake() {
         inputButtonObj = GameObject.Find("ButtonInput");
         inputButton = inputButtonObj.GetComponent<TakeInputButton>();
@@ -27,6 +26,10 @@ public class EnemyController : CharacterController
             //Debug.Log("Attack Player");
         }
         //Debug.Log(CantBuffMana());
+
+        if (Input.GetKeyDown(KeyCode.M)) {
+            characterAnimator.Play("SpawnAnim");
+        }
     }
     bool CantBuffMana() { 
         return (CharacterStats.Instance.IsMaxMana(Character.Enemy)) ;
@@ -49,21 +52,14 @@ public class EnemyController : CharacterController
         characterAnimator.SetDefend(defending);
     }
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (characterAnimator.currentAnimationState == AnimationState.Defend) return;
         if (collision.CompareTag("PlayerPunch1")) {
-            Debug.Log("take damage 1");
-            characterAnimator.SetTakeDamage(TakeDamageType.Type1);
-            characterTakeDamage.DoTakeDamage(TakeDamageType.Type1);
+            enemyTakeDamage.DoTakeDamage(TakeDamageType.Type1);
         }
         if (collision.CompareTag("PlayerPunch2")) {
-            Debug.Log("take damage 2");
-            characterAnimator.SetTakeDamage(TakeDamageType.Type2);
-            characterTakeDamage.DoTakeDamage(TakeDamageType.Type2);
+            enemyTakeDamage.DoTakeDamage(TakeDamageType.Type2);
         }
         if (collision.CompareTag("PlayerPunch3")) {
-            Debug.Log("take damage 3");
-            characterAnimator.SetTakeDamage(TakeDamageType.Type3);
-            characterTakeDamage.DoTakeDamage(TakeDamageType.Type3);
+            enemyTakeDamage.DoTakeDamage(TakeDamageType.Type3);
         }
     }
     protected override void Die() {

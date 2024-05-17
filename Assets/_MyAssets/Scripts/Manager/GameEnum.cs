@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 
 public enum Character { Player, Enemy }
 public enum MovementType {Forward, Backward, Up, Down }

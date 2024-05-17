@@ -15,18 +15,6 @@ public class CheckForCombo : MonoBehaviour {
         inputButton.secondComboInputEvent.AddListener(TakeSecondInput);
     }
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            TakeFirstInput("Q");
-        }
-        if (Input.GetKeyDown(KeyCode.S)) {
-            TakeSecondInput("S");
-        }
-        if (Input.GetKeyDown(KeyCode.D)) {
-            TakeSecondInput("D");
-        }
-        if (Input.GetKeyDown(KeyCode.P)) {
-            TakeSecondInput("P");
-        }
         if (playerActions.Count > 0) 
             isSpecialAttack = true;
         else isSpecialAttack = false;

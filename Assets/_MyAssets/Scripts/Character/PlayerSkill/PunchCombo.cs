@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class PunchCombo : MonoBehaviour {
     public List<PunchSO> combo;
@@ -12,7 +11,7 @@ public class PunchCombo : MonoBehaviour {
     private Transform player;
     private Rigidbody2D rb;
     public float dashDistance = 1f;
-    [SerializeField] GameObject[] punchCollider;
+    [SerializeField] RaycastCheck raycastCheck;
     void Start() {
         rb = GetComponentInParent<Rigidbody2D>();
         player = GameObjectManager.Instance.PlayerObject().transform;
@@ -20,20 +19,10 @@ public class PunchCombo : MonoBehaviour {
     void Update() {
         if (IsInAttackRange())
             StopDash();
-        CheckActiveCollider();
     }
     bool IsInAttackRange() {
         return Mathf.Abs(DirectionToEnemy().x) < GameConstant.attackRange 
             && characterAnimator.currentAnimationState == AnimationState.Attack;
-    }
-    void CheckActiveCollider() {
-        for (int i = 0; i < punchCollider.Length; i++) {
-            punchCollider[i].SetActive(i == comboCount && IsPunchState());
-        }
-    }
-    bool IsPunchState() {
-        return characterAnimator.currentAnimationState == AnimationState.Attack 
-            && characterAnimator.currentAttackType == AttackType.Punch;
     }
     public void StartPunch() {
         if (Time.time - lastComboEnd > 0.2f && comboCount <= combo.Count) {
@@ -46,6 +35,7 @@ public class PunchCombo : MonoBehaviour {
     }
     void DoPunch() {
         characterAnimator.UpdateAnimator(combo[comboCount].animatorOV);
+        raycastCheck.CheckObjByRaycast(comboCount);
         characterAnimator.SetBool("Punch", true);
         if (comboCount < combo.Count - 1) {
             comboCount++;

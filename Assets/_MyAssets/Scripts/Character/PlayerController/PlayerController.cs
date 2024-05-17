@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : CharacterController {
 
@@ -26,8 +24,15 @@ public class PlayerController : CharacterController {
         if (CharacterStats.Instance.IsMaxMana(Character.Player) && characterAnimator.currentAnimationState == AnimationState.BuffMana) {
             BuffMana(false);
         }
+        if (characterAnimator.currentAnimationState == AnimationState.Attack) {
+            BuffMana(false);
+        }
         punchCombo.ExitPunchCombo();
         CannotExitScreen();
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            characterAnimator.Play("Spawn");
+        }
     }
     #region Move Funcion
     protected override void Move(Vector3 targetPosition) {
@@ -47,10 +52,13 @@ public class PlayerController : CharacterController {
 
     #region Buff Mana + Dash
     protected override void BuffMana(bool onBuff) {
+        //if (characterAnimator.currentAnimationState == AnimationState.Attack) return;
         CharacterStats.Instance.ChangeBuffManaState(onBuff, Character.Player);
         characterAnimator.SetBuffMana(onBuff);
         auraBuff.SetActive(onBuff);
     }
+    //bool CancelBuffMana() { 
+    //}
     void Dash() {
         if (CanCastSkill(Character.Player, AttackType.Defaut, true)) {
             characterDash.Dash();
@@ -112,5 +120,8 @@ public class PlayerController : CharacterController {
         inputButton.isDefending.AddListener(Defend);
         checkForCombo.specialAttack.AddListener(Attack);
     }
-    
+    [SerializeField] SpawnKameha spawnKameha;
+    void SpawnKame() {
+        spawnKameha.Spawn();
+    }
 }

@@ -1,20 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterAnimator : MonoBehaviour
-{
+public class CharacterAnimator : MonoBehaviour {
     private Animator animator;
     public AnimationState currentAnimationState;
     protected MovementType currentMovementType;
     public AttackType currentAttackType;
     protected string currentTrigger = "";
-    public Animator Animator { 
-        get { 
-            if (animator == null) 
+    public Animator Animator {
+        get {
+            if (animator == null)
                 animator = GetComponent<Animator>();
-            return animator; 
-        } 
+            return animator;
+        }
     }
 
     //--------------------------------------------------
@@ -33,7 +31,7 @@ public class CharacterAnimator : MonoBehaviour
     }
     public void StopMovement() {
         SetBool("Movement", false);
-        SetIdle();  
+        SetIdle();
     }
     public void SetBuffMana(bool onBuff) {
         SetBool("BuffMana", onBuff);
@@ -51,15 +49,15 @@ public class CharacterAnimator : MonoBehaviour
         currentAnimationState = AnimationState.Attack;
         currentAttackType = AttackType.Punch;
     }
-    
+
     public void SetSkill(AttackType type) {
         SetBool("Skill", true);
-        SetFloat("SkillType",(int)type);
+        SetFloat("SkillType", (int)type);
         currentAnimationState = AnimationState.Attack;
         currentAttackType = type;
         StartCoroutine(StopSkill(GameConstant.timeUseSkill[(int)type]));
     }
-    IEnumerator StopSkill(float time) { 
+    IEnumerator StopSkill(float time) {
         yield return new WaitForSeconds(time);
         SetBool("Skill", false);
         SetIdle();
@@ -70,7 +68,7 @@ public class CharacterAnimator : MonoBehaviour
         currentAnimationState = AnimationState.TakeDamage;
         StartCoroutine(StopTakeDmgAnim(GameConstant.takeDmgTime[(int)type]));
     }
-    IEnumerator StopTakeDmgAnim(float time) { 
+    IEnumerator StopTakeDmgAnim(float time) {
         yield return new WaitForSeconds(time);
         SetBool("TakeDamage", false);
         SetIdle();
@@ -80,6 +78,10 @@ public class CharacterAnimator : MonoBehaviour
         currentAnimationState = AnimationState.Die;
     }
     //--------------------------------------------------
+    public void Play(string nameAnim) {
+        Debug.Log(nameAnim);
+        animator.Play(nameAnim);
+    }
     public void SetTrigger(string parameters) {
         Animator.SetTrigger(parameters);
         currentTrigger = parameters;
