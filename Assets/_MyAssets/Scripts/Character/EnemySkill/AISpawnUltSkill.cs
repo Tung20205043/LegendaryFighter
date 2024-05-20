@@ -7,6 +7,6 @@ public class AISpawnUltSkill : MonoBehaviour {
         AITeleport.endTeleport.AddListener(DoSpawnSkill);
     }
     public void DoSpawnSkill() {
-        characterAnimator.SetSkill(AttackType.UltimateSkill);
+        characterAnimator.SetSkill(AttackType.UltimateSkill, false);
     }
 }

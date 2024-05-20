@@ -30,17 +30,17 @@ public class JoystickMovement : MonoBehaviour
         float yDirection = joyStick.Direction.y;
         Vector3 targetDirection = DirectionToTarget();
 
-        if (Mathf.Abs(xDirection) > 0.4f) {
-            if (xDirection * targetDirection.x < 0) 
-                return MovementType.Backward;       
+        if (Mathf.Abs(xDirection) <= 0.4f && !GameManager.Instance.IsOnLimitPoint(Character.Player)) {
+            if (yDirection * targetDirection.y >= 0)
+                return MovementType.Down;
             else
-                return MovementType.Forward;       
+                return MovementType.Up;       
         } 
         else {
-            if (yDirection * targetDirection.y < 0)
-                return MovementType.Up;                  
+            if (xDirection * targetDirection.x < 0)
+                return MovementType.Backward;
             else
-                return MovementType.Down;
+                return MovementType.Forward;
         }
     }
 

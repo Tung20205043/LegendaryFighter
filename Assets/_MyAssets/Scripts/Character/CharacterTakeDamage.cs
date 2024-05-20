@@ -13,10 +13,8 @@ public class CharacterTakeDamage : MonoBehaviour
     public float ghostDelaySecond;
     private Coroutine dashEffectCoroutine;
 
-    //private Transform enemy;
     private Rigidbody2D rb;
     public virtual void Start() {
-        //enemy = GameObjectManager.Instance.EnemyObject().transform;
         rb = GetComponentInParent<Rigidbody2D>();
     }
     public void Dash() {
@@ -58,7 +56,6 @@ public class CharacterTakeDamage : MonoBehaviour
                 SpawnGhostEffect(true);
             } else {
                 SpawnGhostEffect(false);
-                //ObjectPoolingForEnemy.Instance.SpawnObject(ObjectPoolingForEnemy.ObjectToSpawn.TakeDamageGhost1, enemy.position, enemy.rotation);
             }
 
             yield return new WaitForSeconds(ghostDelaySecond);
@@ -71,4 +68,5 @@ public class CharacterTakeDamage : MonoBehaviour
         return GameObjectManager.Instance.EnemyObject().transform.position - GameObjectManager.Instance.PlayerObject().transform.position;
     }
     #endregion
+   
 }

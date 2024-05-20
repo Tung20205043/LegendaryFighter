@@ -5,8 +5,12 @@ public class CharacterAnimator : MonoBehaviour {
     private Animator animator;
     public AnimationState currentAnimationState;
     protected MovementType currentMovementType;
+    public bool isAttack;
     public AttackType currentAttackType;
     protected string currentTrigger = "";
+    private void Update() {
+        isAttack = CheckForCombo.isSpecialAttack;
+    }
     public Animator Animator {
         get {
             if (animator == null)
@@ -31,11 +35,16 @@ public class CharacterAnimator : MonoBehaviour {
     }
     public void StopMovement() {
         SetBool("Movement", false);
-        SetIdle();
+        //SetIdle();
     }
     public void SetBuffMana(bool onBuff) {
         SetBool("BuffMana", onBuff);
-        currentAnimationState = onBuff ? AnimationState.BuffMana : AnimationState.Idle;
+        if (onBuff) {
+            currentAnimationState = AnimationState.BuffMana;
+        } 
+        if (!onBuff){
+            SetIdle();
+        }
     }
     public void SetDash() {
         SetTrigger("Dash");
@@ -50,7 +59,10 @@ public class CharacterAnimator : MonoBehaviour {
         currentAttackType = AttackType.Punch;
     }
 
-    public void SetSkill(AttackType type) {
+    public void SetSkill(AttackType type, bool isSpecialAttack) {
+        if (isSpecialAttack) {
+            SetTrigger("SpecialSkill");
+        }
         SetBool("Skill", true);
         SetFloat("SkillType", (int)type);
         currentAnimationState = AnimationState.Attack;
@@ -72,6 +84,15 @@ public class CharacterAnimator : MonoBehaviour {
         yield return new WaitForSeconds(time);
         SetBool("TakeDamage", false);
         SetIdle();
+    }
+    public void SetTransform() {
+        StartCoroutine(TransformToNextState());
+        SetBuffMana(true);  
+    }
+    IEnumerator TransformToNextState() {
+        yield return new WaitForSeconds(2f);
+        Debug.Log("trans");
+        SetTrigger("Transform");
     }
     public void SetDie() {
         SetTrigger("Die");

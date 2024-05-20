@@ -1,11 +1,11 @@
 ﻿using System.Collections;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Events;
 public class CharacterDash : MonoBehaviour
 {
     [Header("Dash Value")]
     [SerializeField] private float dashForce = 10f;
-    [SerializeField] private float dashDuration = 0.1f;
     [SerializeField] private float dashDelay = 0.5f;
     private bool isDashing = false;
 
@@ -66,6 +66,12 @@ public class CharacterDash : MonoBehaviour
         }
     }
     Vector2 DirectionToEnemy() {
-        return GameObjectManager.Instance.EnemyObject().transform.position - player.transform.position;
+        Vector2 direction = GameObjectManager.Instance.EnemyObject().transform.position - player.transform.position;
+        if (direction.x == 0) {
+            return new Vector2 (1,0);
+        } 
+        else {
+            return direction;
+        }
     }
 }

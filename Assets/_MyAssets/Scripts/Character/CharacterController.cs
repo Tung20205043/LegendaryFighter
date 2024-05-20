@@ -27,7 +27,7 @@ public abstract class CharacterController : MonoBehaviour {
                 Debug.Log("Player is out of mana.");
                 return false;
             } else {
-                stats.PayMana(character, manaRequired);
+                stats.ChangeCurrentMana(character, -manaRequired);
                 return true;
             }
         } else if (character == Character.Enemy) {
@@ -35,7 +35,7 @@ public abstract class CharacterController : MonoBehaviour {
                 Debug.Log("Enemy is out of mana.");
                 return false;
             } else {
-                stats.PayMana(character, manaRequired);
+                stats.ChangeCurrentMana(character, -manaRequired);
                 return true;
             }
         }

@@ -12,8 +12,6 @@ public class RaycastCheck : MonoBehaviour {
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, raycastDistance, layerMask);
         if (hit.collider != null) {
             takeDmgEvent.Invoke((TakeDamageType)value);
-        } else {
-            Debug.Log("No object in front.");
-        }
+        } 
     }
 }

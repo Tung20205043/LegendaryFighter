@@ -7,17 +7,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] SpawnKameha spawnKameha;
     [SerializeField] PlayerTeleport playerTeleport;
     [SerializeField] PlayerHeavyPunch playerHeavyPunch;
-    public void DoSpawnSkill(AttackType type, Vector3 playerPosition, Vector3 forward, Vector3 up) {
+    public void DoSkill(AttackType type) {
         switch (type) {
-            case AttackType.Skill:
-                spawnSkill1.DoSpawnSkill1(playerPosition, forward, up);
-                break;
-            case AttackType.UltimateSkill:
-                spawnUlt.DoUltSkill(playerPosition, forward, up);
-                break;
-            case AttackType.Kameha:
-                spawnKameha.DoSpawnKameha(playerPosition, forward, up);
-                break;
             case AttackType.Teleport:
                 playerTeleport.DoTeleport();
                 break;
@@ -27,5 +18,14 @@ public class PlayerAttack : MonoBehaviour
             default:
                 break;
         }
+    }
+    void SpawnKame() {
+        spawnKameha.Spawn();
+    }
+    void SpawnSkill() { 
+        spawnSkill1.DoSpawnSkill1();
+    }
+    void SpawnUltSkill() {
+        spawnUlt.DoUltSkill();
     }
 }

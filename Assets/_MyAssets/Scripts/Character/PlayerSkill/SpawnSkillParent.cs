@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class SpawnSkillParent : MonoBehaviour
 {
-    public IEnumerator SpawnFromPooling(Vector3 playPosition, Vector3 forward, Vector3 up, Vector2 distanceToSpawn, float timeDelayToSpawn, ObjectPoolingForCharacter.ObjectToSpawn objType) {
+
+    public IEnumerator SpawnFromPooling(AttackType type, float timeDelayToSpawn, ObjectPoolingForCharacter.ObjectToSpawn objType) {
         yield return new WaitForSeconds(timeDelayToSpawn);
-        ObjectPoolingForCharacter.Instance.SpawnObject(objType, SpawnPosition(playPosition, forward, up, distanceToSpawn), SpawmQuaternion(GameObjectManager.Instance.EnemyObject()));
+        ObjectPoolingForCharacter.Instance.SpawnObject(objType,SpawnPosition(type), SpawmQuaternion(GameObjectManager.Instance.EnemyObject()));
     }
-    public Vector3 SpawnPosition(Vector3 playerPosition, Vector3 forward, Vector3 up, Vector2 distanceToSpawn) {
-        if (GameObjectManager.Instance.DirectionToEnemy().x < 0) {
-            return playerPosition + forward * distanceToSpawn.x - up * distanceToSpawn.y;
-        } 
-        else return playerPosition + forward * distanceToSpawn.x + up * distanceToSpawn.y;
+
+    Vector3 spawnPos;
+    public Vector3 SpawnPosition(AttackType attackType) {
+        if (attackType == AttackType.Skill) 
+            spawnPos = GetPlayerPoint.Instance.SkillPos;
+        if (attackType == AttackType.UltimateSkill)
+            spawnPos = GetPlayerPoint.Instance.UltSkillPos;
+        return spawnPos;
+
     }
     protected Quaternion SpawmQuaternion(GameObject targetAttack) {
         if (targetAttack == null) return new Quaternion();

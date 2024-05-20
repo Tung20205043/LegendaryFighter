@@ -1,5 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.Intrinsics;
+
+//using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,24 +16,24 @@ public class CheckForCombo : MonoBehaviour {
     private void Start() {
         inputButton.firstComboInputEvent.AddListener(TakeFirstInput);
         inputButton.secondComboInputEvent.AddListener(TakeSecondInput);
+        inputButton.checkForDelay.AddListener(CheckForDelay);
+        SpecialUnityEvent.Instance.doClearRecordAction.AddListener(ClearRecord);
     }
     void Update() {
-        if (playerActions.Count > 0) 
-            isSpecialAttack = true;
-        else isSpecialAttack = false;
+        isSpecialAttack = (playerActions.Count > 0) ? true : false;
     }
     public void TakeFirstInput(string input) {
         if (input != "Q") return;
-        //Debug.Log("Q");
         RecordAction("Q");
-        string[] secondInputs = { "S", "D", "P" };
-        StartCoroutine(CheckForSecondInput(secondInputs));
     }
     public void TakeSecondInput(string input) {
         if (playerActions.Count == 0) return; 
-        //Debug.Log(input);
         RecordAction(input);
         CheckComboString();
+    }
+    void CheckForDelay() {
+        string[] secondInputs = { "S", "D", "P" };
+        StartCoroutine(CheckForSecondInput(secondInputs));
     }
     IEnumerator CheckForSecondInput(string[] input) {
         yield return new WaitForSeconds(timeWaitForCombo);
@@ -42,22 +45,26 @@ public class CheckForCombo : MonoBehaviour {
     void RecordAction(string action) {
         playerActions.Add(action);
     }
+    void ClearRecord() {
+        playerActions.Clear();
+        Debug.Log("Combo executed" );
+    }
     void CheckComboString() {
         string currentActionSequence = string.Join("", playerActions);
         foreach (string combo in requiredCombos) {
             if (currentActionSequence.EndsWith(combo)) {
                 ExecuteCombo(currentActionSequence);
-                playerActions.Clear();
+                
                 return;
             }
         }
         playerActions.Clear();
     }
     void ExecuteCombo(string combo) {
-        Debug.Log("Combo executed: " + combo);
         if (combo == "QS")
             specialAttack?.Invoke(AttackType.Kameha);
         else if (combo == "QD")
             specialAttack?.Invoke(AttackType.Teleport);
     }
+    
 }

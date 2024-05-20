@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PunchCombo : MonoBehaviour {
     public List<PunchSO> combo;
@@ -48,7 +49,7 @@ public class PunchCombo : MonoBehaviour {
     public void ExitPunchCombo() {
         if (characterAnimator.currentAnimationState == AnimationState.Attack
             && characterAnimator.currentAttackType == AttackType.Punch) {
-            Invoke("EndCombo", 0.3f);
+            Invoke("EndCombo", (comboCount == 0) ? 0.1f : 0.3f);
         }
     }
     void EndCombo() {

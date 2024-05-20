@@ -10,6 +10,8 @@ TagManager:
   - PlayerPunch3
   - Enemy
   - EnemyForward
+  - PlayerNormalSkill
+  - PlayerHeavySkill
   layers:
   - Default
   - TransparentFX

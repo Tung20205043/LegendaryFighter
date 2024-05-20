@@ -72,14 +72,14 @@ public class CharacterStats : MonoBehaviourSingleton<CharacterStats>
                 break;
         }
     }
-    public void PayMana(Character character, float amount) {
+    public void ChangeCurrentMana(Character character, float amount) {
         switch (character) {
             case Character.Player:
-                playerMana -= amount;
+                playerMana += amount;
                 if (playerMana < 0) playerMana = 0;
                 break;
             case Character.Enemy:
-                enemyMana -= amount;
+                enemyMana += amount;
                 if (enemyMana < 0) enemyMana = 0;
                 break;
         }

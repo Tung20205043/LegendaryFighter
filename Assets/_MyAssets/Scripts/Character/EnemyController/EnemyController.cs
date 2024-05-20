@@ -27,7 +27,7 @@ public class EnemyController : CharacterController
         }
         //Debug.Log(CantBuffMana());
 
-        if (Input.GetKeyDown(KeyCode.M)) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             characterAnimator.Play("SpawnAnim");
         }
     }
@@ -43,7 +43,7 @@ public class EnemyController : CharacterController
     protected override void BuffMana(bool buff) {
         if (CantBuffMana() && buff) return;
         CharacterStats.Instance.ChangeBuffManaState(buff, Character.Enemy);
-        characterAnimator.SetBuffMana(buff);
+        //characterAnimator.SetBuffMana(buff, );
     }
     void CallDefend(AttackType type) {
         //Defend(true);
@@ -52,14 +52,11 @@ public class EnemyController : CharacterController
         characterAnimator.SetDefend(defending);
     }
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.CompareTag("PlayerPunch1")) {
-            enemyTakeDamage.DoTakeDamage(TakeDamageType.Type1);
+        if (collision.CompareTag("PlayerNormalSkill")) {
+            enemyTakeDamage.DoTakeDamage(TakeDamageType.NormalSkill);
         }
-        if (collision.CompareTag("PlayerPunch2")) {
-            enemyTakeDamage.DoTakeDamage(TakeDamageType.Type2);
-        }
-        if (collision.CompareTag("PlayerPunch3")) {
-            enemyTakeDamage.DoTakeDamage(TakeDamageType.Type3);
+        if (collision.CompareTag("PlayerHeavySkill")) {
+            enemyTakeDamage.DoTakeDamage(TakeDamageType.HeavySkill);
         }
     }
     protected override void Die() {

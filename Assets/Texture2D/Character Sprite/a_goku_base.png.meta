@@ -96,15 +96,15 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    resizeAlgorithm: 1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
+    androidETC2FallbackOverride: 2
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_8
+      name: Transform_3
       rect:
         serializedVersion: 2
         x: 298
@@ -341,7 +341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_13
+      name: Transform_2
       rect:
         serializedVersion: 2
         x: 81
@@ -404,7 +404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_16
+      name: Spawn_1
       rect:
         serializedVersion: 2
         x: 193
@@ -425,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_17
+      name: Move_1
       rect:
         serializedVersion: 2
         x: 228
@@ -866,7 +866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_39
+      name: Move_0
       rect:
         serializedVersion: 2
         x: 123
@@ -1181,7 +1181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_57
+      name: Transform_5
       rect:
         serializedVersion: 2
         x: 2
@@ -1391,7 +1391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_70
+      name: Transform_4
       rect:
         serializedVersion: 2
         x: 2
@@ -1433,7 +1433,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_72
+      name: Kameha_0
       rect:
         serializedVersion: 2
         x: 145
@@ -1475,7 +1475,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_base_77
+      name: Transform_6
       rect:
         serializedVersion: 2
         x: 2
@@ -1735,7 +1735,7 @@ TextureImporter:
         width: 50
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1758,17 +1758,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Kameha_0: -287269347
+      Move_0: -618552717
+      Move_1: 12999601
+      Spawn_1: -784118565
+      Transform_2: 1592751176
+      Transform_3: -1889182098
+      Transform_4: -1689884988
+      Transform_5: 99201130
+      Transform_6: -1861866691
       a_goku_base_0: -1913202666
       goku_base_0: -1111129255
       goku_base_1: 1140138838
       goku_base_10: 2074096651
       goku_base_11: -1967762578
       goku_base_12: -1680957897
-      goku_base_13: 1592751176
       goku_base_14: -740552266
       goku_base_15: -903283545
-      goku_base_16: -784118565
-      goku_base_17: 12999601
       goku_base_18: 979171550
       goku_base_19: -760566507
       goku_base_2: -1164641007
@@ -1792,7 +1798,6 @@ TextureImporter:
       goku_base_36: -491685097
       goku_base_37: -1974401631
       goku_base_38: 820125411
-      goku_base_39: -618552717
       goku_base_4: -1660090833
       goku_base_40: -1966252165
       goku_base_41: -594711165
@@ -1812,7 +1817,6 @@ TextureImporter:
       goku_base_54: -816317865
       goku_base_55: -509031888
       goku_base_56: -1461548485
-      goku_base_57: 99201130
       goku_base_58: -1144162799
       goku_base_59: 483264667
       goku_base_6: -567842411
@@ -1827,17 +1831,13 @@ TextureImporter:
       goku_base_68: 1889206870
       goku_base_69: -1413580876
       goku_base_7: -1815217434
-      goku_base_70: -1689884988
       goku_base_71: -456269690
-      goku_base_72: -287269347
       goku_base_73: 1726177109
       goku_base_74: 46777506
       goku_base_75: -613006622
       goku_base_76: -1453705058
-      goku_base_77: -1861866691
       goku_base_78: 1202229492
       goku_base_79: -1360745316
-      goku_base_8: -1889182098
       goku_base_80: -219663253
       goku_base_81: -609461817
       goku_base_82: 1244330079

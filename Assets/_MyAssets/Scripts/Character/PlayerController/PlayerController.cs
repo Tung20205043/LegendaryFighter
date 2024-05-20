@@ -21,13 +21,11 @@ public class PlayerController : CharacterController {
         AddListener();
     }
     protected void Update() {
+        punchCombo.ExitPunchCombo();
         if (CharacterStats.Instance.IsMaxMana(Character.Player) && characterAnimator.currentAnimationState == AnimationState.BuffMana) {
             BuffMana(false);
         }
-        if (characterAnimator.currentAnimationState == AnimationState.Attack) {
-            BuffMana(false);
-        }
-        punchCombo.ExitPunchCombo();
+
         CannotExitScreen();
 
         if (Input.GetKeyDown(KeyCode.Space)) {
@@ -57,8 +55,7 @@ public class PlayerController : CharacterController {
         characterAnimator.SetBuffMana(onBuff);
         auraBuff.SetActive(onBuff);
     }
-    //bool CancelBuffMana() { 
-    //}
+
     void Dash() {
         if (CanCastSkill(Character.Player, AttackType.Defaut, true)) {
             characterDash.Dash();
@@ -76,22 +73,32 @@ public class PlayerController : CharacterController {
             punchCombo.StartPunch();
             return;
         }
-        if (CanAttack()) {  
+        if (CanAttackInState() && CheckForCombo.isSpecialAttack) {
+            DoCastSkill(type, true);
+        }
+        if (CanAttackInState() && !CheckForCombo.isSpecialAttack) {  
             DoCastSkill(type);
         }
     }
-    bool CanAttack() {
+    bool CanAttackInState() {
         return (characterAnimator.currentAnimationState == AnimationState.Idle ||
             characterAnimator.currentAnimationState == AnimationState.Movement ||
             characterAnimator.currentAnimationState == AnimationState.BuffMana);
     }
     void DoCastSkill(AttackType type) {
         if (CanCastSkill(Character.Player, type, false)){
-            characterAnimator.SetSkill(type);
-            playerAttack.DoSpawnSkill(type, transform.position, transform.forward, transform.up);
+            characterAnimator.SetSkill(type, false);
+            playerAttack.DoSkill(type);
         }
     }
-    
+    void DoCastSkill(AttackType type, bool isSpecialAtk) {
+        if (CanCastSkill(Character.Player, type, false)) {
+            BuffMana(false);
+            characterAnimator.SetSkill(type, isSpecialAtk);
+            playerAttack.DoSkill(type);
+            SpecialUnityEvent.Instance.doClearRecordAction?.Invoke();
+        }
+    }
     protected override void Defend(bool defending) {
         characterAnimator.SetDefend(defending);
     }
@@ -107,6 +114,12 @@ public class PlayerController : CharacterController {
         throw new System.NotImplementedException();
     }
     #endregion
+
+    #region Transform
+    void Transform() {
+        characterAnimator.SetTransform();
+    }
+    #endregion
     bool CanMove() { 
         return (characterAnimator.currentAnimationState == AnimationState.Idle ||
             characterAnimator.currentAnimationState == AnimationState.Movement);
@@ -119,9 +132,6 @@ public class PlayerController : CharacterController {
         inputButton.attacking.AddListener(Attack);
         inputButton.isDefending.AddListener(Defend);
         checkForCombo.specialAttack.AddListener(Attack);
-    }
-    [SerializeField] SpawnKameha spawnKameha;
-    void SpawnKame() {
-        spawnKameha.Spawn();
+        inputButton.isTransform.AddListener(Transform);
     }
 }

@@ -14,7 +14,7 @@ public class AIHeavyPunch : MonoBehaviour
         punchComboAI.endPunchCombo.AddListener(DoTeleport);
     }
     public void DoTeleport() {
-        characterAnimator.SetSkill(AttackType.HeavyPunch);
+        characterAnimator.SetSkill(AttackType.HeavyPunch, true);
         enemyObj = GameObjectManager.Instance.EnemyObject();
         //kickCollider.SetActive(true);
         StartCoroutine(TeleportToPosition());
@@ -27,6 +27,6 @@ public class AIHeavyPunch : MonoBehaviour
         //kickCollider.SetActive(false);
     }
     public Vector3 TelePosition() {
-        return GetPlayerTelePosition.Instance.BackTransform;
+        return GetPlayerPoint.Instance.BackTransform;
     }
 }

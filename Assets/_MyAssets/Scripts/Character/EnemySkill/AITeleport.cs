@@ -13,7 +13,7 @@ public class AITeleport : MonoBehaviour
         AIHeavyPunch.endHeavyPunch.AddListener(DoTeleport);
     }
     public void DoTeleport() {
-        characterAnimator.SetSkill(AttackType.Teleport);
+        //characterAnimator.SetSkill(AttackType.Teleport, true);
         enemyObj = GameObjectManager.Instance.EnemyObject();
         StartCoroutine(TeleportToPosition());
     }
@@ -23,6 +23,6 @@ public class AITeleport : MonoBehaviour
         endTeleport?.Invoke();
     }
     public Vector3 TelePosition() {
-        return GetPlayerTelePosition.Instance.BackTransform;
+        return GetPlayerPoint.Instance.BackTransform;
     }
 }
