@@ -23,7 +23,7 @@ public class PunchCombo : MonoBehaviour {
     }
     bool IsInAttackRange() {
         return Mathf.Abs(DirectionToEnemy().x) < GameConstant.attackRange 
-            && characterAnimator.currentAnimationState == AnimationState.Attack;
+            && characterAnimator.currentAttackType == AttackType.Punch;
     }
     public void StartPunch() {
         if (Time.time - lastComboEnd > 0.2f && comboCount <= combo.Count) {
@@ -47,9 +47,9 @@ public class PunchCombo : MonoBehaviour {
     } 
 
     public void ExitPunchCombo() {
-        if (characterAnimator.currentAnimationState == AnimationState.Attack
+        if (characterAnimator.currentAnimationState == AnimationState.Punch
             && characterAnimator.currentAttackType == AttackType.Punch) {
-            Invoke("EndCombo", (comboCount == 0) ? 0.1f : 0.3f);
+            Invoke("EndCombo", /*(comboCount == 0) ? 0.1f :*/ 0.3f);
         }
     }
     void EndCombo() {

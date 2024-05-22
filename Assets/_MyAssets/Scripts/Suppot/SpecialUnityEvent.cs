@@ -6,5 +6,6 @@ using UnityEngine.Events;
 public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
 {
     public UnityEvent setActiveHeavyPunchButton;
-    public UnityEvent doClearRecordAction;
+    public UnityEvent doComboPunch;
+    public UnityEvent doTransform;
 }

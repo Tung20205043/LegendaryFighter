@@ -7,25 +7,36 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] SpawnKameha spawnKameha;
     [SerializeField] PlayerTeleport playerTeleport;
     [SerializeField] PlayerHeavyPunch playerHeavyPunch;
-    public void DoSkill(AttackType type) {
-        switch (type) {
-            case AttackType.Teleport:
-                playerTeleport.DoTeleport();
-                break;
-            case AttackType.HeavyPunch:
-                playerHeavyPunch.DoTeleport();
-                break;
-            default:
-                break;
-        }
-    }
+    [SerializeField] PlayerSuperPunch playerSuperPunch;
+
     void SpawnKame() {
+        PayMana(AttackType.Kameha);
         spawnKameha.Spawn();
     }
-    void SpawnSkill() { 
+    void SpawnSkill() {
+        PayMana(AttackType.Skill);
         spawnSkill1.DoSpawnSkill1();
     }
     void SpawnUltSkill() {
+        PayMana(AttackType.UltimateSkill);
         spawnUlt.DoUltSkill();
+    }
+    void Teleport() {
+        PayMana(AttackType.Teleport);
+        playerTeleport.DoTeleport();
+    }
+    void HeavyPunch() {
+        PayMana(AttackType.HeavyPunch);
+        playerHeavyPunch.DoTeleport();
+    }
+    void SuperPunch() {
+        PayMana(AttackType.SuperPunch);
+        playerSuperPunch.DoSuperPunch();
+    }
+
+    void PayMana(AttackType type) {
+        CharacterStats stats = CharacterStats.Instance;
+        float manaRequired = GameConstant.manaToCastSkill[(int)type];
+        stats.ChangeCurrentMana(Character.Player, -manaRequired);
     }
 }

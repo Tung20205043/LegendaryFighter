@@ -5,12 +5,8 @@ public class CharacterAnimator : MonoBehaviour {
     private Animator animator;
     public AnimationState currentAnimationState;
     protected MovementType currentMovementType;
-    public bool isAttack;
     public AttackType currentAttackType;
     protected string currentTrigger = "";
-    private void Update() {
-        isAttack = CheckForCombo.isSpecialAttack;
-    }
     public Animator Animator {
         get {
             if (animator == null)
@@ -20,8 +16,13 @@ public class CharacterAnimator : MonoBehaviour {
     }
 
     //--------------------------------------------------
+    public void DoComboPunch() {
+        SetTrigger("ComboPunch");
+        currentAnimationState = AnimationState.Attack;
+        currentAttackType = AttackType.ComboPunch;
+        StartCoroutine(StopSkill(2f));
+    }
     public void SetIdle() {
-        SetTrigger("Idle");
         currentAnimationState = AnimationState.Idle;
         currentAttackType = AttackType.Defaut;
     }
@@ -44,30 +45,33 @@ public class CharacterAnimator : MonoBehaviour {
         } 
         if (!onBuff){
             SetIdle();
+            SetTrigger("Idle");
         }
     }
-    public void SetDash() {
-        SetTrigger("Dash");
-        currentAnimationState = AnimationState.Dash;
+    public void SetDash(bool isDash) {
+        SetBool("Dash", isDash);
+        currentAnimationState = isDash ? AnimationState.Dash : AnimationState.Idle;
     }
     public void SetDefend(bool isDefending) {
         SetBool("Defend", isDefending);
         currentAnimationState = isDefending ? AnimationState.Defend : AnimationState.Idle;
     }
     public void SetPunch() {
-        currentAnimationState = AnimationState.Attack;
+        currentAnimationState = AnimationState.Punch;
         currentAttackType = AttackType.Punch;
     }
 
-    public void SetSkill(AttackType type, bool isSpecialAttack) {
-        if (isSpecialAttack) {
-            SetTrigger("SpecialSkill");
-        }
+    public void SetSkill(AttackType type) {
         SetBool("Skill", true);
         SetFloat("SkillType", (int)type);
         currentAnimationState = AnimationState.Attack;
         currentAttackType = type;
         StartCoroutine(StopSkill(GameConstant.timeUseSkill[(int)type]));
+    }
+    public void SetSpecialSkill(AttackType type) {
+        SetBool("BuffMana", false);
+        SetTrigger("SpecialSkill");
+        SetSkill(type);
     }
     IEnumerator StopSkill(float time) {
         yield return new WaitForSeconds(time);

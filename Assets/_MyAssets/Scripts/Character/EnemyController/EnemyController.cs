@@ -17,11 +17,12 @@ public class EnemyController : CharacterController
         inputButton.isDefending.AddListener(BuffMana);
     }
     private void Update() {
+        CannotExitScreen();
+        if (GameModeManager.Instance.currentGameMode == GameMode.Train) return;
         if (CantBuffMana()) {
             BuffMana(false);
         }
         Die();
-        CannotExitScreen();
         if (player.characterAnimator.currentAnimationState != AnimationState.Defend) {
             //Debug.Log("Attack Player");
         }

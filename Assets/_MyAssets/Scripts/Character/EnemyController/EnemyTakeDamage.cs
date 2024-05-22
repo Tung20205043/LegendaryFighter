@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyTakeDamage : CharacterTakeDamage
+public class EnemyTakeDamage : CharacterDashEffect
 {
     [SerializeField] CharacterAnimator characterAnimator;
     [SerializeField] RaycastCheck raycastCheck;
@@ -16,7 +16,9 @@ public class EnemyTakeDamage : CharacterTakeDamage
             CharacterStats.Instance.ChangeCurrentMana(Character.Player, +2);
         }
         characterAnimator.SetTakeDamage(type);
-        CharacterStats.Instance.TakeDamage(Character.Enemy, CharacterStats.Instance.PlayerAtk);
+        if (GameModeManager.Instance.currentGameMode != GameMode.Train) {
+            CharacterStats.Instance.TakeDamage(Character.Enemy, CharacterStats.Instance.PlayerAtk);
+        }
         if (type == TakeDamageType.Type3) {
             Dash();
             SpecialUnityEvent.Instance.setActiveHeavyPunchButton?.Invoke();

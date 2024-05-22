@@ -14,7 +14,7 @@ public class AIHeavyPunch : MonoBehaviour
         punchComboAI.endPunchCombo.AddListener(DoTeleport);
     }
     public void DoTeleport() {
-        characterAnimator.SetSkill(AttackType.HeavyPunch, true);
+        //characterAnimator.SetSkill(AttackType.HeavyPunch, true);
         enemyObj = GameObjectManager.Instance.EnemyObject();
         //kickCollider.SetActive(true);
         StartCoroutine(TeleportToPosition());

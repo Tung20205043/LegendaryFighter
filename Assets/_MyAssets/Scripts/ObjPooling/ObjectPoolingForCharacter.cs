@@ -5,13 +5,14 @@ using UnityEngine;
 public class ObjectPoolingForCharacter : ObjectPooling{
     public static ObjectPoolingForCharacter Instance { get; private set; }
 
-    public enum ObjectToSpawn {GhostEffect, GhostEffect1, GokuSkill, GokuUltSkill, Kameha, TakeDamageGhost, TakeDamageGhost1 }
+    public enum ObjectToSpawn {GhostEffect, GhostEffect1, PunchGhost, PunchGhost1, GokuSkill, GokuUltSkill, Kameha, TakeDamageGhost, TakeDamageGhost1 }
     [System.Serializable]
     public struct SpawnableObject {
         public ObjectToSpawn key;
         public GameObject value;
     }
     [SerializeField] private SpawnableObject[] spawnableObjectsArray;
+    [SerializeField] private SpawnableObject[] spawnableObjectsArrayNextTrans;
     private Dictionary<ObjectToSpawn, GameObject> spawnableObjectsDict;
     private void Awake() {
         if (Instance != null) {
@@ -21,11 +22,13 @@ public class ObjectPoolingForCharacter : ObjectPooling{
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        // Initialize the dictionary
         spawnableObjectsDict = new Dictionary<ObjectToSpawn, GameObject>();
         foreach (var item in spawnableObjectsArray) {
             spawnableObjectsDict.Add(item.key, item.value);
         }
+    }
+    private void Start() {
+        SpecialUnityEvent.Instance.doTransform.AddListener(UpdateGhostEffect);
     }
     public GameObject GetObjectByKey(ObjectToSpawn key) {
         if (spawnableObjectsDict.TryGetValue(key, out var obj)) {
@@ -39,5 +42,13 @@ public class ObjectPoolingForCharacter : ObjectPooling{
         GetObjectFromBool(GetObjectByKey(objType), spawnPoint, spawnRotation);
     }
 
-
+    void UpdateGhostEffect() {
+        for (int i = 0; i < spawnableObjectsDict.Count; i++) { 
+            spawnableObjectsArray[i] = spawnableObjectsArrayNextTrans[i];
+            spawnableObjectsDict = new Dictionary<ObjectToSpawn, GameObject>();
+            foreach (var item in spawnableObjectsArray) {
+                spawnableObjectsDict.Add(item.key, item.value);
+            }
+        }
+    }
 }

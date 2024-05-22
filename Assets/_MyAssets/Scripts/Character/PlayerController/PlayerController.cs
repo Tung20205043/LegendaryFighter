@@ -1,23 +1,23 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class PlayerController : CharacterController {
 
     [SerializeField] protected PlayerAttack playerAttack;
     [SerializeField] protected JoystickMovement joystickMovement;
-    [SerializeField] private GameObject auraBuff;
     [SerializeField] private PunchCombo punchCombo;
+    [SerializeField] protected PlayerBuffMana playerBuffMana;
+    [SerializeField] protected PlayerTransform playerTransform;
 
     protected TakeInputButton inputButton;
-    private CheckForCombo checkForCombo;
     private GameObject inputButtonObj;
     public float moveSpeed;
     private void Awake() {
         inputButtonObj = GameObject.Find("ButtonInput");
         inputButton = inputButtonObj.GetComponent<TakeInputButton>();
-        checkForCombo = inputButtonObj.GetComponentInChildren<CheckForCombo>();
     }
-    private void Start()
-    {
+    private void Start() {
         AddListener();
     }
     protected void Update() {
@@ -34,8 +34,8 @@ public class PlayerController : CharacterController {
     }
     #region Move Funcion
     protected override void Move(Vector3 targetPosition) {
-        if (!CanMove()) {
-            return; 
+        if (!IsOnMovement()) {
+            return;
         }
         if (targetPosition == default) {
             characterAnimator.StopMovement();
@@ -50,56 +50,58 @@ public class PlayerController : CharacterController {
 
     #region Buff Mana + Dash
     protected override void BuffMana(bool onBuff) {
-        //if (characterAnimator.currentAnimationState == AnimationState.Attack) return;
-        CharacterStats.Instance.ChangeBuffManaState(onBuff, Character.Player);
+        if (onBuff && !IsOnMovement()) return;
+        if (!onBuff && characterAnimator.currentAnimationState != AnimationState.BuffMana) return;
         characterAnimator.SetBuffMana(onBuff);
-        auraBuff.SetActive(onBuff);
+        playerBuffMana.DoLogicBuffMana(onBuff);
     }
 
     void Dash() {
-        if (CanCastSkill(Character.Player, AttackType.Defaut, true)) {
+        DoSpecialSKill(AttackType.Teleport);
+        if (!IsOnMovement()) return;
+        if (CanDash(Character.Player)) {
             characterDash.Dash();
-            characterAnimator.SetDash();
+            characterAnimator.SetDash(true);
         }
     }
     void StopDash() {
-        characterAnimator.SetIdle();
+        characterAnimator.SetDash(false);
     }
     #endregion
 
     #region Attack + Defend
     protected override void Attack(AttackType type) {
-        if (type == AttackType.Punch) {
+        if (type == AttackType.Skill)
+            DoSpecialSKill(AttackType.Kameha);
+        if (type == AttackType.Punch)
+            DoSpecialSKill(AttackType.SuperPunch);
+        if (type == AttackType.Punch && (IsOnMovement() || characterAnimator.currentAnimationState == AnimationState.Punch)) {
             punchCombo.StartPunch();
             return;
         }
-        if (CanAttackInState() && CheckForCombo.isSpecialAttack) {
-            DoCastSkill(type, true);
-        }
-        if (CanAttackInState() && !CheckForCombo.isSpecialAttack) {  
+        if (!IsOnMovement()) return;
+        if (CanCastSkill(Character.Player, type)) {
             DoCastSkill(type);
         }
     }
-    bool CanAttackInState() {
-        return (characterAnimator.currentAnimationState == AnimationState.Idle ||
-            characterAnimator.currentAnimationState == AnimationState.Movement ||
-            characterAnimator.currentAnimationState == AnimationState.BuffMana);
-    }
     void DoCastSkill(AttackType type) {
-        if (CanCastSkill(Character.Player, type, false)){
-            characterAnimator.SetSkill(type, false);
-            playerAttack.DoSkill(type);
+        characterAnimator.SetSkill(type);
+    }
+    void DoSpecialSKill(AttackType type) {
+        if (characterAnimator.currentAnimationState == AnimationState.BuffMana
+            && CanCastSkill(Character.Player, type)) {
+            characterAnimator.SetSpecialSkill(type);
+            playerBuffMana.DoLogicBuffMana(false);
+            DoCastSkill(type);
+            return;
         }
     }
-    void DoCastSkill(AttackType type, bool isSpecialAtk) {
-        if (CanCastSkill(Character.Player, type, false)) {
-            BuffMana(false);
-            characterAnimator.SetSkill(type, isSpecialAtk);
-            playerAttack.DoSkill(type);
-            SpecialUnityEvent.Instance.doClearRecordAction?.Invoke();
-        }
+    void DoComboPunch() {
+        characterAnimator.DoComboPunch();
     }
     protected override void Defend(bool defending) {
+        if (defending && !IsOnMovement()) return;
+        if (!defending && characterAnimator.currentAnimationState != AnimationState.Defend) return;
         characterAnimator.SetDefend(defending);
     }
     #endregion
@@ -119,8 +121,12 @@ public class PlayerController : CharacterController {
     void Transform() {
         characterAnimator.SetTransform();
     }
+    public void DoTransform() {
+        playerTransform.Transform();
+    }
+
     #endregion
-    bool CanMove() { 
+    bool IsOnMovement() {
         return (characterAnimator.currentAnimationState == AnimationState.Idle ||
             characterAnimator.currentAnimationState == AnimationState.Movement);
     }
@@ -131,7 +137,7 @@ public class PlayerController : CharacterController {
         characterDash.stopDashing.AddListener(StopDash);
         inputButton.attacking.AddListener(Attack);
         inputButton.isDefending.AddListener(Defend);
-        checkForCombo.specialAttack.AddListener(Attack);
         inputButton.isTransform.AddListener(Transform);
+        SpecialUnityEvent.Instance.doComboPunch.AddListener(DoComboPunch);
     }
 }

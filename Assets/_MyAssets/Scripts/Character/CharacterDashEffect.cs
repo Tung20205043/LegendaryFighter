@@ -1,13 +1,13 @@
 using System.Collections;
 using UnityEngine;
-public class CharacterTakeDamage : MonoBehaviour
+public class CharacterDashEffect : MonoBehaviour
 {
     #region Ghost Effect
     [Header("Dash Value")]
     [SerializeField] private float dashForce = 10f;
     [SerializeField] private float dashDuration = 0.1f;
     [SerializeField] private float dashDelay = 0.5f;
-    private bool isDashing = false;
+    public bool isDashing = false;
 
     [Header("Ghost Effect")]
     public float ghostDelaySecond;
@@ -38,7 +38,7 @@ public class CharacterTakeDamage : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.AddForce(direction * distance, ForceMode2D.Impulse);
     }
-    void StopDash() {
+    public void StopDash() {
         isDashing = false;
         rb.velocity = Vector2.zero;
         StopDashEffect();
@@ -57,7 +57,6 @@ public class CharacterTakeDamage : MonoBehaviour
             } else {
                 SpawnGhostEffect(false);
             }
-
             yield return new WaitForSeconds(ghostDelaySecond);
         }
     }

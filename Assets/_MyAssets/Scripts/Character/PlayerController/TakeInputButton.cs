@@ -13,12 +13,9 @@ public class TakeInputButton : MonoBehaviour
     [SerializeField] Button transformButton;
 
     public UnityEvent<bool> isBuffingMana;
-    public UnityEvent checkForDelay;
     public UnityEvent<bool> isDefending;
     public UnityEvent isDashing;
     public UnityEvent<AttackType> attacking;
-    public UnityEvent<string> firstComboInputEvent;
-    public UnityEvent<string> secondComboInputEvent;
     public UnityEvent isTransform;
     private void Awake() {
         dashButton.onClick.AddListener(Dashing);
@@ -67,33 +64,18 @@ public class TakeInputButton : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R)) {
             DoTransform();
         }
-        //Debug.Log(CheckForCombo.isSpecialAttack);
     }
     public void BuffingMana(bool state) {
         isBuffingMana?.Invoke(state);
-        if (state) {
-            firstComboInputEvent?.Invoke("Q");
-        }
-        if (!state) {
-            checkForDelay?.Invoke();
-        }
     }
     public void Defending(bool state) {
         isDefending?.Invoke(state);
     }
     public void Attacking(AttackType type) {
-        if (!CheckForCombo.isSpecialAttack) {
-            attacking?.Invoke(type);
-        } 
-        else
-            secondComboInputEvent?.Invoke(GameConstant.AttackCode[(int)type]);
+        attacking?.Invoke(type);
     }
-    public void Dashing() {     
-        if (!CheckForCombo.isSpecialAttack) {
-            isDashing?.Invoke();
-        } 
-        else
-            secondComboInputEvent?.Invoke("D");
+    public void Dashing() {
+        isDashing?.Invoke();
     }
     void SetActiveHeavyPunch() {
         if (CharacterStats.Instance.PlayerMana >= GameConstant.manaToCastSkill[(int)AttackType.HeavyPunch]) {
