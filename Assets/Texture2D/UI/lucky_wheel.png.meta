@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9c2b6a09273d86241a4930ae724919b0
+guid: 33612cba8fdc4c74fb0c696dc8c937d6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -30,12 +30,12 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: 47
+  textureFormat: 4
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: 1
+    aniso: 4
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -50,7 +50,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -83,26 +83,26 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    resizeAlgorithm: 1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    resizeAlgorithm: 1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -110,34 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_0
+      name: lucky_wheel_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 868
-        width: 247
-        height: 131
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77faa339fc8805c478e76df33ac223db
-      internalID: 152425076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_1
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 724
-        width: 248
-        height: 132
+        x: 0
+        y: 982
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 115768ee54081784195fe884fdb9e654
-      internalID: 1226033354
+      spriteID: 9c6d3a8a1b07a86439cc76bca570b328
+      internalID: 438105761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_2
+      name: lucky_wheel_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 580
-        width: 248
-        height: 132
+        x: 41
+        y: 982
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a19dc8d5942ba8a488fa0b8a843e0400
-      internalID: -130376029
+      spriteID: d321ff54123715246a4030e08bcf9df0
+      internalID: -1253851810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_3
+      name: lucky_wheel_2
       rect:
         serializedVersion: 2
-        x: 4
-        y: 436
-        width: 248
-        height: 132
+        x: 66
+        y: 982
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc8a0b5975a10cd42ab65a3f93404cec
-      internalID: 1207727117
+      spriteID: 74ec56743f49e014eb6288698ac144ab
+      internalID: -839798954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_4
+      name: lucky_wheel_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 292
-        width: 248
-        height: 131
+        x: 235
+        y: 957
+        width: 158
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3ca2f9ac1b04374a86f12c981d0038c
-      internalID: -1305288054
+      spriteID: e907d4e3c8271a2429650afee263177c
+      internalID: 185711742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_5
+      name: lucky_wheel_4
       rect:
         serializedVersion: 2
-        x: 264
-        y: 292
-        width: 245
-        height: 131
+        x: 404
+        y: 957
+        width: 32
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9546a18eda07e8642870a5fd03670d41
-      internalID: -1021018446
+      spriteID: 6815c4e5fbd0d584b84c532bece762fa
+      internalID: 122514672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_6
+      name: lucky_wheel_5
       rect:
         serializedVersion: 2
-        x: 4
-        y: 148
-        width: 248
-        height: 131
+        x: 0
+        y: 521
+        width: 230
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9172dfeebccd7c34e9b915fc2d5cdcad
-      internalID: -152409382
+      spriteID: 34d4cd4682c693440b8d91d538349f8e
+      internalID: 2067653908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_7
+      name: lucky_wheel_6
       rect:
         serializedVersion: 2
-        x: 264
-        y: 148
-        width: 248
-        height: 132
+        x: 260
+        y: 780
+        width: 143
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 780c87725f2b67a42be677fa4328407e
-      internalID: -988672224
+      spriteID: e21b1bea4e5bafe49b01843fedff8c9d
+      internalID: 619846985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_8
+      name: lucky_wheel_7
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 247
-        height: 131
+        x: 231
+        y: 521
+        width: 180
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f11e39fd0913794fb079376ffd9cefa
-      internalID: -550027140
+      spriteID: d5863d41a58e96a4a89b25552437da8f
+      internalID: -917604501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_9
+      name: lucky_wheel_8
       rect:
         serializedVersion: 2
-        x: 264
-        y: 4
-        width: 247
-        height: 131
+        x: 0
+        y: 0
+        width: 262
+        height: 520
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,8 +292,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 973ebed4ca444ad4dbf24a534f425c6c
-      internalID: 1594488668
+      spriteID: 49d0257c8ff6c4e47886c7f238c9ee47
+      internalID: 322479948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucky_wheel_9
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 215
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542c8378ddc8db74ab3774ac1ba4d8e6
+      internalID: -1709717713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucky_wheel_10
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 107
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dda31b8c105bd4c877853954a5da91
+      internalID: 1770378875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lucky_wheel_11
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 0
+        width: 120
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773bbf12636ef284382fce8a42dca12b
+      internalID: -1366107146
       vertices: []
       indices: 
       edges: []
@@ -322,7 +364,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c9915296e0909664fa45b4e0bc3e204c
+    spriteID: 438f8c3c569b3b3429515c64191f38a3
     internalID: 0
     vertices: []
     indices: 
@@ -330,16 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_0: 152425076
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_1: 1226033354
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_2: -130376029
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_3: 1207727117
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_4: -1305288054
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_5: -1021018446
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_6: -152409382
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_7: -988672224
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_8: -550027140
-      sactx-0-1024x1024-ETC2-ui_stages_image-d9a60ed7_9: 1594488668
+      lucky_wheel_0: 438105761
+      lucky_wheel_1: -1253851810
+      lucky_wheel_10: 1770378875
+      lucky_wheel_11: -1366107146
+      lucky_wheel_2: -839798954
+      lucky_wheel_3: 185711742
+      lucky_wheel_4: 122514672
+      lucky_wheel_5: 2067653908
+      lucky_wheel_6: 619846985
+      lucky_wheel_7: -917604501
+      lucky_wheel_8: 322479948
+      lucky_wheel_9: -1709717713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

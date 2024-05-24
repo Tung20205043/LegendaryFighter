@@ -21,4 +21,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager> {
         return posToCheck.x - LimitedLeft() < groundCheck || posToCheck.x - LimitedRight() > groundCheck ||
             posToCheck.y - LimitedTop() > groundCheck || posToCheck.y - GroundPosition() < groundCheck;    
     }
+
+    public GameDifficult gameDifficult;
+    public GameMode gameMode;
 }

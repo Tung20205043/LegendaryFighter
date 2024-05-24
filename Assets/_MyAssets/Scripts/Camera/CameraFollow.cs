@@ -8,7 +8,9 @@ public class CameraFollow : MonoBehaviour {
     public float maxDistanceScaleOffset = 7f;
     public float maxOffset = 4.5f;
     private void Awake() {
-        _camera.Follow = GameObject.FindWithTag("Player").transform;
+        if (GameObject.FindWithTag("Player").transform != null) {
+            _camera.Follow = GameObject.FindWithTag("Player").transform;
+        }
     }
     void Update() {
         ZoomInOut();

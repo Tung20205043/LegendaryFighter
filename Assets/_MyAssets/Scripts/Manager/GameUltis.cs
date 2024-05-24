@@ -5,9 +5,16 @@ using UnityEngine;
 
 public static class GameUltis {
 
-    //public static void DelayCall(float time, Action Callback) {
-    //    StartCoroutine(IEDelayCall(time, Callback));
-    //}
+    public static void ReplaceArrayElements<T>(T[] a, T[] b) {
+        if (a.Length != b.Length) {
+            Debug.LogError("Both arrays must have the same number of elements.");
+            return;
+        }
+
+        for (int i = 0; i < a.Length; i++) {
+            a[i] = b[i];
+        }
+    }
     public static IEnumerator IEDelayCall(float time, Action Callback) {
         yield return new WaitForSeconds(time);
         Callback?.Invoke();
@@ -21,10 +28,8 @@ public static class GameUltis {
     public static int RandomIntNumber(int a, int b) {
         return UnityEngine.Random.Range(a, b + 1);
     }
-    public static T TryGetMonoComponent<T>(this MonoBehaviour mono, ref T tryValue) {
-        if (tryValue == null)
-            tryValue = mono.gameObject.GetComponent<T>();
-        return tryValue;
+    public static T GetComponentFromObject<T>(GameObject obj) where T : Component {
+        return obj.GetComponent<T>();
     }
 
 

@@ -43,12 +43,10 @@ public class ObjectPoolingForCharacter : ObjectPooling{
     }
 
     void UpdateGhostEffect() {
-        for (int i = 0; i < spawnableObjectsDict.Count; i++) { 
-            spawnableObjectsArray[i] = spawnableObjectsArrayNextTrans[i];
-            spawnableObjectsDict = new Dictionary<ObjectToSpawn, GameObject>();
-            foreach (var item in spawnableObjectsArray) {
-                spawnableObjectsDict.Add(item.key, item.value);
-            }
+        GameUltis.ReplaceArrayElements(spawnableObjectsArray, spawnableObjectsArrayNextTrans);
+        spawnableObjectsDict = new Dictionary<ObjectToSpawn, GameObject>();
+        foreach (var item in spawnableObjectsArray) {
+            spawnableObjectsDict.Add(item.key, item.value);
         }
     }
 }

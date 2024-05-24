@@ -7,7 +7,7 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Punch2
-  m_Controller: {fileID: 9100000, guid: 45d2021eb0a126b4b9a2ee226420ac91, type: 2}
+  m_Controller: {fileID: 9100000, guid: 658ea8f635c261f4599745c86186adcb, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 6cdf7462ecb6079418cb55f52ae9729d, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 6f05c4a9786b7c94ea7f88df2319d2e3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f1ed19546554a1448ba311975478d32c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7619750731a752145a5571328c407463, type: 2}

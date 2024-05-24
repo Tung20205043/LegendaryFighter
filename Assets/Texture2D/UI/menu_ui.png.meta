@@ -50,7 +50,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -83,13 +83,13 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    resizeAlgorithm: 1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -97,12 +97,12 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -176,13 +176,13 @@ TextureImporter:
       name: menu_ui_3
       rect:
         serializedVersion: 2
-        x: 805
+        x: 804
         y: 686
-        width: 50
+        width: 49
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 15, y: 14, z: 15, w: 13}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_6
+      name: game mode
       rect:
         serializedVersion: 2
         x: 978
@@ -245,7 +245,7 @@ TextureImporter:
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 11, z: 8, w: 10}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_7
+      name: more game bt
       rect:
         serializedVersion: 2
         x: 359
@@ -266,7 +266,7 @@ TextureImporter:
         height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 10, z: 7, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_12
+      name: Gray Baar
       rect:
         serializedVersion: 2
         x: 931
@@ -371,7 +371,7 @@ TextureImporter:
         height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 17, y: 16, z: 17, w: 14}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -383,16 +383,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_13
+      name: label
       rect:
         serializedVersion: 2
-        x: 359
+        x: 360
         y: 601
-        width: 278
+        width: 324
         height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 94, y: 0, z: 125, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -404,7 +404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_14
+      name: control button
       rect:
         serializedVersion: 2
         x: 420
@@ -413,7 +413,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 9, y: 12, z: 9, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -425,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_15
+      name: _skin 1
       rect:
         serializedVersion: 2
         x: 539
@@ -434,7 +434,7 @@ TextureImporter:
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 11, y: 10, z: 10, w: 12}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -446,16 +446,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_16
+      name: _setting
       rect:
         serializedVersion: 2
         x: 685
         y: 633
-        width: 59
+        width: 60
         height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 18, y: 19, z: 20, w: 16}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -509,43 +509,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_20
+      name: Black bar
       rect:
         serializedVersion: 2
-        x: 982
-        y: 663
+        x: 981
+        y: 662
         width: 33
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 5, z: 5, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: d5f48bae1cb3cc345ab17d17728fcd5b
       internalID: 234466750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: menu_ui_21
-      rect:
-        serializedVersion: 2
-        x: 601
-        y: 602
-        width: 81
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f2ae607cf11d614393f20f4cb6cfe61
-      internalID: -1717450320
       vertices: []
       indices: 
       edges: []
@@ -572,16 +551,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_24
+      name: button green 2
       rect:
         serializedVersion: 2
-        x: 904
+        x: 903
         y: 554
         width: 59
         height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 15, z: 20, w: 9}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -635,13 +614,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_28
+      name: button green
       rect:
         serializedVersion: 2
-        x: 194
-        y: 498
+        x: 191
+        y: 496
         width: 270
-        height: 106
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,16 +698,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_32
+      name: yellow button
       rect:
         serializedVersion: 2
         x: 746
         y: 570
-        width: 62
+        width: 59
         height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 11, y: 15, z: 14, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -908,16 +887,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_41
+      name: button title
       rect:
         serializedVersion: 2
-        x: 911
+        x: 917
         y: 435
-        width: 85
+        width: 73
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 46, y: 6, z: 12, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -977,7 +956,7 @@ TextureImporter:
         x: 723
         y: 348
         width: 114
-        height: 108
+        height: 82
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1034,7 +1013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_48
+      name: diffcult button
       rect:
         serializedVersion: 2
         x: 973
@@ -1043,7 +1022,7 @@ TextureImporter:
         height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 11, y: 14, z: 11, w: 13}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1097,11 +1076,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_52
+      name: button yellow
       rect:
         serializedVersion: 2
         x: 338
-        y: 241
+        y: 239
         width: 270
         height: 102
       alignment: 0
@@ -1143,8 +1122,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 720
-        y: 254
-        width: 102
+        y: 253
+        width: 104
         height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1202,7 +1181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_57
+      name: _skin
       rect:
         serializedVersion: 2
         x: 973
@@ -1211,7 +1190,7 @@ TextureImporter:
         height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 11, y: 14, z: 11, w: 14}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1244,7 +1223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_59
+      name: Hp mana
       rect:
         serializedVersion: 2
         x: 749
@@ -1559,13 +1538,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_78
+      name: Button blue
       rect:
         serializedVersion: 2
-        x: 833
+        x: 831
         y: 0
-        width: 74
-        height: 75
+        width: 76
+        height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1643,7 +1622,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_19
+      name: Button Green
       rect:
         serializedVersion: 2
         x: 965
@@ -1652,7 +1631,7 @@ TextureImporter:
         height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 12, z: 9, w: 9}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1747,6 +1726,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: menu_ui_12
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 431
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6c8039dde0b5944aa9172412efede5
+      internalID: 1187902633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue button
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 137
+        width: 270
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34de1fee32ac37b4cac2147aa35b2449
+      internalID: 1425343554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1758,33 +1779,41 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Black bar: 234466750
+      Button Green: 568494806
+      Button blue: 174633822
+      Gray Baar: 1077422426
+      Hp mana: -372784472
+      _setting: 248680145
+      _skin: 88618664
+      _skin 1: -1698809492
+      blue button: 1425343554
+      button green: 626686107
+      button green 2: -538797111
+      button title: -1789190799
+      button yellow: 1651651646
+      control button: -298425291
+      diffcult button: -2128501725
+      game mode: -1161102941
+      label: 1999159181
       menu_ui_0: 860024620
       menu_ui_1: -986029156
       menu_ui_10: -179722286
       menu_ui_11: 1844303661
-      menu_ui_12: 1077422426
-      menu_ui_13: 1999159181
-      menu_ui_14: -298425291
-      menu_ui_15: -1698809492
-      menu_ui_16: 248680145
+      menu_ui_12: 1187902633
       menu_ui_17: -531077991
       menu_ui_18: -1293194735
-      menu_ui_19: 568494806
       menu_ui_2: -1239969909
-      menu_ui_20: 234466750
       menu_ui_21: -1717450320
       menu_ui_22: -1632822807
       menu_ui_23: -1757894205
-      menu_ui_24: -538797111
       menu_ui_25: -905406229
       menu_ui_26: -1759966450
       menu_ui_27: -155312903
-      menu_ui_28: 626686107
       menu_ui_29: 1228043558
       menu_ui_3: -26180061
       menu_ui_30: -1758239097
       menu_ui_31: -1659477182
-      menu_ui_32: -1018531015
       menu_ui_33: -713467864
       menu_ui_34: -144760419
       menu_ui_35: 603569627
@@ -1794,27 +1823,21 @@ TextureImporter:
       menu_ui_39: -180515017
       menu_ui_4: -1129802920
       menu_ui_40: -2138762665
-      menu_ui_41: -1789190799
       menu_ui_42: 1462260655
       menu_ui_43: -913137127
       menu_ui_44: 956455404
       menu_ui_45: 257444543
       menu_ui_46: -1570052985
       menu_ui_47: -197608010
-      menu_ui_48: -2128501725
       menu_ui_49: 729409011
       menu_ui_5: -1024038803
       menu_ui_50: 1537304502
       menu_ui_51: -472518524
-      menu_ui_52: 1651651646
       menu_ui_53: 418935492
       menu_ui_54: -1289327814
       menu_ui_55: 544756114
       menu_ui_56: -597158933
-      menu_ui_57: 88618664
       menu_ui_58: 1944065570
-      menu_ui_59: -372784472
-      menu_ui_6: -1161102941
       menu_ui_60: -1048043995
       menu_ui_61: 1463741383
       menu_ui_62: 1873000294
@@ -1825,7 +1848,6 @@ TextureImporter:
       menu_ui_67: 33361549
       menu_ui_68: 1203183612
       menu_ui_69: -642938774
-      menu_ui_7: 263306954
       menu_ui_70: 2036048609
       menu_ui_71: 298803983
       menu_ui_72: -216950545
@@ -1834,12 +1856,13 @@ TextureImporter:
       menu_ui_75: -1993184289
       menu_ui_76: 309450700
       menu_ui_77: 439220020
-      menu_ui_78: 174633822
       menu_ui_79: -817959180
       menu_ui_8: 5181135
       menu_ui_80: 964674225
       menu_ui_81: 2077938976
       menu_ui_9: -251783349
+      more game bt: 263306954
+      yellow button: -1018531015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

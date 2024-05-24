@@ -10,6 +10,7 @@ public class PlayerTransform : MonoBehaviour
         characterAnimator.UpdateAnimator(overrideController);
         characterAnimator.SetIdle();
         characterAnimator.Play("Idle");
+        characterAnimator.SetBool("BuffMana", false);
         SpecialUnityEvent.Instance.doTransform?.Invoke();
     }
 }

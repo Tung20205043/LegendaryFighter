@@ -90,12 +90,12 @@ public class CharacterAnimator : MonoBehaviour {
         SetIdle();
     }
     public void SetTransform() {
+        currentAnimationState = AnimationState.Transform;
         StartCoroutine(TransformToNextState());
-        SetBuffMana(true);  
+        SetBool("BuffMana", true);
     }
     IEnumerator TransformToNextState() {
         yield return new WaitForSeconds(2f);
-        Debug.Log("trans");
         SetTrigger("Transform");
     }
     public void SetDie() {
