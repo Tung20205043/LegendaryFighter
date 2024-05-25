@@ -7,7 +7,10 @@ public class NoticeUI : MonoBehaviour
 {
     [SerializeField] Button okButton;
 
-    private void Awake() {
-        okButton.onClick.AddListener(() => this.gameObject.SetActive(false));
+    protected virtual void Awake() {
+        okButton.onClick.AddListener(OnclickOkButton);
+    }
+    protected virtual void OnclickOkButton() {
+        this.gameObject.SetActive(false);
     }
 }

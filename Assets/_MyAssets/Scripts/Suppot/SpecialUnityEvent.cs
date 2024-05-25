@@ -10,4 +10,5 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
     public UnityEvent doTransform;
     public UnityEvent backToMainUI;
     public UnityEvent<GameObject> pressNextButton;
+    public UnityEvent spawnCoin;
 }
