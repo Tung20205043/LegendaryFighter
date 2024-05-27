@@ -13,12 +13,17 @@ public class PlayerController : CharacterController {
     protected TakeInputButton inputButton;
     private GameObject inputButtonObj;
     public float moveSpeed;
+    public static CharacterState playerState;
     private void Awake() {
         inputButtonObj = GameObject.Find("ButtonInput");
         inputButton = inputButtonObj.GetComponent<TakeInputButton>();
     }
     private void Start() {
         AddListener();
+    }
+   protected override void OnEnable() {
+        base.OnEnable();
+        playerState = CharacterState.Ready;
     }
     protected void Update() {
         punchCombo.ExitPunchCombo();
@@ -42,7 +47,7 @@ public class PlayerController : CharacterController {
             return;
         }
         Vector3 newPosition = transform.position + targetPosition * moveSpeed * Time.deltaTime;
-        newPosition = GameManager.Instance.LimitPosition(newPosition);
+        newPosition = GamePositionManager.Instance.LimitPosition(newPosition);
         characterAnimator.SetMovement(joystickMovement.MoveType());
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * moveSpeed);
     }
@@ -139,5 +144,9 @@ public class PlayerController : CharacterController {
         inputButton.isDefending.AddListener(Defend);
         inputButton.isTransform.AddListener(Transform);
         SpecialUnityEvent.Instance.doComboPunch.AddListener(DoComboPunch);
+        SpecialUnityEvent.Instance.readyToFight.AddListener(ChangeState);
+    }
+    void ChangeState() {
+        playerState = CharacterState.Fight;
     }
 }

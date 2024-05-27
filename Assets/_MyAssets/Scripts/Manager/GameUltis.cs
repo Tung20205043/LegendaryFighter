@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public static class GameUltis {
@@ -14,6 +13,12 @@ public static class GameUltis {
         for (int i = 0; i < a.Length; i++) {
             a[i] = b[i];
         }
+    }
+    public static void ShowObjInArray(int value, GameObject[] gameObjects) {
+        for (int i = 0; i < gameObjects.Length; i++) {
+            gameObjects[i].SetActive(false);
+        }
+        gameObjects[value].SetActive(true);
     }
     public static IEnumerator IEDelayCall(float time, Action Callback) {
         yield return new WaitForSeconds(time);
@@ -43,18 +48,15 @@ public static class GameUltis {
         return obj.name.Replace("(Clone)", "");
     }
 
-    public static void Hide(GameObject obj) {
-        obj.SetActive(false);
-    }
-
     public static void SetParent(GameObject obj, Transform parent) {
         obj.transform.SetParent(parent);
     }
-
-    public static void Show(GameObject obj) {
-        obj.SetActive(true);
+    public static void Hide(GameObject obj) {
+        obj.gameObject.SetActive(false);
     }
-
+    public static void Show(GameObject obj) {
+        obj.gameObject.SetActive(true);
+    }
     public static bool ExitScreen(Vector3 currentPosition) {
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(currentPosition);
         return (screenPosition.x < 0 || screenPosition.x > Screen.width || screenPosition.y < 0|| screenPosition.y > Screen.height * 2);

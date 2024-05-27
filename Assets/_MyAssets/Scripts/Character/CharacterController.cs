@@ -47,7 +47,7 @@ public abstract class CharacterController : MonoBehaviour {
         return false;
     }
     protected void CannotExitScreen() {
-        this.transform.position = GameManager.Instance.LimitPosition(transform.position);
+        this.transform.position = GamePositionManager.Instance.LimitPosition(transform.position);
     }
 
 }

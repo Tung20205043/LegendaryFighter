@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_4
+      name: button violet
       rect:
         serializedVersion: 2
         x: 856
@@ -203,7 +203,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 9, y: 11, z: 10, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -224,7 +224,7 @@ TextureImporter:
         height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 12, z: 9, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -617,9 +617,9 @@ TextureImporter:
       name: button green
       rect:
         serializedVersion: 2
-        x: 191
+        x: 193
         y: 496
-        width: 270
+        width: 268
         height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1791,6 +1791,7 @@ TextureImporter:
       button green: 626686107
       button green 2: -538797111
       button title: -1789190799
+      button violet: -1129802920
       button yellow: 1651651646
       control button: -298425291
       diffcult button: -2128501725
@@ -1821,7 +1822,6 @@ TextureImporter:
       menu_ui_37: 1404362208
       menu_ui_38: 1411288171
       menu_ui_39: -180515017
-      menu_ui_4: -1129802920
       menu_ui_40: -2138762665
       menu_ui_42: 1462260655
       menu_ui_43: -913137127

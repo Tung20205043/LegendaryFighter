@@ -33,6 +33,7 @@ public class TakeInputButton : MonoBehaviour
             
     }
     private void Update() {
+        if (PlayerController.playerState == CharacterState.Ready) return;
         if (Input.GetKeyDown(KeyCode.Q)) {
             BuffingMana(true);
         }
@@ -66,15 +67,19 @@ public class TakeInputButton : MonoBehaviour
         }
     }
     public void BuffingMana(bool state) {
+        if (PlayerController.playerState == CharacterState.Ready) return;
         isBuffingMana?.Invoke(state);
     }
     public void Defending(bool state) {
+        if (PlayerController.playerState == CharacterState.Ready) return;
         isDefending?.Invoke(state);
     }
     public void Attacking(AttackType type) {
+        if (PlayerController.playerState == CharacterState.Ready) return;
         attacking?.Invoke(type);
     }
     public void Dashing() {
+        if (PlayerController.playerState == CharacterState.Ready) return;
         isDashing?.Invoke();
     }
     void SetActiveHeavyPunch() {
@@ -83,6 +88,8 @@ public class TakeInputButton : MonoBehaviour
         }
     }
     void DoTransform() {
+        if (PlayerController.playerState == CharacterState.Ready) return;
         isTransform?.Invoke();
     }
+    
 }

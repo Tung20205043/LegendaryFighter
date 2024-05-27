@@ -15,6 +15,7 @@ public class JoystickMovement : MonoBehaviour
     }
     protected void Update()
     {
+        if (PlayerController.playerState == CharacterState.Ready) return;
         FaceToEnemy(GameObjectManager.Instance.EnemyObject());
         FlipToEnemy(GameObjectManager.Instance.EnemyObject());
         UpdateNewPosition();
@@ -30,7 +31,7 @@ public class JoystickMovement : MonoBehaviour
         float yDirection = joyStick.Direction.y;
         Vector3 targetDirection = DirectionToTarget();
 
-        if (Mathf.Abs(xDirection) <= 0.4f && !GameManager.Instance.IsOnLimitPoint(Character.Player)) {
+        if (Mathf.Abs(xDirection) <= 0.4f && !GamePositionManager.Instance.IsOnLimitPoint(Character.Player)) {
             if (yDirection * targetDirection.y >= 0)
                 return MovementType.Down;
             else

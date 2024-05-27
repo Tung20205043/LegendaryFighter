@@ -8,4 +8,5 @@ public enum AnimationState {Idle, Movement, BuffMana, Dash, Attack, Punch, Defen
 public enum AttackType { Punch, Skill, UltimateSkill, Kameha, Teleport, HeavyPunch, SuperPunch, ComboPunch, Defaut }
 
 public enum TakeDamageType {Type1, Type2, Type3, NormalSkill, HeavySkill }
+public enum CharacterState {Ready, Fight }
 
