@@ -131,16 +131,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_1
+      name: char choose 3
       rect:
         serializedVersion: 2
-        x: 357
-        y: 720
-        width: 24
-        height: 26
+        x: 359
+        y: 721
+        width: 21
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 6, y: 5, z: 6, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_2
+      name: char choose 2
       rect:
         serializedVersion: 2
         x: 386
@@ -161,7 +161,7 @@ TextureImporter:
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 6, y: 5, z: 6, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_8
+      name: char choose 1
       rect:
         serializedVersion: 2
         x: 359
@@ -287,7 +287,7 @@ TextureImporter:
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 8, z: 7, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1793,18 +1793,19 @@ TextureImporter:
       button title: -1789190799
       button violet: -1129802920
       button yellow: 1651651646
+      char choose 1: 5181135
+      char choose 2: -1239969909
+      char choose 3: -986029156
       control button: -298425291
       diffcult button: -2128501725
       game mode: -1161102941
       label: 1999159181
       menu_ui_0: 860024620
-      menu_ui_1: -986029156
       menu_ui_10: -179722286
       menu_ui_11: 1844303661
       menu_ui_12: 1187902633
       menu_ui_17: -531077991
       menu_ui_18: -1293194735
-      menu_ui_2: -1239969909
       menu_ui_21: -1717450320
       menu_ui_22: -1632822807
       menu_ui_23: -1757894205
@@ -1857,7 +1858,6 @@ TextureImporter:
       menu_ui_76: 309450700
       menu_ui_77: 439220020
       menu_ui_79: -817959180
-      menu_ui_8: 5181135
       menu_ui_80: 964674225
       menu_ui_81: 2077938976
       menu_ui_9: -251783349

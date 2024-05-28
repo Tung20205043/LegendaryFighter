@@ -8,7 +8,6 @@ public class FaceToPlayer : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
     }
     protected void Update() {
-        if (GameManager.Instance.gameMode == GameMode.Train) return;
         if (CharacterStats.Instance.EnemyHp <= 0) return;
         FaceToTarget(GameObjectManager.Instance.PlayerObject());
         FlipToTarget(GameObjectManager.Instance.PlayerObject());

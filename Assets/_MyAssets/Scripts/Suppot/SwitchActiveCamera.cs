@@ -12,7 +12,7 @@ public class SwitchActiveCamera : MonoBehaviour
         //zoomCameraObj = GameObject.Find("FollowCamera");
         mainCamera = mainCameraObj.GetComponent<Camera>();
         zoomCamera = zoomCameraObj.GetComponent<Camera>();
-        gameUI = GameObject.Find("GameUI");
+        gameUI = GameObject.Find("UI");
     }
     private void OnEnable() {
         mainCamera.gameObject.SetActive(false);
