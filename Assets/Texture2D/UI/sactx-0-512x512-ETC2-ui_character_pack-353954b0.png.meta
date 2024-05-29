@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_3
+      name: mabu2
       rect:
         serializedVersion: 2
         x: 98
@@ -425,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_16
+      name: mabu3
       rect:
         serializedVersion: 2
         x: 256
@@ -704,7 +704,7 @@ TextureImporter:
         x: 103
         y: 247
         width: 34
-        height: 51
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -887,7 +887,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_38
+      name: mabu4
       rect:
         serializedVersion: 2
         x: 457
@@ -1034,13 +1034,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_45
+      name: a_unknow 2
       rect:
         serializedVersion: 2
         x: 239
         y: 171
         width: 36
-        height: 60
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1202,13 +1202,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_53
+      name: mabu5
       rect:
         serializedVersion: 2
         x: 319
         y: 114
         width: 36
-        height: 58
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1328,7 +1328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_59
+      name: mabu
       rect:
         serializedVersion: 2
         x: 205
@@ -1454,7 +1454,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_65
+      name: goku4
       rect:
         serializedVersion: 2
         x: 434
@@ -1538,7 +1538,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_69
+      name: goku3
       rect:
         serializedVersion: 2
         x: 205
@@ -1559,13 +1559,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_70
+      name: a_unknow 1
       rect:
         serializedVersion: 2
-        x: 250
+        x: 251
         y: 0
-        width: 38
-        height: 58
+        width: 35
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1685,7 +1685,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_76
+      name: goku1
       rect:
         serializedVersion: 2
         x: 465
@@ -1706,13 +1706,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_77
+      name: goku2
       rect:
         serializedVersion: 2
         x: 31
         y: 267
         width: 27
-        height: 59
+        height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1727,7 +1727,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_78
+      name: goku5
       rect:
         serializedVersion: 2
         x: 425
@@ -1779,6 +1779,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      a_unknow 1: -1605522798
+      a_unknow 2: -31302010
+      goku1: 1971059885
+      goku2: 1682905275
+      goku3: 612730003
+      goku4: 1349698592
+      goku5: -1328036594
+      mabu: -1215299989
+      mabu2: 2098331414
+      mabu3: 1410684006
+      mabu4: 1846517930
+      mabu5: -910005261
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_0: 1469713488
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_1: -553212685
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_10: 960258055
@@ -1787,7 +1799,6 @@ TextureImporter:
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_13: 1675615859
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_14: -311469035
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_15: -1706607657
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_16: 1410684006
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_17: 31653108
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_18: 1304943547
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_19: 1747324516
@@ -1802,7 +1813,6 @@ TextureImporter:
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_27: -104370561
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_28: -1493233232
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_29: -1470366478
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_3: 2098331414
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_30: -246372397
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_31: -1286338240
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_32: -220427498
@@ -1811,7 +1821,6 @@ TextureImporter:
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_35: 308896728
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_36: -1665067658
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_37: 1572112403
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_38: 1846517930
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_39: 1240257547
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_4: -2128675921
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_40: -332335086
@@ -1819,7 +1828,6 @@ TextureImporter:
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_42: -1173856045
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_43: 869279545
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_44: 1365144031
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_45: -31302010
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_46: 413807164
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_47: 1344685052
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_48: 319945103
@@ -1828,34 +1836,26 @@ TextureImporter:
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_50: -1730529783
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_51: 1450796115
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_52: -2007497849
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_53: -910005261
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_54: 1699041804
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_55: -2073450174
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_56: -1311769844
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_57: -926405783
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_58: 3909534
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_59: -1215299989
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_6: 159990112
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_60: -10716861
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_61: 2005609067
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_62: 224334732
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_63: -1839882997
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_64: -322749117
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_65: 1349698592
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_66: -1106272367
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_67: -1267600749
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_68: -601114741
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_69: 612730003
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_7: -1991186838
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_70: -1605522798
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_71: 1135372586
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_72: 1573740928
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_73: -648482091
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_74: -1901381838
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_75: -1390757116
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_76: 1971059885
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_77: 1682905275
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_78: -1328036594
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_8: 342129922
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_9: -686345102
   mipmapLimitGroupName: 

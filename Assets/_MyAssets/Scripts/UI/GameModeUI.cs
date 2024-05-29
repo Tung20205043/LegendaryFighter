@@ -24,7 +24,9 @@ public class GameModeUI : UIParent {
         difficultButton.onClick.AddListener(ChangeDifficult);
         nextButton.onClick.AddListener(OnclickNextButton);
     }
-    
+    private void OnEnable() {
+        GameManager.Instance.gameDifficult = GameDifficult.Easy;
+    }
 
     void OnClickModeButton(int chooseNum) {
         modeValue = chooseNum;
@@ -34,24 +36,21 @@ public class GameModeUI : UIParent {
         modeButtonOff[chooseNum].gameObject.SetActive(false);
         SetActiveOneObjInArray(modeUI, chooseNum);
         SetActiveOneObjInArray(modeButtonOn, chooseNum);
+        GameManager.Instance.gameMode = (GameMode)modeValue;
     }
     void ChangeDifficult() {
         difficultValue++;
         if (difficultValue > difficultUI.Length - 1)
             difficultValue = 0;
         SetActiveOneObjInArray(difficultUI, difficultValue);
+        GameManager.Instance.gameDifficult = (GameDifficult)difficultValue;
     }
     void SetActiveOneObjInArray(GameObject[] array, int chooseNum) {
         for (int i = 0; i < array.Length; i++)
             array[i].SetActive(false);
         array[chooseNum].gameObject.SetActive(true);
     }
-
     void OnclickNextButton() {
         SpecialUnityEvent.Instance.pressNextButton?.Invoke(charChoose);
-        GameManager.Instance.gameDifficult = (GameDifficult)difficultValue;
-        GameManager.Instance.gameMode = (GameMode) modeValue;
-        Debug.Log(GameManager.Instance.gameDifficult);
-        Debug.Log(GameManager.Instance.gameMode);
     }
 }

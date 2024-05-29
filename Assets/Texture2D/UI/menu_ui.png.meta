@@ -117,8 +117,8 @@ TextureImporter:
         y: 652
         width: 239
         height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -329,7 +329,7 @@ TextureImporter:
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 5, y: 5, z: 5, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -686,7 +686,7 @@ TextureImporter:
         height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 13, y: 23, z: 14, w: 15}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1055,7 +1055,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menu_ui_51
+      name: tourment-UI
       rect:
         serializedVersion: 2
         x: 0
@@ -1064,7 +1064,7 @@ TextureImporter:
         height: 363
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 60, z: 0, w: 301}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1833,7 +1833,6 @@ TextureImporter:
       menu_ui_49: 729409011
       menu_ui_5: -1024038803
       menu_ui_50: 1537304502
-      menu_ui_51: -472518524
       menu_ui_53: 418935492
       menu_ui_54: -1289327814
       menu_ui_55: 544756114
@@ -1862,6 +1861,7 @@ TextureImporter:
       menu_ui_81: 2077938976
       menu_ui_9: -251783349
       more game bt: 263306954
+      tourment-UI: -472518524
       yellow button: -1018531015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -1,16 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
+using static GameUltis;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class CharChooseUI : UIParent {
-    [SerializeField] Button nextButton;
+    [SerializeField] GameObject[] charChoosePanels;
+    public static bool isPlayerChooseTurn;
     protected override void Awake() {
         base.Awake();
-        nextButton.onClick.AddListener(LoadNextScene);
     }
-    void LoadNextScene() {
-        SceneManager.LoadScene(1);
+    private void OnEnable() {
+        ShowObjInArray((int)GameManager.Instance.gameMode, charChoosePanels);
+
+    }
+    public static void SetPlayerChooseTurn() { 
+        isPlayerChooseTurn = true;
     }
 }

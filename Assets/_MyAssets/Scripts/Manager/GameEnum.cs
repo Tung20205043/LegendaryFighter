@@ -6,6 +6,9 @@ public enum CharacterToChoose {
     Goku, GokuSSj, GokuSSj2, GokuSSj3, GokuSSj4,
     MabuForm1, MabuForm2, MabuForm3, MabuForm4, MabuForm5
 }
+public enum MapToChoose {
+    Tournament, Wasteland, KamiHouse, CircleHouse, GodPlanet
+}
 public enum MovementType {Forward, Backward, Up, Down }
 public enum AnimationState {Idle, Movement, BuffMana, Dash, Attack, Punch, Defend, TakeDamage, Die, Transform }
 

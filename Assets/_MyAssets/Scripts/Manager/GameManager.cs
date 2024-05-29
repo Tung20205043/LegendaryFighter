@@ -13,4 +13,6 @@ public class GameManager : MonoBehaviourSingletonPersistent<GameManager> {
 
     public CharacterToChoose playerChosen;
     public CharacterToChoose enemyChosen;
+
+    public MapToChoose mapChosen;
 }

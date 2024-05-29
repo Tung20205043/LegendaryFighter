@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using static GameUltis;
 
 public class ObjectPooling : MonoBehaviour
 {
@@ -12,22 +12,22 @@ public class ObjectPooling : MonoBehaviour
             foreach (GameObject poolObj in poolObj) {
                 if (poolObj.name == _poolObj.name) {
                     this.poolObj.Remove(poolObj);
-                    poolObj.transform.parent = parentToSpawn;
+                    SetParent(poolObj, parentToSpawn);
                     poolObj.transform.position = spawnPoin;
                     poolObj.transform.rotation = spawnRotation;
-                    poolObj.SetActive(true);
+                    Show(poolObj);
                     return;
                 }
             }
         }
         GameObject newPoolObj = Instantiate(_poolObj, spawnPoin, spawnRotation, parentToSpawn);
         newPoolObj.name = _poolObj.name;
-        newPoolObj.transform.parent = parentToSpawn;
+        newPoolObj.transform.SetParent(parentToSpawn, false);
 
     }
     public void DeSpawn(GameObject _poolObj) {
         poolObj.Add(_poolObj);
-        _poolObj.SetActive(false);
-        _poolObj.transform.parent = holder;
+        Hide(_poolObj);
+        SetParent(_poolObj, holder);
     }
 }

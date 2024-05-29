@@ -15,8 +15,8 @@ public static class GameUltis {
         }
     }
     public static void ShowObjInArray(int value, GameObject[] gameObjects) {
-        for (int i = 0; i < gameObjects.Length; i++) {
-            gameObjects[i].SetActive(false);
+        foreach (var gameObject in gameObjects) {
+            gameObject.SetActive(false);
         }
         gameObjects[value].SetActive(true);
     }
@@ -25,12 +25,7 @@ public static class GameUltis {
         Callback?.Invoke();
     }
 
-    public static float RandomFloatNumber(float a, float b) {
-        float firstNum = a * 2;
-        float secondNum = b * 2;
-        return UnityEngine.Random.Range(firstNum, secondNum + 1) / 2;
-    }
-    public static int RandomIntNumber(int a, int b) {
+    public static int RandomNumber(int a, int b) {
         return UnityEngine.Random.Range(a, b + 1);
     }
     public static T GetComponentFromObject<T>(GameObject obj) where T : Component {
@@ -49,7 +44,7 @@ public static class GameUltis {
     }
 
     public static void SetParent(GameObject obj, Transform parent) {
-        obj.transform.SetParent(parent);
+        obj.transform.SetParent(parent, false);
     }
     public static void Hide(GameObject obj) {
         obj.gameObject.SetActive(false);

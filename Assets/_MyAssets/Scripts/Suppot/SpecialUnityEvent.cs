@@ -13,4 +13,5 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
     public UnityEvent spawnCoin;
     public UnityEvent readyToFight;
     public UnityEvent <CharacterToChoose> changePlayerChoose;
+    public UnityEvent <MapToChoose> changeMapToChoose;
 }
