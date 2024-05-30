@@ -6,17 +6,24 @@ public class GamePlayUI : MonoBehaviour
     [SerializeField] Button pauseButton;
     [SerializeField] GameObject pausePanel;
     [SerializeField] GameObject ui;
-
+    public bool playerIsReady = false;
+    public bool enemyIsReady = false;
+    Animator animator;
     private void Awake() {
         pauseButton.onClick.AddListener(SetPauseGame);
+        animator = GetComponent<Animator>();
+        SpecialUnityEvent.Instance.playerIsReady.AddListener(CheckPlayerReady);
+        SpecialUnityEvent.Instance.enemyIsReady.AddListener(CheckEnemyReady);
     }
     private void OnEnable() {
         Hide(pauseButton.gameObject);
-        Debug.Log(GameManager.Instance.gameDifficult);
-        Debug.Log(GameManager.Instance.gameMode);
-        Debug.Log(GameManager.Instance.playerChosen);
-        Debug.Log(GameManager.Instance.enemyChosen);
-        Debug.Log(GameManager.Instance.mapChosen);
+        playerIsReady = false;
+        enemyIsReady = false;
+        //Debug.Log(GameManager.Instance.gameDifficult);
+        //Debug.Log(GameManager.Instance.gameMode);
+        //Debug.Log(GameManager.Instance.playerChosen);
+        //Debug.Log(GameManager.Instance.enemyChosen);
+        //Debug.Log(GameManager.Instance.mapChosen);
     }
     void SetPauseGame() {
         Show(pausePanel);
@@ -27,4 +34,18 @@ public class GamePlayUI : MonoBehaviour
         SpecialUnityEvent.Instance.readyToFight?.Invoke();
         Show(pauseButton.gameObject);
     }
+    void CheckPlayerReady() { 
+        playerIsReady = true;
+        if (!enemyIsReady) return;
+        animator.SetTrigger("Ready");
+    }
+    void CheckEnemyReady() {
+        enemyIsReady = true;
+        if (!playerIsReady) return;
+        animator.SetTrigger("Ready");
+    }
+    //private void OnDisable() {
+    //    playerIsReady = false;
+    //    enemyIsReady = false;
+    //}
 }

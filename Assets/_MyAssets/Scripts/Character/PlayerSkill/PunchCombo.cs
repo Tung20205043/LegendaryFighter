@@ -3,7 +3,12 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class PunchCombo : MonoBehaviour {
-    public List<PunchSO> combo;
+    [System.Serializable]
+    public class PunchSOArrayWrapper {
+        public PunchSO[] comboPunchArray;
+    }
+    [SerializeField] List<PunchSOArrayWrapper> arrayList;
+    //public PunchSO[] combo;
     float lastClickTime;
     float lastComboEnd;
     public int comboCount;
@@ -16,6 +21,7 @@ public class PunchCombo : MonoBehaviour {
     void Start() {
         rb = GetComponentInParent<Rigidbody2D>();
         player = GameObjectManager.Instance.PlayerObject().transform;
+        SpecialUnityEvent.Instance.doTransform.AddListener(UpdatePunchSO);
     }
     void Update() {
         if (IsInAttackRange())
@@ -26,7 +32,7 @@ public class PunchCombo : MonoBehaviour {
             && characterAnimator.currentAttackType == AttackType.Punch;
     }
     public void StartPunch() {
-        if (Time.time - lastComboEnd > 0.2f && comboCount <= combo.Count) {
+        if (Time.time - lastComboEnd > 0.2f && comboCount <= arrayList[0].comboPunchArray.Length) {
             characterAnimator.SetPunch();
             CancelInvoke("EndCombo");
             if (Time.time - lastClickTime >= 0.3f) {
@@ -35,10 +41,10 @@ public class PunchCombo : MonoBehaviour {
         }
     }
     void DoPunch() {
-        characterAnimator.UpdateAnimator(combo[comboCount].animatorOV);
+        characterAnimator.UpdateAnimator(arrayList[0].comboPunchArray[comboCount].animatorOV);
         raycastCheck.CheckObjByRaycast(comboCount);
         characterAnimator.SetBool("Punch", true);
-        if (comboCount < combo.Count - 1) {
+        if (comboCount < arrayList[0].comboPunchArray.Length - 1) {
             comboCount++;
             DashDistance(dashDistance);
         } 
@@ -70,5 +76,8 @@ public class PunchCombo : MonoBehaviour {
     }
     Vector2 DirectionToEnemy() {
         return GameObjectManager.Instance.EnemyObject().transform.position - player.transform.position;
+    }
+    void UpdatePunchSO(int levelTarget) {
+        GameUltis.ReplaceArrayElements(arrayList[0].comboPunchArray, arrayList[levelTarget].comboPunchArray);      
     }
 }

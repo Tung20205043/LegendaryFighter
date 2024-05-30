@@ -14,7 +14,6 @@ public class CharacterAnimator : MonoBehaviour {
             return animator;
         }
     }
-
     //--------------------------------------------------
     public void DoComboPunch() {
         SetTrigger("ComboPunch");

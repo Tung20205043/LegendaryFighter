@@ -11,8 +11,12 @@ public class ObjectPoolingForCharacter : ObjectPooling{
         public ObjectToSpawn key;
         public GameObject value;
     }
-    [SerializeField] private SpawnableObject[] spawnableObjectsArray;
-    [SerializeField] private SpawnableObject[] spawnableObjectsArrayNextTrans;
+    [System.Serializable]
+    public class SpawnableObjectArrayWrapper {
+        public SpawnableObject[] spawnObjectsArray;
+    }
+    [SerializeField] private List<SpawnableObjectArrayWrapper> spawnablesList;
+
     private Dictionary<ObjectToSpawn, GameObject> spawnableObjectsDict;
     private void Awake() {
         if (Instance != null) {
@@ -22,13 +26,10 @@ public class ObjectPoolingForCharacter : ObjectPooling{
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        spawnableObjectsDict = new Dictionary<ObjectToSpawn, GameObject>();
-        foreach (var item in spawnableObjectsArray) {
-            spawnableObjectsDict.Add(item.key, item.value);
-        }
+        UpdateDictonary();  
     }
     private void Start() {
-        SpecialUnityEvent.Instance.doTransform.AddListener(UpdateGhostEffect);
+        SpecialUnityEvent.Instance.doTransform.AddListener(UpdatePoolingToSpawn);
     }
     public GameObject GetObjectByKey(ObjectToSpawn key) {
         if (spawnableObjectsDict.TryGetValue(key, out var obj)) {
@@ -42,10 +43,13 @@ public class ObjectPoolingForCharacter : ObjectPooling{
         GetObjectFromBool(GetObjectByKey(objType), spawnPoint, spawnRotation);
     }
 
-    void UpdateGhostEffect() {
-        GameUltis.ReplaceArrayElements(spawnableObjectsArray, spawnableObjectsArrayNextTrans);
+    void UpdatePoolingToSpawn(int levelTarget) {
+        GameUltis.ReplaceArrayElements(spawnablesList[0].spawnObjectsArray, spawnablesList[levelTarget].spawnObjectsArray);
+        UpdateDictonary();
+    }
+    void UpdateDictonary() {
         spawnableObjectsDict = new Dictionary<ObjectToSpawn, GameObject>();
-        foreach (var item in spawnableObjectsArray) {
+        foreach (var item in spawnablesList[0].spawnObjectsArray) {
             spawnableObjectsDict.Add(item.key, item.value);
         }
     }

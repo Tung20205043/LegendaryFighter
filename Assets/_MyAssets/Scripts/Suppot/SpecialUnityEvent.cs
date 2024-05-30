@@ -7,11 +7,13 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
 {
     public UnityEvent setActiveHeavyPunchButton;
     public UnityEvent doComboPunch;
-    public UnityEvent doTransform;
+    public UnityEvent<int> doTransform;
     public UnityEvent backToMainUI;
     public UnityEvent<GameObject> pressNextButton;
     public UnityEvent spawnCoin;
     public UnityEvent readyToFight;
     public UnityEvent <CharacterToChoose> changePlayerChoose;
     public UnityEvent <MapToChoose> changeMapToChoose;
+    public UnityEvent playerIsReady;
+    public UnityEvent enemyIsReady;
 }

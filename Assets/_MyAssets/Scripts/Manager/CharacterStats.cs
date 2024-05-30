@@ -32,6 +32,7 @@ public class CharacterStats : MonoBehaviourSingleton<CharacterStats>
 
     public float maxEnemyHp = 100f;
     public float maxEnemyMana = 100f;
+    public int maxLevel = 5;
     [Header("")]
     public float startCharacterAtk = 10f;
     public float startHp = 100f;
@@ -46,6 +47,9 @@ public class CharacterStats : MonoBehaviourSingleton<CharacterStats>
             if (IsMaxMana(Character.Enemy)) return;
             enemyMana += 15 * Time.deltaTime; 
         }
+    }
+    private void OnEnable() {
+        StartGame();
     }
     public void StartGame() {
         playerMana = 50;
@@ -87,5 +91,16 @@ public class CharacterStats : MonoBehaviourSingleton<CharacterStats>
     public bool IsMaxMana(Character character) {
         return (character == Character.Player) ? playerMana >= maxPlayerMana : enemyMana >= maxEnemyMana;
     }
-    
+    public void DoTransform(Character character, int levelTarget) {
+        switch (character) {
+            case Character.Player:
+                playerLevel = levelTarget;
+                if (playerLevel >= maxLevel) playerLevel = maxLevel;
+                break;
+            case Character.Enemy:
+                enemyLevel = levelTarget;
+                if (enemyLevel >= maxLevel) enemyLevel = maxLevel;
+                break;
+        }
+    }
 }

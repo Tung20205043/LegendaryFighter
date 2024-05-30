@@ -32,10 +32,6 @@ public class PlayerController : CharacterController {
         }
 
         CannotExitScreen();
-
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            characterAnimator.Play("Spawn");
-        }
     }
     #region Move Funcion
     protected override void Move(Vector3 targetPosition) {
@@ -124,6 +120,7 @@ public class PlayerController : CharacterController {
 
     #region Transform
     void Transform() {
+        if (!IsOnMovement()) return;
         characterAnimator.SetTransform();
     }
     public void DoTransform() {
@@ -148,5 +145,8 @@ public class PlayerController : CharacterController {
     }
     void ChangeState() {
         playerState = CharacterState.Fight;
+    }
+    void Ready() {
+        SpecialUnityEvent.Instance.playerIsReady?.Invoke();
     }
 }

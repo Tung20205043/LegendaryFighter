@@ -18,5 +18,4 @@ public class SpawnUltSkill : SpawnSkillParent
         switchCameraController.SetActive(false);
         ultSkillCanMove = true;
     }
-
 }
