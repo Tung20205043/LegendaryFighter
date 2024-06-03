@@ -122,6 +122,7 @@ public class PlayerController : CharacterController {
     void Transform() {
         if (!IsOnMovement()) return;
         characterAnimator.SetTransform();
+        SpecialUnityEvent.Instance.switchCam?.Invoke(3f);
     }
     public void DoTransform() {
         playerTransform.Transform();

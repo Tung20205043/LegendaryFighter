@@ -7783,11 +7783,42 @@ MonoBehaviour:
   holder: {fileID: 1027918151}
   poolObj: []
   parentToSpawn: {fileID: 0}
-  spawnableObjectsArray:
-  - key: 5
-    value: {fileID: 6450997301641625800, guid: 20a268ac2c6ebc44b9f924e44f43ddf8, type: 3}
-  - key: 6
-    value: {fileID: 6676932639761710166, guid: f2137e64599bd7d4caaa662f9f65b540, type: 3}
+  spawnablesList:
+  - spawnObjectsArray:
+    - key: 7
+      value: {fileID: 592536862636345434, guid: f0e7aa769ca3a3945baaebc9737407ae, type: 3}
+    - key: 8
+      value: {fileID: 6781774223102448084, guid: c9a0cdcf942676f4787034c1f7fa9dd5, type: 3}
+  - spawnObjectsArray:
+    - key: 7
+      value: {fileID: 500835155135650724, guid: 9db1b863a99ad744c8c7663ea1094119, type: 3}
+    - key: 8
+      value: {fileID: 2182801549195057998, guid: db8d14974aec68c489f87bb71fec0c12, type: 3}
+  - spawnObjectsArray:
+    - key: 7
+      value: {fileID: 3923774494953404025, guid: 82064ca216ffe9844979caedae02b0c4, type: 3}
+    - key: 8
+      value: {fileID: 8194527754500352248, guid: 6d50e0b44d77b4d4d993fc3e4e634e48, type: 3}
+  - spawnObjectsArray:
+    - key: 7
+      value: {fileID: 644677681772872271, guid: 9c80fb43c780e9e41b51963a2bed37f0, type: 3}
+    - key: 8
+      value: {fileID: 8501259337144950554, guid: 40460770b86f4c549bdb5cd17cb4a422, type: 3}
+  - spawnObjectsArray:
+    - key: 7
+      value: {fileID: 3153040293259738720, guid: b079fba6437f9c64b8b44da7367f3190, type: 3}
+    - key: 8
+      value: {fileID: 4260554590137229612, guid: bcbaa212330adec43bbfbf2d909ed019, type: 3}
+  - spawnObjectsArray:
+    - key: 7
+      value: {fileID: 6450997301641625800, guid: 20a268ac2c6ebc44b9f924e44f43ddf8, type: 3}
+    - key: 8
+      value: {fileID: 6676932639761710166, guid: f2137e64599bd7d4caaa662f9f65b540, type: 3}
+  - spawnObjectsArray:
+    - key: 7
+      value: {fileID: 7672583218891482753, guid: 0543bfa3e0fa9ef4d9d5b060b108ac4b, type: 3}
+    - key: 8
+      value: {fileID: 8829524099700356044, guid: 6d7fbc51bd5597a4d8150e618b558131, type: 3}
 --- !u!1 &1042541197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10505,7 +10536,7 @@ GameObject:
   - component: {fileID: 1402290095}
   - component: {fileID: 1402290100}
   m_Layer: 6
-  m_Name: MabuAI
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10530,6 +10561,7 @@ Transform:
   - {fileID: 1340274011}
   - {fileID: 1027918151}
   - {fileID: 21643144}
+  - {fileID: 2101818817}
   m_Father: {fileID: 1697513429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1402290092
@@ -10698,7 +10730,7 @@ Animator:
   m_GameObject: {fileID: 1402290090}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5558742fb71d7d2499d2b5ac76780f28, type: 2}
+  m_Controller: {fileID: 9100000, guid: 658ea8f635c261f4599745c86186adcb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13680,8 +13712,8 @@ RectTransform:
   - {fileID: 8897299981439147024}
   - {fileID: 1169768546}
   - {fileID: 415481084}
-  - {fileID: 1402290091}
   - {fileID: 6944880872609564451}
+  - {fileID: 1402290091}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -15351,6 +15383,9 @@ MonoBehaviour:
   doTransform:
     m_PersistentCalls:
       m_Calls: []
+  enemyDoTransform:
+    m_PersistentCalls:
+      m_Calls: []
   backToMainUI:
     m_PersistentCalls:
       m_Calls: []
@@ -15373,6 +15408,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   enemyIsReady:
+    m_PersistentCalls:
+      m_Calls: []
+  switchCam:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1909973468
@@ -17063,6 +17101,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095504381}
   m_CullTransparentMesh: 1
+--- !u!1 &2101818816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2101818817}
+  - component: {fileID: 2101818818}
+  m_Layer: 6
+  m_Name: EnemyTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2101818817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101818816}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1402290091}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2101818818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101818816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78811b9c79663f541adca5180c242135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterAnimator: {fileID: 1402290097}
+  overrideController:
+  - {fileID: 22100000, guid: e85c7c3915b1d5240bd8cf03db1c9563, type: 2}
+  - {fileID: 22100000, guid: 21fff7f994be2d24599ebfd10929e16c, type: 2}
+  - {fileID: 22100000, guid: 5deadb187a25caa4d9667048c644984a, type: 2}
+  - {fileID: 22100000, guid: b0bd482cb58270c4480db726f684f078, type: 2}
+  - {fileID: 22100000, guid: c64ddc6c7e769ec41b2402b86b7284ff, type: 2}
+  - {fileID: 22100000, guid: f8bda80e3a6f64d4199c297c40a24042, type: 2}
+  - {fileID: 22100000, guid: 78df11a90edce374688e3fd226987914, type: 2}
 --- !u!1 &2103373928
 GameObject:
   m_ObjectHideFlags: 0
@@ -17980,6 +18071,22 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 811f4be805e22414b9d92d0b951e5591, type: 2}
     - {fileID: 11400000, guid: 6a7dfed6e13ff9a47b35f13ad66bec9e, type: 2}
     - {fileID: 11400000, guid: 49039994c88335f4d8494f9e7f3c341a, type: 2}
+  - comboPunchArray:
+    - {fileID: 11400000, guid: 6bea18434ebbb7a44abe2b10b35728ec, type: 2}
+    - {fileID: 11400000, guid: de529a184f520bf44a237b49d7b148b0, type: 2}
+    - {fileID: 11400000, guid: 5d3af64c687c37e4b8f788940827a87b, type: 2}
+  - comboPunchArray:
+    - {fileID: 11400000, guid: cc8fb0e12db13af4b85dcd72e9eff3df, type: 2}
+    - {fileID: 11400000, guid: f0e341a735da45447bc593fbb2d2b77c, type: 2}
+    - {fileID: 11400000, guid: c6138a2924ea7e34a970df09b040ed6c, type: 2}
+  - comboPunchArray:
+    - {fileID: 11400000, guid: 7f0b0d34592172442af553ba239f8ebd, type: 2}
+    - {fileID: 11400000, guid: 5f307b98b5dba994d8f75e16a8d45f28, type: 2}
+    - {fileID: 11400000, guid: 4ce2973e146557148be727e41743d13c, type: 2}
+  - comboPunchArray:
+    - {fileID: 11400000, guid: fa15c9a907e4eea4ab9002a3a1396004, type: 2}
+    - {fileID: 11400000, guid: e8ad78130105e1448862cfa10009167a, type: 2}
+    - {fileID: 11400000, guid: 32c3df0114301e64599c46f783399e11, type: 2}
   comboCount: 0
   characterAnimator: {fileID: 8238755278653625055}
   dashDistance: 1
@@ -18073,8 +18180,13 @@ MonoBehaviour:
   - {fileID: 22100000, guid: e85c7c3915b1d5240bd8cf03db1c9563, type: 2}
   - {fileID: 22100000, guid: 21fff7f994be2d24599ebfd10929e16c, type: 2}
   - {fileID: 22100000, guid: 5deadb187a25caa4d9667048c644984a, type: 2}
-  - {fileID: 22100000, guid: 21fff7f994be2d24599ebfd10929e16c, type: 2}
-  - {fileID: 22100000, guid: 21fff7f994be2d24599ebfd10929e16c, type: 2}
+  - {fileID: 22100000, guid: b0bd482cb58270c4480db726f684f078, type: 2}
+  - {fileID: 22100000, guid: c64ddc6c7e769ec41b2402b86b7284ff, type: 2}
+  - {fileID: 22100000, guid: f8bda80e3a6f64d4199c297c40a24042, type: 2}
+  - {fileID: 22100000, guid: 78df11a90edce374688e3fd226987914, type: 2}
+  - {fileID: 22100000, guid: f8bda80e3a6f64d4199c297c40a24042, type: 2}
+  - {fileID: 22100000, guid: f8bda80e3a6f64d4199c297c40a24042, type: 2}
+  - {fileID: 22100000, guid: f8bda80e3a6f64d4199c297c40a24042, type: 2}
 --- !u!4 &4052996141939877466
 Transform:
   m_ObjectHideFlags: 0
@@ -18184,7 +18296,7 @@ GameObject:
   - component: {fileID: 2969620488798229430}
   - component: {fileID: 2629453828646561320}
   m_Layer: 0
-  m_Name: Goku
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19023,6 +19135,66 @@ MonoBehaviour:
       value: {fileID: 3303513255226960861, guid: d8305876fe0de024d954efba4ed3d4f8, type: 3}
     - key: 3
       value: {fileID: 6371015845683982034, guid: aea4c0f3f1b4a6247b9fc0f52cdbb56a, type: 3}
+  - spawnObjectsArray:
+    - key: 0
+      value: {fileID: 3149104981325588440, guid: b9e5707972dc7b14eb8d371dc938da1e, type: 3}
+    - key: 1
+      value: {fileID: 5564122221687932301, guid: 6966b6c3b7ad1ba4489f8f7a0156ee21, type: 3}
+    - key: 4
+      value: {fileID: 7845487281848297593, guid: 990de96ea9ada98489aaa539dbdffa62, type: 3}
+    - key: 5
+      value: {fileID: 8434366745908685778, guid: ad980cd4f15962948b995e0816e1e57b, type: 3}
+    - key: 6
+      value: {fileID: 471050746451015154, guid: 0461a86e9aec3f148bfb6356aa0743e7, type: 3}
+    - key: 2
+      value: {fileID: 7206450105892724896, guid: 1fe970ac026da37479766152c605eea3, type: 3}
+    - key: 3
+      value: {fileID: 299128923512701282, guid: 1d7b44a031cc5854eb9aa2b742037930, type: 3}
+  - spawnObjectsArray:
+    - key: 0
+      value: {fileID: 7192662865494705030, guid: 5b5c76b6fbe66b34cb632c3c78119e92, type: 3}
+    - key: 1
+      value: {fileID: 5444035151862451976, guid: 527afcdc50c9fcc4eb498d7ed17529e5, type: 3}
+    - key: 4
+      value: {fileID: 7845487281848297593, guid: 990de96ea9ada98489aaa539dbdffa62, type: 3}
+    - key: 5
+      value: {fileID: 8434366745908685778, guid: ad980cd4f15962948b995e0816e1e57b, type: 3}
+    - key: 6
+      value: {fileID: 471050746451015154, guid: 0461a86e9aec3f148bfb6356aa0743e7, type: 3}
+    - key: 2
+      value: {fileID: 1071870072614723014, guid: 579cdcb279d42074890f7e9f7dea54fa, type: 3}
+    - key: 3
+      value: {fileID: 475800450482914971, guid: 167170502b3008f42b92286b62aa4406, type: 3}
+  - spawnObjectsArray:
+    - key: 0
+      value: {fileID: 6450997301641625800, guid: 54ef138fe4185aa4a96bc60332baf033, type: 3}
+    - key: 1
+      value: {fileID: 6676932639761710166, guid: 68cc0085ffbf8df45969c8b23c3e1b06, type: 3}
+    - key: 4
+      value: {fileID: 7845487281848297593, guid: ece02c3428a374c44aa6c7a4d639b554, type: 3}
+    - key: 5
+      value: {fileID: 8434366745908685778, guid: baac0563dd3a3f249a2fd74e644f4f44, type: 3}
+    - key: 6
+      value: {fileID: 471050746451015154, guid: 9575ca65e5fe1fa4ba9df01570eff2d8, type: 3}
+    - key: 2
+      value: {fileID: 3474835306375835665, guid: 84538348e257c864ea0386afc31daed0, type: 3}
+    - key: 3
+      value: {fileID: 7001978376966641502, guid: f3679928669ff4746995fe8b5eaddcf6, type: 3}
+  - spawnObjectsArray:
+    - key: 0
+      value: {fileID: 6534015907776436197, guid: b040604bfc9da934ba77517403db0c4b, type: 3}
+    - key: 1
+      value: {fileID: 1629826166552390319, guid: 970143377efe9424fa5aa0ee82176a1a, type: 3}
+    - key: 4
+      value: {fileID: 7845487281848297593, guid: ece02c3428a374c44aa6c7a4d639b554, type: 3}
+    - key: 5
+      value: {fileID: 8434366745908685778, guid: baac0563dd3a3f249a2fd74e644f4f44, type: 3}
+    - key: 6
+      value: {fileID: 471050746451015154, guid: 9575ca65e5fe1fa4ba9df01570eff2d8, type: 3}
+    - key: 2
+      value: {fileID: 4446749874534840181, guid: 388c96ff0fbb68f4cb4b9f598b30bcf7, type: 3}
+    - key: 3
+      value: {fileID: 1585063810268145577, guid: a90ae0897fc711542801b737e7a2a1f5, type: 3}
 --- !u!1 &9073177605458314242
 GameObject:
   m_ObjectHideFlags: 0

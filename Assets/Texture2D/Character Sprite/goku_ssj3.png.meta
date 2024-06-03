@@ -467,7 +467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_ssj3_17
+      name: take dmg2
       rect:
         serializedVersion: 2
         x: 40
@@ -1013,7 +1013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_ssj3_44
+      name: take dmg3
       rect:
         serializedVersion: 2
         x: 414
@@ -1370,7 +1370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_ssj3_67
+      name: take dmg1
       rect:
         serializedVersion: 2
         x: 125
@@ -1942,7 +1942,6 @@ TextureImporter:
       goku_ssj3_14: -417434482
       goku_ssj3_15: -519739701
       goku_ssj3_16: 425024920
-      goku_ssj3_17: 412336031
       goku_ssj3_19: -1290765839
       goku_ssj3_2: -2023373237
       goku_ssj3_21: 35153990
@@ -1960,7 +1959,6 @@ TextureImporter:
       goku_ssj3_38: 336138468
       goku_ssj3_4: -962423903
       goku_ssj3_43: 2048240008
-      goku_ssj3_44: -122555283
       goku_ssj3_47: -729981283
       goku_ssj3_48: 142384052
       goku_ssj3_5: -1366239824
@@ -1977,7 +1975,6 @@ TextureImporter:
       goku_ssj3_63: -2072013691
       goku_ssj3_64: -981102895
       goku_ssj3_66: 1846792057
-      goku_ssj3_67: 1242359397
       goku_ssj3_68: 1824653425
       goku_ssj3_70: 1675043933
       goku_ssj3_71: -1567514320
@@ -2021,6 +2018,9 @@ TextureImporter:
       skill tele 1: -530457374
       skill tele 2: 470499704
       skill1: 1288885444
+      take dmg1: 1242359397
+      take dmg2: 412336031
+      take dmg3: -122555283
       ult skill 1: -1712290404
       ult skill 2: 599798854
   mipmapLimitGroupName: 

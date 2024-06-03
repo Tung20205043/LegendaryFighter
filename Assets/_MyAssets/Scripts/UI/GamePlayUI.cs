@@ -19,11 +19,6 @@ public class GamePlayUI : MonoBehaviour
         Hide(pauseButton.gameObject);
         playerIsReady = false;
         enemyIsReady = false;
-        //Debug.Log(GameManager.Instance.gameDifficult);
-        //Debug.Log(GameManager.Instance.gameMode);
-        //Debug.Log(GameManager.Instance.playerChosen);
-        //Debug.Log(GameManager.Instance.enemyChosen);
-        //Debug.Log(GameManager.Instance.mapChosen);
     }
     void SetPauseGame() {
         Show(pausePanel);

@@ -320,13 +320,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_10
+      name: goku 5_
       rect:
         serializedVersion: 2
         x: 0
         y: 267
-        width: 28
-        height: 58
+        width: 26
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1781,6 +1781,7 @@ TextureImporter:
     nameFileIdTable:
       a_unknow 1: -1605522798
       a_unknow 2: -31302010
+      goku 5_: 960258055
       goku1: 1971059885
       goku2: 1682905275
       goku3: 612730003
@@ -1793,7 +1794,6 @@ TextureImporter:
       mabu5: -910005261
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_0: 1469713488
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_1: -553212685
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_10: 960258055
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_11: 1512501094
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_12: 449726749
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_13: 1675615859

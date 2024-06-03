@@ -22,6 +22,7 @@ public class CharChooseVsMode : MonoBehaviour {
         CharChooseUI.SetPlayerChooseTurn();
         Hide(undoButton.gameObject);
         charChooseControls[(int)GameManager.Instance.playerChosen].ChangePlayerChosen();
+        ShowObjInArray((int)GameManager.Instance.playerChosen, playerUi);
         SetDefaultEnemyUI();
     }
     void OnclickNextButton() {
@@ -34,6 +35,7 @@ public class CharChooseVsMode : MonoBehaviour {
             if (GameManager.Instance.gameMode != GameMode.Train) return;
 
             SceneManager.LoadScene(1);
+            
         }
     }
     void OnclickUndoButton() {
@@ -55,14 +57,8 @@ public class CharChooseVsMode : MonoBehaviour {
         Show(enemyDefaultUi);
     }
     void PickRamdomEnemy() {
-        int ramdomValue = RandomValue(0, charChooseControls.Length - 1, (int)GameManager.Instance.playerChosen);
+        int ramdomValue = GenerateRandomValue(0, charChooseControls.Length - 1, new int[] { (int)GameManager.Instance.playerChosen });
         charChooseControls[ramdomValue].ChangePlayerChosen();
     }
-    int RandomValue(int startValue, int endValue, int notTargetValue) {
-        int ramdomValue = RandomNumber(startValue, endValue);
-        if (ramdomValue == notTargetValue) {
-            ramdomValue = RandomValue(startValue, endValue, notTargetValue);
-        }
-        return ramdomValue;
-    }
+
 }

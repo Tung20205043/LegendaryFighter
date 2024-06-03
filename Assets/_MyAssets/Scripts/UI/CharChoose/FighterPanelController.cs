@@ -29,5 +29,6 @@ public class FighterPanelController : MonoBehaviour
         Hide(this.gameObject);
         Show(tourPanelBackButton);
         Show(tourPanel);
+        SpecialUnityEvent.Instance.newTourGame?.Invoke();
     }
 }

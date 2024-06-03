@@ -15,4 +15,16 @@ public class GameManager : MonoBehaviourSingletonPersistent<GameManager> {
     public CharacterToChoose enemyChosen;
 
     public MapToChoose mapChosen;
+
+    //
+    //           _.-/`)
+    //          // / / )
+    //       .-// / / / )
+    //      //`/ / / / / )
+    //     // /       ` /
+    //    ||           /
+    //     \\         /
+    //      ))      .`
+    //     //      /
+    //            /
 }

@@ -8,6 +8,7 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
     public UnityEvent setActiveHeavyPunchButton;
     public UnityEvent doComboPunch;
     public UnityEvent<int> doTransform;
+    public UnityEvent<int> enemyDoTransform;
     public UnityEvent backToMainUI;
     public UnityEvent<GameObject> pressNextButton;
     public UnityEvent spawnCoin;
@@ -16,4 +17,7 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
     public UnityEvent <MapToChoose> changeMapToChoose;
     public UnityEvent playerIsReady;
     public UnityEvent enemyIsReady;
+    public UnityEvent<float> switchCam;
+
+    public UnityEvent newTourGame;
 }

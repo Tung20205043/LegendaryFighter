@@ -1,15 +1,13 @@
 fileFormatVersion: 2
 guid: 10ac2dfa7b0429242bd8c11fd7ef2178
-timeCreated: 1714681865
-licenseType: Free
 TextureImporter:
-  serializedVersion: 12
   internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -22,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -35,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,9 +48,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -65,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -77,48 +77,2210 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: heavy punch 2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 462
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40239b64453d23941975e978e46005e4
+      internalID: -1164776077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kameha 2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 459
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2baeec4a4446664abc0fd9285e2afbc
+      internalID: 1956480519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch 3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 450
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8155435e6c08f3548a00ea88f0f7b616
+      internalID: 1274850553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skill
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 448
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9bfff4f6c6c584baf2d15cf068a249
+      internalID: 399241441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 448
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bebf76c0c16904bbf0e340ef73e4e5
+      internalID: -1579293279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn 3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 434
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76e2f7497226e24f86eabcdc28d1082
+      internalID: 2112255212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_6
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 431
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456525e17f20f1e48ab5dee545f96039
+      internalID: 1015397095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skill 1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 426
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d009e8175c57c4190e8b6d9b1a6f00
+      internalID: -65209166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defend
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 426
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041dc10ec2fc6ec43bc8f3afe7e1f2fc
+      internalID: 1470083453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_9
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 472
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4178e89c29985da4a8b64466da67b562
+      internalID: -2141678167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: take dmg 3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 462
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab66222188e42943a6a1692bba68e08
+      internalID: 1583558117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 402
+        width: 38
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e52243f86d80844c8fff8bf2a19e150
+      internalID: 716442561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 403
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2eafa4f9678297419d250d5259a74b1
+      internalID: -1916598107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 417
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473682feabd9baa4c8fdce6802a334d2
+      internalID: 868619234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_15
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 413
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4c0583f0b356f47b4507d76d7fae53
+      internalID: 1561663880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_16
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 413
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9c815c7ed446c49a80931ce4d547a0
+      internalID: -1127680797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 408
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a62f31a8c874649a9339a513be531d
+      internalID: 387813489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 408
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812613e3ea999ca44823e730c9ff976e
+      internalID: -241228850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 396
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca907e955f24c5b48a1c5244c33e813c
+      internalID: -428564155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move up
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 379
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb509c3183a65e4a9f47d9fbb54df28
+      internalID: 1481119823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 378
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea2e4d76aa195a4bbb875cb1f6b07c8
+      internalID: -318779080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 360
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678669b9530bc744182fe2d0de333e1f
+      internalID: -2125242085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_24
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 354
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3208d857333b3c4aa0e5f66893d21f9
+      internalID: 1813393811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 355
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb5046ddeae466479bcbe8fe17b342f
+      internalID: -1003131000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 377
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aecd11635f4bfc488c36728c1764708
+      internalID: 976608390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skill 4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 370
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85088402c6b53e479bae6c730c87b6f
+      internalID: 324893470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_28
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 359
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3787e391e3fc1924886e21ead6d6acae
+      internalID: -1854686124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 360
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c01623e87af527439201b0812b795d7
+      internalID: 901003795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_30
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 359
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06627b96fdf563d44aba75162b9a6877
+      internalID: 1776552217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 355
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c351bc7e36029764f94293dae46ac6be
+      internalID: 1143592898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 305
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf443b854ac27c4397b75cb6f2f5b3c
+      internalID: -1213027507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 302
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e7e4e3a3bf5414a8f21490994b128e
+      internalID: -1386061942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill 1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 301
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171125c13d7693e42941b5684952f45e
+      internalID: 1702073632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_35
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 289
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80b4a7356747954ea851598d223babf
+      internalID: -1204153310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_36
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 323
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc70ca9c4c26c0f42a22477afe913e15
+      internalID: -1511352387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skil
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 322
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92754adf3490f134fa296774e4f1d4fb
+      internalID: 1484042355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_38
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 312
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064d2248e449ac34eb9701fb3ff63de7
+      internalID: -700440901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn 2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 312
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b8814c7e9a45c4ab253710db59336d
+      internalID: 1226982323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_40
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 309
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c65b5a7861c24b439ccefa32949a648
+      internalID: 559857308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_41
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 301
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698b92b181a36f54688e0bfb035401e4
+      internalID: 1018986904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_42
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 301
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a481c97d1a5267f40832a92fa30b36af
+      internalID: -418886175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch 3c
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 249
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a807a70faed4374fa8d80772bb21537
+      internalID: 1362035971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch 2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 249
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75357d5ade48e8b48b27b5bf36f65b80
+      internalID: -1116797411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 236
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ed52fefd7152447b8ef9a752c444bd
+      internalID: 589277273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 6
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 270
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9270a162cfff63b44a515abfaa277116
+      internalID: 1044447127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skill 5
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 260
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961e6704d453dc54b851841fe4e41107
+      internalID: 644594009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skill 7
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 260
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6638e6840e7445d459d0c3a84d99e4e4
+      internalID: 296467923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move backward
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 260
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65490f771ccb1145b06813e9335e791
+      internalID: -836761554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dash
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 255
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbafb8b90c9c6846be8cf1dd1afa9c8
+      internalID: 788695840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_51
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 199
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a03e90843f7eb428d604868935bff2
+      internalID: -1991525288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 196
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d65e4bc48e1bcf4893e07a8342ee623
+      internalID: -624083065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 216
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de3731c96dbcc346828fc5550c98939
+      internalID: -547244475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_54
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 215
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a417b2625d6c2504d8624b850d48f8a1
+      internalID: 634717246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move for
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 213
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ab4cdf187d11a47be15e8598b0f014
+      internalID: 1081617345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_56
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 208
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543e9cd0d844b994fa04510fd32d636d
+      internalID: 1624724138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_57
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 219
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb2da6ebeed1a941a3c48825a73ba95
+      internalID: 1981688388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buff mana 2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 202
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e62c5f0fba6997469d599c06baf61a9
+      internalID: -1543029065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_59
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 200
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4aabc7496b3d842a41a0618b58f3bc
+      internalID: -244931441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_60
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 171
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a2ea73aaddbf34388eb966e5137ee3
+      internalID: 1259440688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 146
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a2657862c797a41b0c1e24931634eb
+      internalID: -1346814290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch 1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 146
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaaba90ea60ce704aabcb36bdde42ac5
+      internalID: -1360331469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch 3b
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 163
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093b5144801fa2845a7ee163d21ac8b2
+      internalID: -23647340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_64
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 160
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74e6f5b1a7a3e24280f19f8abe43a8d
+      internalID: 1084677323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kameha 1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 158
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12224b250f9ef44281b738732f13d0f
+      internalID: 1929698675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_66
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 169
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b643022fbe08354794fba302d002f5c
+      internalID: 21515585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move down
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 161
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b3a51e96c734546ad4a9eff41529af
+      internalID: -1762502544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_68
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 145
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491c50b2904e92b4f81b2e4d69229a94
+      internalID: -639562376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tele
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 142
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ff1d2137081d34dbf6416f1401f980
+      internalID: -1785287834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_71
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 85
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391588ca06702eb4bb7d4eb861fd4eeb
+      internalID: -465988026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skill 8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 108
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d4cae96f6944943ae2dd1fb27d8b56
+      internalID: 1273368370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_73
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 106
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715f934f6e7616d43a82aefb41b2f500
+      internalID: -134034346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_74
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 103
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8fb9727ebc2244cb649b2cca08af4f
+      internalID: -121898520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_75
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 111
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d2cad82b7a4284c90a660795252c18
+      internalID: 430536289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo punch 3
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 108
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f655071da9b408459c4ec0b8ee1ecf4
+      internalID: 1595276606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn 1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 89
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dde3bb29a808744b666aa2a9970d05
+      internalID: -1538506606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_78
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 89
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01dd5a1d5771ba45be0e7af82ed5a3a
+      internalID: -1231142394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_79
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 112
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64795bb601c7aa49b3c3a973b8b40e1
+      internalID: 1617312762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_80
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 97
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2f70cd6ded88f459f53d4b85cdcdcc
+      internalID: 679860209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 51
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903a3e3e27146894da5fde7de8ab153c
+      internalID: 603427568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_82
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 61
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5e125f206a41f4da55dc7365746201
+      internalID: -195200256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kameha 3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 54
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c34bd3f8819a7746a38c8f1fe0cc27f
+      internalID: 1563371566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_84
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 58
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70033d30b79efec4b97a512c5d652ce3
+      internalID: 424779562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tele 2
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 52
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ea091c5d172ed4992ae0fa99def3a3
+      internalID: 368667836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_86
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 55
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdf315a9fad13642b8f160aef2b09ed
+      internalID: -1827791000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skill 3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 49
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f2d783258581e44acb3ff249bcea9a
+      internalID: -684959428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_88
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 57
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c6a1cc33b3ed546b78ea4b9824e687
+      internalID: 1015744925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_89
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 54
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b2cae61f301794eb0e83519b83ed50
+      internalID: 936670731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_90
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 42
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73dfa648f2849a1428944eec65e1a930
+      internalID: 605222600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_91
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 42
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f93470658646ed44b618d5a8bb9811c
+      internalID: 334186355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_92
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb13c1ca1404d14aa2adbd0d47bdfbc
+      internalID: -319082931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo puch 10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593cda4db7c741549aaf08491a6a2e53
+      internalID: -1830201234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch 1a
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012e985964cdc3a4395097722efbbc8c
+      internalID: -851505973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_95
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 2
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5b09bf78fa95f49a3927b930971f42
+      internalID: -1680937182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_96
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0727bbd251f824fadb762b173a5fde
+      internalID: -1377106570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ult skill 6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1864253a01299ea4180b4db2087a5606
+      internalID: -698372712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buff mana 1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f60fa06672ee34b898b50a01acfc5f
+      internalID: -589148678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goku_ssj_blue_99
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae57ecd264036724c9388896917d9caa
+      internalID: 1765055281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch 1b
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666eb9bac0b797541ade6775be36b26b
+      internalID: -1255018444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID:
+    spriteID: 8e66dd3248a66e14d9203f9f2d634f7a
     internalID: 0
     vertices: []
-    indices: []
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
-  spritePackingTag:
-  output:
-    textureImportInstructions:
-      compressedFormat: 0
-      uncompressedFormat: 0
-      desiredFormat: 0
-      usageMode: 0
-      colorSpace: 0
-      androidETC2FallbackFormat: 0
-      width: 0
-      height: 0
-      depth: 0
-      cubeIntermediateSize: 0
-      cubeMode: 0
-      cubeLayout: 0
-      compressionQuality: 0
-      androidETC2FallbackDownscale: 0
-      vtOnly: 0
-    sourceTextureInformation:
-      width: 0
-      height: 0
-      doesTextureContainAlpha: 0
-      sourceWasHDR: 0
-    importInspectorWarnings:
+    nameFileIdTable:
+      buff mana 1: -589148678
+      buff mana 2: -1543029065
+      combo puch 10: -1830201234
+      combo punch: 387813489
+      combo punch 1: -318779080
+      combo punch 11: -1386061942
+      combo punch 3: 1595276606
+      combo punch 4: -1003131000
+      combo punch 5: -241228850
+      combo punch 6: 1044447127
+      combo punch 7: -624083065
+      combo punch 8: -428564155
+      combo punch 9: -1346814290
+      dash: 788695840
+      defend: 1470083453
+      goku_ssj_blue_11: 716442561
+      goku_ssj_blue_12: 1517509555
+      goku_ssj_blue_13: -1916598107
+      goku_ssj_blue_14: 868619234
+      goku_ssj_blue_15: 1561663880
+      goku_ssj_blue_16: -1127680797
+      goku_ssj_blue_18: 32981646
+      goku_ssj_blue_23: -2125242085
+      goku_ssj_blue_24: 1813393811
+      goku_ssj_blue_28: -1854686124
+      goku_ssj_blue_29: 901003795
+      goku_ssj_blue_30: 1776552217
+      goku_ssj_blue_31: 1143592898
+      goku_ssj_blue_32: -1213027507
+      goku_ssj_blue_35: -1204153310
+      goku_ssj_blue_36: -1511352387
+      goku_ssj_blue_38: -700440901
+      goku_ssj_blue_4: -1579293279
+      goku_ssj_blue_40: 559857308
+      goku_ssj_blue_41: 1018986904
+      goku_ssj_blue_42: -418886175
+      goku_ssj_blue_45: 589277273
+      goku_ssj_blue_51: -1991525288
+      goku_ssj_blue_53: -547244475
+      goku_ssj_blue_54: 634717246
+      goku_ssj_blue_56: 1624724138
+      goku_ssj_blue_57: 1981688388
+      goku_ssj_blue_59: -244931441
+      goku_ssj_blue_6: 1015397095
+      goku_ssj_blue_60: 1259440688
+      goku_ssj_blue_64: 1084677323
+      goku_ssj_blue_66: 21515585
+      goku_ssj_blue_68: -639562376
+      goku_ssj_blue_70: 791854065
+      goku_ssj_blue_71: -465988026
+      goku_ssj_blue_73: -134034346
+      goku_ssj_blue_74: -121898520
+      goku_ssj_blue_75: 430536289
+      goku_ssj_blue_78: -1231142394
+      goku_ssj_blue_79: 1617312762
+      goku_ssj_blue_80: 679860209
+      goku_ssj_blue_81: 603427568
+      goku_ssj_blue_82: -195200256
+      goku_ssj_blue_84: 424779562
+      goku_ssj_blue_86: -1827791000
+      goku_ssj_blue_88: 1015744925
+      goku_ssj_blue_89: 936670731
+      goku_ssj_blue_9: -2141678167
+      goku_ssj_blue_90: 605222600
+      goku_ssj_blue_91: 334186355
+      goku_ssj_blue_92: -319082931
+      goku_ssj_blue_95: -1680937182
+      goku_ssj_blue_96: -1377106570
+      goku_ssj_blue_99: 1765055281
+      heavy punch 2: -1164776077
+      idle: 976608390
+      kameha 1: 1929698675
+      kameha 2: 1956480519
+      kameha 3: 1563371566
+      move backward: -836761554
+      move down: -1762502544
+      move for: 1081617345
+      move up: 1481119823
+      punch 1: -1360331469
+      punch 1a: -851505973
+      punch 1b: -1255018444
+      punch 2: -1116797411
+      punch 3: 1274850553
+      punch 3b: -23647340
+      punch 3c: 1362035971
+      skill 1: 1702073632
+      spawn 1: -1538506606
+      spawn 2: 1226982323
+      spawn 3: 2112255212
+      take dmg 3: 1583558117
+      tele: -1785287834
+      tele 2: 368667836
+      ult skil: 1484042355
+      ult skill: 399241441
+      ult skill 1: -65209166
+      ult skill 3: -684959428
+      ult skill 4: 324893470
+      ult skill 5: 644594009
+      ult skill 6: -698372712
+      ult skill 7: 296467923
+      ult skill 8: 1273368370
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

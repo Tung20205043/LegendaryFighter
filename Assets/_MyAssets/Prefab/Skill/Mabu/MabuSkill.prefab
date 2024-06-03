@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9042965774114195031}
   m_Layer: 0
   m_Name: MabuSkill
-  m_TagString: PlayerPunch2
+  m_TagString: PlayerNormalSkill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

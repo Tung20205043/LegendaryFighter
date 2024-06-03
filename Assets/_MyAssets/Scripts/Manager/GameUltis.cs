@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public static class GameUltis {
@@ -33,6 +34,17 @@ public static class GameUltis {
     }
 
 
+    public static int GenerateRandomValue(int startValue, int endValue, int[] notTargetValues) {
+        int randomValue;
+
+        do {
+            randomValue = UnityEngine.Random.Range(startValue, endValue + 1);
+        } while (notTargetValues.Contains(randomValue));
+
+        return randomValue;
+    }
+
+
     public static void CreateContainer(this MonoBehaviour mono, string name, ref Transform trans) {
         GameObject obj = new GameObject(name);
         obj.transform.parent = mono.transform;
@@ -54,13 +66,13 @@ public static class GameUltis {
     }
     public static bool ExitScreen(Vector3 currentPosition) {
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(currentPosition);
-        return (screenPosition.x < 0 || screenPosition.x > Screen.width || screenPosition.y < 0|| screenPosition.y > Screen.height * 2);
+        return (screenPosition.x < 0 || screenPosition.x > Screen.width || screenPosition.y < 0 || screenPosition.y > Screen.height * 2);
     }
 
 
     public static bool ExitLeftScreen(Vector3 currentPosition) {
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(currentPosition);
-        return (screenPosition.x < 0 );
+        return (screenPosition.x < 0);
     }
     public static bool ExitRightScreen(Vector3 currentPosition) {
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(currentPosition);

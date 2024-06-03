@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1628e0bdd8d62a4eaa242ab5e6c6f58, type: 3}
   m_Name: Punch2Mabu
   m_EditorClassIdentifier: 
-  animatorOV: {fileID: 22100000, guid: d70de87aa47106d4b9986774005e1fa3, type: 2}
-  damage: 0
+  animatorOV: {fileID: 22100000, guid: f526789f067b8844e971fea3d6c0a085, type: 2}
+  damage: 5

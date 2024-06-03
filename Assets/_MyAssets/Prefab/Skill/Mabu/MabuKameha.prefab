@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 9214729600568402970}
   m_Layer: 0
   m_Name: Tail
-  m_TagString: PlayerPunch2
+  m_TagString: PlayerHeavySkill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,4 +379,3 @@ MonoBehaviour:
   targetSize: 800
   time: 1.7
   upSize: 1
-  speed: 2.5
