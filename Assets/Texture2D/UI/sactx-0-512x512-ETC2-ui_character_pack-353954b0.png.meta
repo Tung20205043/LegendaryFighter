@@ -1076,13 +1076,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-512x512-ETC2-ui_character_pack-353954b0_47
+      name: _Fieza
       rect:
         serializedVersion: 2
         x: 357
-        y: 176
+        y: 180
         width: 31
-        height: 47
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1779,6 +1779,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      _Fieza: 1344685052
       a_unknow 1: -1605522798
       a_unknow 2: -31302010
       goku 5_: 960258055
@@ -1829,7 +1830,6 @@ TextureImporter:
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_43: 869279545
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_44: 1365144031
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_46: 413807164
-      sactx-0-512x512-ETC2-ui_character_pack-353954b0_47: 1344685052
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_48: 319945103
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_49: 1454620797
       sactx-0-512x512-ETC2-ui_character_pack-353954b0_5: -1276428633

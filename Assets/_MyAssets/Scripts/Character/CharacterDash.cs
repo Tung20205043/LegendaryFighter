@@ -29,6 +29,7 @@ public class CharacterDash : MonoBehaviour
         yield return new WaitForSeconds(dashDelay);
         StopDash();
     }
+    // ReSharper disable Unity.PerformanceAnalysis
     void DoDashing() {
         isDashing = true;
         DashDistance(dashForce);
@@ -54,24 +55,21 @@ public class CharacterDash : MonoBehaviour
     void StopDashEffect() {
         if (dashEffectCoroutine != null) StopCoroutine(dashEffectCoroutine);
     }
+    // ReSharper disable Unity.PerformanceAnalysis
     IEnumerator DashEffectCoroutine() {
-        while (true) {
-            if (DirectionToEnemy().x < 0) {
-                ObjectPoolingForCharacter.Instance.SpawnObject(ObjectPoolingForCharacter.ObjectToSpawn.GhostEffect1, player.position, player.rotation);
-            } else {
-                ObjectPoolingForCharacter.Instance.SpawnObject(ObjectPoolingForCharacter.ObjectToSpawn.GhostEffect, player.position, player.rotation);
-            }
+        while (true)
+        {
+            ObjectPoolingForCharacter.Instance.SpawnObject(
+                DirectionToEnemy().x < 0
+                    ? ObjectPoolingForCharacter.ObjectToSpawn.GhostEffect1
+                    : ObjectPoolingForCharacter.ObjectToSpawn.GhostEffect, player.position, player.rotation);
 
             yield return new WaitForSeconds(ghostDelaySecond);
         }
     }
-    Vector2 DirectionToEnemy() {
+    Vector2 DirectionToEnemy()
+    {
         Vector2 direction = GameObjectManager.Instance.EnemyObject().transform.position - player.transform.position;
-        if (direction.x == 0) {
-            return new Vector2 (1,0);
-        } 
-        else {
-            return direction;
-        }
+        return direction.x == 0 ? new Vector2 (1,0) : direction;
     }
 }

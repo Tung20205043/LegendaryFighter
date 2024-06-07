@@ -1387,9 +1387,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combo:
-  - {fileID: 11400000, guid: 7f0b0d34592172442af553ba239f8ebd, type: 2}
-  - {fileID: 11400000, guid: 5f307b98b5dba994d8f75e16a8d45f28, type: 2}
-  - {fileID: 11400000, guid: 4ce2973e146557148be727e41743d13c, type: 2}
+  - {fileID: 11400000, guid: 811f4be805e22414b9d92d0b951e5591, type: 2}
+  - {fileID: 11400000, guid: 6a7dfed6e13ff9a47b35f13ad66bec9e, type: 2}
+  - {fileID: 11400000, guid: 49039994c88335f4d8494f9e7f3c341a, type: 2}
   comboCount: 0
   characterAnimator: {fileID: 1402290097}
   punchCollider: []
@@ -4196,7 +4196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &418378985
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10050,14 +10050,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1340274011}
-  - component: {fileID: 1340274012}
   m_Layer: 0
   m_Name: 'EnemyAttack '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1340274011
 Transform:
   m_ObjectHideFlags: 0
@@ -10078,18 +10077,6 @@ Transform:
   - {fileID: 1647994267}
   m_Father: {fileID: 1402290091}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1340274012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340274010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdd3c42ea01f621489cec643aa7a5e7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1352657111
 GameObject:
   m_ObjectHideFlags: 0
@@ -10269,7 +10256,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashForce: 15
-  dashDuration: 0.4
   dashDelay: 0.1
   isDashing: 0
   ghostDelaySecond: 0.025
@@ -10535,6 +10521,7 @@ GameObject:
   - component: {fileID: 1402290097}
   - component: {fileID: 1402290095}
   - component: {fileID: 1402290100}
+  - component: {fileID: 1402290101}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -10755,12 +10742,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterAnimator: {fileID: 1402290097}
   characterDash: {fileID: 1402290095}
+  playerAnimator: {fileID: 8238755278653625055}
   inputButtonObj: {fileID: 0}
   player: {fileID: 0}
-  punchComboAI: {fileID: 105206227}
+  enemyAttack: {fileID: 1340274010}
   enemyTakeDamage: {fileID: 1352940970}
   manaAura: {fileID: 237926792}
-  speed: 1
+  speed: 2
   atkRange: 0.3
   enemyState: 0
 --- !u!114 &1402290100
@@ -10775,6 +10763,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea60c19144c3964ba46d31506f23039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1402290101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402290090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdd3c42ea01f621489cec643aa7a5e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnSkill1: {fileID: 0}
+  spawnUlt: {fileID: 0}
+  spawnKameha: {fileID: 0}
+  playerTeleport: {fileID: 0}
+  playerHeavyPunch: {fileID: 0}
+  playerSuperPunch: {fileID: 0}
+  punchComboAI: {fileID: 0}
 --- !u!1 &1415210738
 GameObject:
   m_ObjectHideFlags: 0
@@ -14057,7 +14064,6 @@ MonoBehaviour:
   enemyAtk: 10
   enemyHp: 100
   enemyMana: 100
-  previousEnemyLevel: 1
   maxPlayerHp: 100
   maxPlayerMana: 100
   maxEnemyHp: 100
@@ -15413,6 +15419,12 @@ MonoBehaviour:
   switchCam:
     m_PersistentCalls:
       m_Calls: []
+  newTourGame:
+    m_PersistentCalls:
+      m_Calls: []
+  endCoinRoad:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1909973468
 GameObject:
   m_ObjectHideFlags: 0
@@ -15583,7 +15595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1928425577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17709,7 +17721,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashForce: 5
-  dashDuration: 0.1
   dashDelay: 0.2
   isDashing: 0
   ghostDelaySecond: 0.05

@@ -15,7 +15,6 @@ public class CharacterStats : MonoBehaviourSingleton<CharacterStats>
     [SerializeField] private float enemyHp = 100f;
     [SerializeField] private float enemyMana = 100f;
 
-    [SerializeField] private float previousEnemyLevel = 1;
 
     public int PlayerLevel => playerLevel;
     public float PlayerAtk => playerAtk;

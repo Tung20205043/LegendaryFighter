@@ -1,17 +1,13 @@
 
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour
+public class EnemyAttack : PlayerAttack
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] private PunchComboAI punchComboAI;
+    private void OnEnable() {
+        StartComboTypeA();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void StartComboTypeA() {
+        punchComboAI.Attack();
     }
 }

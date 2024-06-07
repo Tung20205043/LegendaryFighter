@@ -5,7 +5,6 @@ public class CharacterDashEffect : MonoBehaviour
     #region Ghost Effect
     [Header("Dash Value")]
     [SerializeField] private float dashForce = 10f;
-    [SerializeField] private float dashDuration = 0.1f;
     [SerializeField] private float dashDelay = 0.5f;
     public bool isDashing = false;
 

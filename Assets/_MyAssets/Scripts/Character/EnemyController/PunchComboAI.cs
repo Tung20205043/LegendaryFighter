@@ -14,10 +14,12 @@ public class PunchComboAI : MonoBehaviour
     public UnityEvent endPunchCombo;
     void Start() {
         player = GameObjectManager.Instance.PlayerObject().transform;
-        //StartCoroutine(DoPunch());
     }
     void Update() {
 
+    }
+    public void Attack() {
+        StartCoroutine(DoPunch());
     }
     public IEnumerator DoPunch() {
         yield return new WaitForSeconds(0.5f);  // Initial delay before starting the combo

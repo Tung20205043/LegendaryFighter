@@ -4,7 +4,7 @@ public enum GameDifficult {Easy, Medium, Hard }
 public enum Character { Player, Enemy }
 public enum CharacterToChoose {
     Goku, GokuSSj, GokuSSj2, GokuSSj3, GokuSSj4,
-    MabuForm1, MabuForm2, MabuForm3, MabuForm4, MabuForm5
+    MabuForm1, MabuForm2, Frieza, Picolo, Default
 }
 public enum MapToChoose {
     Tournament, Wasteland, KamiHouse, CircleHouse, GodPlanet

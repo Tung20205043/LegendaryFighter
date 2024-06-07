@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public static class GameUltis {
@@ -40,20 +41,29 @@ public static class GameUltis {
         do {
             randomValue = UnityEngine.Random.Range(startValue, endValue + 1);
         } while (notTargetValues.Contains(randomValue));
-
         return randomValue;
     }
 
+    public static string FormatNumber(int number) {
+        string numStr = number.ToString();
+        char[] numArray = numStr.ToCharArray();
+        Array.Reverse(numArray);
+        string reversedStr = new string(numArray);
 
-    public static void CreateContainer(this MonoBehaviour mono, string name, ref Transform trans) {
-        GameObject obj = new GameObject(name);
-        obj.transform.parent = mono.transform;
-        trans = obj.transform;
+        string result = "";
+        for (int i = 0; i < reversedStr.Length; i++) {
+            if (i > 0 && i % 3 == 0) {
+                result += ".";
+            }
+            result += reversedStr[i];
+        }
+
+        char[] resultArray = result.ToCharArray();
+        Array.Reverse(resultArray);
+        return new string(resultArray);
     }
 
-    public static string ObjectName(GameObject obj) {
-        return obj.name.Replace("(Clone)", "");
-    }
+
 
     public static void SetParent(GameObject obj, Transform parent) {
         obj.transform.SetParent(parent, false);
@@ -77,5 +87,13 @@ public static class GameUltis {
     public static bool ExitRightScreen(Vector3 currentPosition) {
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(currentPosition);
         return (screenPosition.x > Screen.width);
+    }
+
+    public static void ReplaceGameObj(ObjectPooling objPooling, GameObject obj, GameObject objToReplace){
+        if (obj == null || objToReplace == null) return;
+        Vector3 pos = obj.transform.position;
+        Quaternion rotate = obj.transform .rotation;
+        objPooling.GetObjectFromBool(objToReplace, pos, rotate);
+        objPooling.DeSpawn(obj);
     }
 }

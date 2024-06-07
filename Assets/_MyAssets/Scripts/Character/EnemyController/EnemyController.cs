@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.Playables;
 
 public class EnemyController : CharacterController {
+    [SerializeField] CharacterAnimator playerAnimator;
+
     private TakeInputButton inputButton;
     [SerializeField] GameObject inputButtonObj;
     [SerializeField] CharacterController player;
-    [SerializeField] PunchComboAI punchComboAI;
+    [SerializeField] GameObject enemyAttack;
     [SerializeField] EnemyTakeDamage enemyTakeDamage;
     [SerializeField] GameObject manaAura;
     [SerializeField] float speed;
@@ -22,22 +24,28 @@ public class EnemyController : CharacterController {
         enemyState = CharacterState.Ready;
     }
     private void Start() {
-        inputButton.attacking.AddListener(CallDefend);
-        inputButton.isBuffingMana.AddListener(BuffMana);
         inputButton.isDefending.AddListener(BuffMana);
         SpecialUnityEvent.Instance.readyToFight.AddListener(ChangeState);
     }
     private void Update() {
         CannotExitScreen();
-
+        manaAura.SetActive(characterAnimator.currentAnimationState == AnimationState.BuffMana);
         if (GameModeManager.Instance.currentGameMode == GameMode.Train) return;
 
         if (enemyState == CharacterState.Ready) return;
-        //BuffMana(!FullMana());
+        if (characterAnimator.currentAnimationState == AnimationState.TakeDamage) {
+            return; 
+        }
+        if (playerAnimator.currentAnimationState != AnimationState.Attack && !FullMana()) {
+            BuffMana(true);
+        }
+        if (characterAnimator.currentAnimationState == AnimationState.BuffMana && FullMana()) {
+            BuffMana(false);
+        }
         if (FullMana() && IsOnMovement())
             Move(TargetPos());
         if (Direction(TargetPos()) < atkRange) {
-            characterAnimator.SetIdle();
+            enemyAttack.SetActive(true);
             characterAnimator.StopMovement();   
         }
     }
@@ -66,12 +74,11 @@ public class EnemyController : CharacterController {
         throw new System.NotImplementedException();
     }
     protected override void BuffMana(bool buff) {
-        if (GameModeManager.Instance.currentGameMode == GameMode.Train) return;
 
         if (FullMana() && buff) return;
         CharacterStats.Instance.ChangeBuffManaState(buff, Character.Enemy);
         characterAnimator.SetBuffMana(buff);
-        manaAura.SetActive(buff);
+        //manaAura.SetActive(buff);
     }
     void CallDefend(AttackType type) {
         //Defend(true);

@@ -35,12 +35,13 @@ public class PanelManager : MonoBehaviour
     private void Start() {
         SpecialUnityEvent.Instance.backToMainUI.AddListener(BackToMain);
         SpecialUnityEvent.Instance.pressNextButton.AddListener(OnclickButton);
+        SpecialUnityEvent.Instance.goToShopButton.AddListener(OnclickButton);
     }
     void OnclickButton(GameObject objToSetActive) {
         if (panelStack.Contains(objToSetActive)) return;
         SetActiveUI(false);
         if (panelStack.Count > 0) {
-            GameObject objToDisable = panelStack.Peek();
+            var objToDisable = panelStack.Peek();
             objToDisable.SetActive(false);
         }
         objToSetActive.SetActive(true);
@@ -51,7 +52,7 @@ public class PanelManager : MonoBehaviour
         if (panelStack.Count == 1) {
             SetActiveUI(true);
         }
-        GameObject objToDisable = panelStack.Pop();
+        var objToDisable = panelStack.Pop();
         objToDisable.SetActive(false);
         if (panelStack.Count >= 1) {
             GameObject objToEnable = panelStack.Peek();

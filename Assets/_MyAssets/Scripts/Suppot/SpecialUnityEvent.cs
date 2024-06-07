@@ -11,6 +11,7 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
     public UnityEvent<int> enemyDoTransform;
     public UnityEvent backToMainUI;
     public UnityEvent<GameObject> pressNextButton;
+    public UnityEvent<GameObject> goToShopButton;
     public UnityEvent spawnCoin;
     public UnityEvent readyToFight;
     public UnityEvent <CharacterToChoose> changePlayerChoose;
@@ -20,4 +21,10 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
     public UnityEvent<float> switchCam;
 
     public UnityEvent newTourGame;
+    public UnityEvent endCoinRoad;
+    public UnityEvent<CharacterToChoose> changeCharToBuy;
+    public UnityEvent<int> charPrice;
+
+    public UnityEvent<int> setActiveUnlockPanel;
+    public UnityEvent<CharacterToChoose> unlockCharacter;
 }

@@ -45,9 +45,11 @@ public class GameModeUI : UIParent {
         SetActiveOneObjInArray(difficultUI, difficultValue);
         GameManager.Instance.gameDifficult = (GameDifficult)difficultValue;
     }
-    void SetActiveOneObjInArray(GameObject[] array, int chooseNum) {
-        for (int i = 0; i < array.Length; i++)
-            array[i].SetActive(false);
+    void SetActiveOneObjInArray(GameObject[] array, int chooseNum)
+    {
+        foreach (var t in array)
+            t.SetActive(false);
+
         array[chooseNum].gameObject.SetActive(true);
     }
     void OnclickNextButton() {

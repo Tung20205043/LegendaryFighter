@@ -9,32 +9,32 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] PlayerHeavyPunch playerHeavyPunch;
     [SerializeField] PlayerSuperPunch playerSuperPunch;
 
-    void SpawnKame() {
+    protected virtual void SpawnKame() {
         PayMana(AttackType.Kameha);
         spawnKameha.Spawn();
     }
-    void SpawnSkill() {
+    protected virtual void SpawnSkill() {
         PayMana(AttackType.Skill);
         spawnSkill1.DoSpawnSkill1();
     }
-    void SpawnUltSkill() {
+    protected virtual void SpawnUltSkill() {
         PayMana(AttackType.UltimateSkill);
         spawnUlt.DoUltSkill();
     }
-    void Teleport() {
+    protected virtual void Teleport() {
         PayMana(AttackType.Teleport);
         playerTeleport.DoTeleport();
     }
-    void HeavyPunch() {
+    protected virtual void HeavyPunch() {
         PayMana(AttackType.HeavyPunch);
         playerHeavyPunch.DoTeleport();
     }
-    void SuperPunch() {
+    protected virtual void SuperPunch() {
         PayMana(AttackType.SuperPunch);
         playerSuperPunch.DoSuperPunch();
     }
 
-    void PayMana(AttackType type) {
+    protected virtual void PayMana(AttackType type) {
         CharacterStats stats = CharacterStats.Instance;
         float manaRequired = GameConstant.manaToCastSkill[(int)type];
         stats.ChangeCurrentMana(Character.Player, -manaRequired);

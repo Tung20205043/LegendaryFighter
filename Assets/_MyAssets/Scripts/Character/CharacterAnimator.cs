@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CharacterAnimator : MonoBehaviour {
@@ -7,6 +8,7 @@ public class CharacterAnimator : MonoBehaviour {
     protected MovementType currentMovementType;
     public AttackType currentAttackType;
     protected string currentTrigger = "";
+
     public Animator Animator {
         get {
             if (animator == null)
