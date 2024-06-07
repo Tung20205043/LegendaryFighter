@@ -1,3 +1,4 @@
+using System;
 using static GameUltis;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class FighterPanelController : MonoBehaviour
     [SerializeField] Button thisBackButton;
     [SerializeField] Button okButton;
     [SerializeField] GameObject tourPanel;
+    [SerializeField] private GameObject settingCoinObj;
     private void Awake() {
         thisBackButton.onClick.AddListener(OnclickOkButton);
         okButton.onClick.AddListener(OnclickOkButton);  
@@ -30,5 +32,10 @@ public class FighterPanelController : MonoBehaviour
         Show(tourPanelBackButton);
         Show(tourPanel);
         SpecialUnityEvent.Instance.newTourGame?.Invoke();
+    }
+
+    private void OnDisable()
+    {
+        Show(settingCoinObj);
     }
 }

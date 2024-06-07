@@ -15,16 +15,13 @@ public class CharChooseVsMode : MonoBehaviour {
     [SerializeField] GameObject[] playerUi;
     [SerializeField] GameObject[] enemyUi;
     [SerializeField] GameObject enemyDefaultUi;
-
-    [SerializeField] private GameObject unlockPanel;
-    [SerializeField] private TextMeshProUGUI coinValue;
+    
     protected void Awake() {
         nextButton.onClick.AddListener(OnclickNextButton);
         undoButton.onClick.AddListener(OnclickUndoButton);
     }
     private void Start() {
         SpecialUnityEvent.Instance.changePlayerChoose.AddListener(ChangeImg);
-        SpecialUnityEvent.Instance.setActiveUnlockPanel.AddListener(SetActiveUnlockPanel);
     }
     private void OnEnable() {
         CharChooseUI.SetPlayerChooseTurn();
@@ -82,11 +79,4 @@ public class CharChooseVsMode : MonoBehaviour {
 
         return combinedArray;
     }
-
-    private void SetActiveUnlockPanel(int value)
-    {
-        Show(unlockPanel);
-        coinValue.text = FormatNumber(value);
-    }
-
 }

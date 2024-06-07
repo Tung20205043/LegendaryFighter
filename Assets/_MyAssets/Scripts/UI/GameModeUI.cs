@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameModeUI : UIParent {
-    [SerializeField] Button[] modeButtonOff;
-    [SerializeField] GameObject[] modeButtonOn;
-    [SerializeField] GameObject[] modeUI;
-    [SerializeField] GameObject[] difficultUI;
-    [SerializeField] Button difficultButton;
+    [SerializeField] private Button[] modeButtonOff;
+    [SerializeField] private GameObject[] modeButtonOn;
+    [SerializeField] private GameObject[] modeUI;
+    [SerializeField] private GameObject[] difficultUI;
+    [SerializeField] private Button difficultButton;
 
-    [SerializeField] Button nextButton;
-    [SerializeField] GameObject charChoose;
+    [SerializeField] private Button nextButton;
+    [SerializeField] private GameObject charChoose;
     private int difficultValue = 0;
     private int modeValue;
+    [SerializeField] private TextMeshProUGUI rewardText;
+
     protected override void Awake() {
         base.Awake();
         modeButtonOff[0].onClick.AddListener(() => OnClickModeButton(0));
@@ -25,7 +28,7 @@ public class GameModeUI : UIParent {
         nextButton.onClick.AddListener(OnclickNextButton);
     }
     private void OnEnable() {
-        GameManager.Instance.gameDifficult = GameDifficult.Easy;
+        SetDifficultUI(GameDifficult.Medium);
     }
 
     void OnClickModeButton(int chooseNum) {
@@ -42,8 +45,14 @@ public class GameModeUI : UIParent {
         difficultValue++;
         if (difficultValue > difficultUI.Length - 1)
             difficultValue = 0;
-        SetActiveOneObjInArray(difficultUI, difficultValue);
-        GameManager.Instance.gameDifficult = (GameDifficult)difficultValue;
+        SetDifficultUI((GameDifficult)difficultValue);
+    }
+    private void SetDifficultUI(GameDifficult difficult)
+    {
+        difficultValue = (int)difficult;
+        GameManager.Instance.gameDifficult = difficult;
+        SetActiveOneObjInArray(difficultUI, (int)difficult);
+        rewardText.text = "x" + GameConstant.rewardDifficult[(int)difficult];
     }
     void SetActiveOneObjInArray(GameObject[] array, int chooseNum)
     {

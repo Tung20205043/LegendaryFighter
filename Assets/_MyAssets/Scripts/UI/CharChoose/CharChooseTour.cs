@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 using UnityEngine.Events;
 
 public class CharChooseTour : MonoBehaviour
@@ -15,6 +16,8 @@ public class CharChooseTour : MonoBehaviour
 
     [SerializeField] AvtImgTourController[] enemyAvtImg;
     [SerializeField] AvtImgTourController playerAvtImg;
+
+    [SerializeField] private GameObject settingCoinObj;
     private void Awake() {
         resetButton.onClick.AddListener(OnclickResetButton);
     }
@@ -34,6 +37,7 @@ public class CharChooseTour : MonoBehaviour
     void OnclickResetButton() {
         Show(fighterPanel);
         Hide(tourPanel);
+        Hide(settingCoinObj);
     }
     void SetPlayer() {
         playerAvtImg.ShowImg(GameManager.Instance.playerChosen);
@@ -46,7 +50,10 @@ public class CharChooseTour : MonoBehaviour
     }
 
     public static CharacterToChoose[] GenerateRandomCharacters(int numberOfCharacters) {
-        List<CharacterToChoose> allCharacters = new List<CharacterToChoose>((CharacterToChoose[])Enum.GetValues(typeof(CharacterToChoose)));
+        List<CharacterToChoose> allCharacters = new List<CharacterToChoose>(
+            ((CharacterToChoose[])Enum.GetValues(typeof(CharacterToChoose)))
+            .Where(character => character != CharacterToChoose.Default)
+        );
         CharacterToChoose[] randomCharacters = new CharacterToChoose[numberOfCharacters];
 
         for (int i = 0; i < numberOfCharacters; i++) {
