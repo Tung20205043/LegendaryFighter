@@ -13,7 +13,7 @@ public class CharChooseUI : UIParent {
         SpecialUnityEvent.Instance.setActiveUnlockPanel.AddListener(SetActiveUnlockPanel);
     }
     private void OnEnable() {
-        ShowObjInArray((int)GameManager.Instance.gameMode, charChoosePanels);
+        ShowObjInArray((int)GameManager.Instance.GameMode, charChoosePanels);
 
     }
     public static void SetPlayerChooseTurn() { 

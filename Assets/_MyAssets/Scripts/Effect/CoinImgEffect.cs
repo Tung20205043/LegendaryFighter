@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
@@ -11,7 +12,7 @@ public class CoinImgEffect : MonoBehaviour {
     Vector3 firstTargetPos;
 
     private static int coinCounter = 0;
-    private bool isFirstCoin = false;
+    public bool isFirstCoin = false;
 
     void OnEnable() {
         if (coinCounter == 0) {

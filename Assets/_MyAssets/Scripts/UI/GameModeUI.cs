@@ -39,7 +39,7 @@ public class GameModeUI : UIParent {
         modeButtonOff[chooseNum].gameObject.SetActive(false);
         SetActiveOneObjInArray(modeUI, chooseNum);
         SetActiveOneObjInArray(modeButtonOn, chooseNum);
-        GameManager.Instance.gameMode = (GameMode)modeValue;
+        GameManager.Instance.ChangeGameMode((GameMode)modeValue);
     }
     void ChangeDifficult() {
         difficultValue++;
@@ -50,7 +50,7 @@ public class GameModeUI : UIParent {
     private void SetDifficultUI(GameDifficult difficult)
     {
         difficultValue = (int)difficult;
-        GameManager.Instance.gameDifficult = difficult;
+        GameManager.Instance.ChangeGameDifficult(difficult);
         SetActiveOneObjInArray(difficultUI, (int)difficult);
         rewardText.text = "x" + GameConstant.rewardDifficult[(int)difficult];
     }

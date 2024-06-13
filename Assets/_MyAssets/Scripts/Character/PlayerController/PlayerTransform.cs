@@ -8,7 +8,7 @@ public class PlayerTransform : MonoBehaviour
     [SerializeField] CharacterAnimator characterAnimator;
     [SerializeField] AnimatorOverrideController[] overrideController;
     private void OnEnable() {
-        int charChooseValue = (int)GameManager.Instance.playerChosen;
+        int charChooseValue = (int)GameManager.Instance.PlayerChosen;
         //if (charChooseValue == 0) return;
         characterAnimator.UpdateAnimator(overrideController[charChooseValue]);
         StartCoroutine(UpdateValue(charChooseValue));  

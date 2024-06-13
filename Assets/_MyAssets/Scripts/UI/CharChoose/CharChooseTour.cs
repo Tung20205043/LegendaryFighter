@@ -40,7 +40,7 @@ public class CharChooseTour : MonoBehaviour
         Hide(settingCoinObj);
     }
     void SetPlayer() {
-        playerAvtImg.ShowImg(GameManager.Instance.playerChosen);
+        playerAvtImg.ShowImg(GameManager.Instance.PlayerChosen);
     }
     void SetRandomEnemy() {
         CharacterToChoose[] characters = GenerateRandomCharacters(enemyAvtImg.Length);
@@ -57,7 +57,7 @@ public class CharChooseTour : MonoBehaviour
         CharacterToChoose[] randomCharacters = new CharacterToChoose[numberOfCharacters];
 
         for (int i = 0; i < numberOfCharacters; i++) {
-            int playerIndex = (int)GameManager.Instance.playerChosen;
+            int playerIndex = (int)GameManager.Instance.PlayerChosen;
             int randomIndex = GenerateRandomValue(0, allCharacters.Count - 1, new int[] { playerIndex });
             randomCharacters[i] = allCharacters[randomIndex];
             allCharacters.RemoveAt(randomIndex); 

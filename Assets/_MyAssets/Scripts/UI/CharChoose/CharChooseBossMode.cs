@@ -10,7 +10,7 @@ public class CharChooseBossMode : MonoBehaviour
     }
     private void OnEnable() {
         CharChooseUI.SetPlayerChooseTurn();
-        charChooseControls[(int)GameManager.Instance.playerChosen].ChangePlayerChosen();
+        charChooseControls[(int)GameManager.Instance.PlayerChosen].ChangePlayerChosen();
     }
     void ChangeImg(CharacterToChoose characterToChoose) {
         ShowObjInArray((int)characterToChoose, playerUi);

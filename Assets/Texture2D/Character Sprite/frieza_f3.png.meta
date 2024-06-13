@@ -1,0 +1,2417 @@
+fileFormatVersion: 2
+guid: 37d79900c9adf594d9027c1e1f99d6d5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 46
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frieza_f3_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 469
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb35df9f15072a42ac6a20f6969c09d
+      internalID: 906270022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 474
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3aac70d35bba54598ffbf5d54111ff
+      internalID: 532780459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 474
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449daa1375dd9f0419787d7822501d8d
+      internalID: 1048479996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 474
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53fd037a01493744a9bf78c716efe6d
+      internalID: -2053156011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 474
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6a04782c4966c43b43c7c7146f977e
+      internalID: 998715152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 475
+        width: 47
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2468b772aedf03f4f953c0ddbd43c93a
+      internalID: 531884280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 471
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0b2489518346444b98d1fd872f71b0
+      internalID: -783891629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_7
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 460
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a586e948ba9d524798434b3200bdf5f
+      internalID: -2039762510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 409
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de781aa395f2ffe45a067c0febec2c4b
+      internalID: 1200174991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 442
+        width: 62
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f236e749600ea44b1148567173fae8
+      internalID: -232520424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _die
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 455
+        width: 62
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d825dd7f77c714c49944c3643638dcc9
+      internalID: 1278836400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 426
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd69800d8e9bd694fa2f8660c2cb234a
+      internalID: 1337308604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_12
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 426
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958b3402a4e24034cb9d9e6da480b72d
+      internalID: 152284409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_13
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 430
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6e50b8a5235ea41be77da2f8fda64d
+      internalID: -884281578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_14
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 419
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4647396e4e184a74dbdf3a50272cd170
+      internalID: 554768347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_15
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 396
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472652a6080481e4f8e3587dc08761ff
+      internalID: -1741211053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 410
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a21e47ea8915746aea308c89c72cb1
+      internalID: -377607282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_17
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 388
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f8cff7d91b04541973fbfa7f792094
+      internalID: -690340700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_18
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 377
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c96f7e4dbc6dc458209cf51c63336f
+      internalID: 125004437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_19
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 416
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c6dd14c07965241942099163971dee
+      internalID: 1235724048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 345
+        width: 47
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5cc264adaa2e4498b2c26583a9acad
+      internalID: 1258416221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 396
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a831895a2cff60e40865009e1d2c89ba
+      internalID: 266782353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_22
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 378
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d812f99279247489dc8af5829f7f21
+      internalID: 875209574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_23
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 374
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f52f2bdaa5e7c44b4ecb7cb089f1d3
+      internalID: 1099448782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_24
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 363
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6d3d5b0a01bc24691a31853f1d9e14
+      internalID: 530362473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_25
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 342
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe16ea5c87352a9449cebeaaeec949e2
+      internalID: 1528669409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_27
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 339
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aeff6981bcf74a4889d2006e3937760
+      internalID: 1296156389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_28
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 343
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034fa6fa7c9100449b48d31e973d729e
+      internalID: 70154675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 344
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f9fb9420ec3634c82c7fde792ee22a
+      internalID: 1058281153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_30
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 338
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4286ce3caed2b4eb1aadff03ba9abd
+      internalID: -2020323715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_31
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 332
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92890ff25bd52fe4b9fdb0cbd49baf01
+      internalID: 973557298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_32
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 331
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfe62dfdd28ac645808f9c2beb7c870
+      internalID: -1391973123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_33
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 334
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddfa2f06b43f474f9d5551d62905dda
+      internalID: 1686356465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 292
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc05859abd741dd4aafc8db8a5177b9a
+      internalID: -1896539764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_35
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 288
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4127bef5efd12e44a52d0f26e781468
+      internalID: 541841717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_36
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 288
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5706108a9d69c7e41b7457a903921315
+      internalID: 1780841813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_37
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 299
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c9ae9010b94ac438dd95ebe9fe9b88
+      internalID: 1223611054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_38
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 292
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcee1a52e603c5a4ca50c2022d113669
+      internalID: 2097560671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_39
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 288
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2fcb6e4f07956498dcd057ef7d7742
+      internalID: 835637561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_40
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 289
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5725f1e836c867f42981cb9fd36c3915
+      internalID: -363709915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_41
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 288
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f731db8a7b4444eb3d1ec04cc782e1
+      internalID: 1719398343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_42
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 286
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909c8d4cf2ad4ee4c8ee53a303c32599
+      internalID: 1628321078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_43
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 323
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c14c6587df7b0f4c9ac5d2600c5805d
+      internalID: -768092626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_44
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 243
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda866435fae5004a922a2dc29090027
+      internalID: -1967172490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_45
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 245
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e703c5c7b65b4064e89bf1adf01b906e
+      internalID: -1267035916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_46
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 243
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc05fbea141ed7f4b8a78d14049b7576
+      internalID: -1867036022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_47
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 243
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aea1dd202e7d4c4a955969e6c77ad76
+      internalID: 711976877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_48
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 243
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dd4851744aebe48be9813f50140c72
+      internalID: -1642111518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_49
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 243
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef36b45c8afe2d142b08d93f083c51c6
+      internalID: 563715060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_50
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 277
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ea91a3e45284b4cb3c850218395685
+      internalID: -2071354311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_51
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 233
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd69cf95f751fb478e27e6efe6f7a47
+      internalID: -1689048370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 232
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a9d6ae24ebd564ba8f6489a87a5aed
+      internalID: -1931634657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_53
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 233
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0e9a4f6d266c742a8564347d6f0e15
+      internalID: 557415159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_54
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 194
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc786ccc1175344ba0121955438cf74
+      internalID: -304975365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_55
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 193
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3bfdd9598b34f41b5d6dd31a275241
+      internalID: -231023598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_56
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 235
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9226f8db9ff88ca4a90dafeab926b169
+      internalID: -354814155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_57
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 235
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0541d402c5428704ab17001b2a7d0cb2
+      internalID: 1320362380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_58
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 177
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522da13a9b93d47438df206137d8fd0d
+      internalID: -663700788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_59
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 180
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6aeba6fde5024449bee4be3f837ca3b
+      internalID: 504493723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_60
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 176
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4422c59f358988d48ad07585a5a760fc
+      internalID: -629964947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_61
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 189
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e228d370a3d8c794e97cabc28725fd0b
+      internalID: 943300610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_62
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 191
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ddcb6516bf65240a2dcead209555cd
+      internalID: 734238564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_63
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 192
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a127a414ce8bf3043ac5b55e17737c87
+      internalID: 1152720048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_64
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 193
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6574cdcb59a30ab41b75b989e31d62f5
+      internalID: -1894501544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_65
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 195
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9211b44c5cc96614a9c85c8279c3ad72
+      internalID: -1567016299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_66
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 192
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3e1a0e7e94a814d91da152db2acebd
+      internalID: -1321083198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_67
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 125
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6afbc7b5004cf4eb96b96c0e64c678
+      internalID: -1611922087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_68
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 122
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b3f15f5794b9c4586934269e7d498c
+      internalID: 304558542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_69
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 121
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d9978afe165ad49bae60db3bafec03
+      internalID: -385665999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_70
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 131
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a79f857af83904e9c90067ebcaf081
+      internalID: -47273938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_71
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 139
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682670db042b7834297305b2475727c1
+      internalID: -1341075680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_72
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 141
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fb557d828445940ab2625f41dcf9e2
+      internalID: -1891112090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_73
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 143
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533472e826d8d684ea0227c40f51e422
+      internalID: -1422799051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_74
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 146
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c598afa5438f0cb4daaa5325b02dd438
+      internalID: 453472922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_76
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 142
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb6856cd1d6cea46bfec832d22a75c9
+      internalID: 556711484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_77
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 150
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fd8c587d13e4f479d5ee89ddc6ac62
+      internalID: -179967277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_78
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 152
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6ab85798115284b9c0aa2f8e8bbdaa
+      internalID: 1757651578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_79
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 69
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0775399a20a75ee4897487b462c630fc
+      internalID: -263849140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_80
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 84
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a998cf5deed53404aa6c7e54b9d8504d
+      internalID: -1040150539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_81
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 86
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411e97b67d4d80e47910b77b258be872
+      internalID: -1191664014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_82
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 91
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87e659a40dae264b94af21deacf4d8a
+      internalID: -1347290876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_83
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 90
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db50ad393d1f6148b0e6bbfc3e6fa1b
+      internalID: -1398804928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_84
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 95
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8506f74f821136749aafa118bb59657a
+      internalID: 1074210910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_85
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 100
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa5a915a5ce7404da140092cc67e3d0
+      internalID: 1827550461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_86
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 103
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bc634417b500542874f5b69905701a
+      internalID: 632067841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_87
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 113
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8788d328ab384214587bdf0de0f86ea3
+      internalID: -440257475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_88
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 77
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3046152f2f3322540b2eec9fa54036a0
+      internalID: -1677647305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_89
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 72
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19cc607ccca77742b6e4a52adab78b0
+      internalID: 617505278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_90
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 39
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66a85e5b951b9a44b0b889422141df4
+      internalID: -1992442658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_91
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 45
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309eca34eb8a3454795af79bf2d2d823
+      internalID: 1528045573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_92
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 52
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e8753a4912410459630d6b734af18a
+      internalID: -1927536394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_93
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 55
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729b2e71959e0224cbf82a92c05071a0
+      internalID: 121324866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_94
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 60
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef44d1a4945ea65488bb1a848f5197f5
+      internalID: -427610729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_95
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 11
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288bad166c6eb4a44a6fe22e353a6b76
+      internalID: -35816389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_96
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 12
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f50080e1cca8b43895e326ececed78
+      internalID: 420721516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_97
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 23
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dfd865d04a7224397bbeff41db210e
+      internalID: -642341385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_98
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 19
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f07190db25c7a41990674db6785acb
+      internalID: 141959254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_99
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 29
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306e2c632fa2fb9499469b98e7ce34dc
+      internalID: -829411626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_100
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 34
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55aa016bc4f9a3c4ab4d49b183fef2c0
+      internalID: 1970881631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_101
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2
+        width: 47
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62c2a8449f271f4d87975ef4aed22b6
+      internalID: 83022757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_102
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae29399bcf486ce43baa4f0a371713c3
+      internalID: 643868482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_103
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 15
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a538ed285438f94b8ffa6bd102e35e0
+      internalID: 1854045150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_104
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 17
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d72525ff4d9294498eb2c14bd197f4
+      internalID: 2080940279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieza_f3_105
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 2
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43abc26ea98f1d44c939144a2fa52c4d
+      internalID: 1430534016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7d691a0eebc9c6d49a35d078f41acde5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      _die: 1278836400
+      frieza_f3_0: 906270022
+      frieza_f3_1: 532780459
+      frieza_f3_100: 1970881631
+      frieza_f3_101: 83022757
+      frieza_f3_102: 643868482
+      frieza_f3_103: 1854045150
+      frieza_f3_104: 2080940279
+      frieza_f3_105: 1430534016
+      frieza_f3_11: 1337308604
+      frieza_f3_12: 152284409
+      frieza_f3_13: -884281578
+      frieza_f3_14: 554768347
+      frieza_f3_15: -1741211053
+      frieza_f3_16: -377607282
+      frieza_f3_17: -690340700
+      frieza_f3_18: 125004437
+      frieza_f3_19: 1235724048
+      frieza_f3_2: 1048479996
+      frieza_f3_20: 1258416221
+      frieza_f3_21: 266782353
+      frieza_f3_22: 875209574
+      frieza_f3_23: 1099448782
+      frieza_f3_24: 530362473
+      frieza_f3_25: 1528669409
+      frieza_f3_26: -421224014
+      frieza_f3_27: 1296156389
+      frieza_f3_28: 70154675
+      frieza_f3_29: 1058281153
+      frieza_f3_3: -2053156011
+      frieza_f3_30: -2020323715
+      frieza_f3_31: 973557298
+      frieza_f3_32: -1391973123
+      frieza_f3_33: 1686356465
+      frieza_f3_34: -1896539764
+      frieza_f3_35: 541841717
+      frieza_f3_36: 1780841813
+      frieza_f3_37: 1223611054
+      frieza_f3_38: 2097560671
+      frieza_f3_39: 835637561
+      frieza_f3_4: 998715152
+      frieza_f3_40: -363709915
+      frieza_f3_41: 1719398343
+      frieza_f3_42: 1628321078
+      frieza_f3_43: -768092626
+      frieza_f3_44: -1967172490
+      frieza_f3_45: -1267035916
+      frieza_f3_46: -1867036022
+      frieza_f3_47: 711976877
+      frieza_f3_48: -1642111518
+      frieza_f3_49: 563715060
+      frieza_f3_5: 531884280
+      frieza_f3_50: -2071354311
+      frieza_f3_51: -1689048370
+      frieza_f3_52: -1931634657
+      frieza_f3_53: 557415159
+      frieza_f3_54: -304975365
+      frieza_f3_55: -231023598
+      frieza_f3_56: -354814155
+      frieza_f3_57: 1320362380
+      frieza_f3_58: -663700788
+      frieza_f3_59: 504493723
+      frieza_f3_6: -783891629
+      frieza_f3_60: -629964947
+      frieza_f3_61: 943300610
+      frieza_f3_62: 734238564
+      frieza_f3_63: 1152720048
+      frieza_f3_64: -1894501544
+      frieza_f3_65: -1567016299
+      frieza_f3_66: -1321083198
+      frieza_f3_67: -1611922087
+      frieza_f3_68: 304558542
+      frieza_f3_69: -385665999
+      frieza_f3_7: -2039762510
+      frieza_f3_70: -47273938
+      frieza_f3_71: -1341075680
+      frieza_f3_72: -1891112090
+      frieza_f3_73: -1422799051
+      frieza_f3_74: 453472922
+      frieza_f3_75: -1563547758
+      frieza_f3_76: 556711484
+      frieza_f3_77: -179967277
+      frieza_f3_78: 1757651578
+      frieza_f3_79: -263849140
+      frieza_f3_8: 1200174991
+      frieza_f3_80: -1040150539
+      frieza_f3_81: -1191664014
+      frieza_f3_82: -1347290876
+      frieza_f3_83: -1398804928
+      frieza_f3_84: 1074210910
+      frieza_f3_85: 1827550461
+      frieza_f3_86: 632067841
+      frieza_f3_87: -440257475
+      frieza_f3_88: -1677647305
+      frieza_f3_89: 617505278
+      frieza_f3_9: -232520424
+      frieza_f3_90: -1992442658
+      frieza_f3_91: 1528045573
+      frieza_f3_92: -1927536394
+      frieza_f3_93: 121324866
+      frieza_f3_94: -427610729
+      frieza_f3_95: -35816389
+      frieza_f3_96: 420721516
+      frieza_f3_97: -642341385
+      frieza_f3_98: 141959254
+      frieza_f3_99: -829411626
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

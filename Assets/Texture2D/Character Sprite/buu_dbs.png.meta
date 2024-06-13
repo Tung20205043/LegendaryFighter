@@ -152,15 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buu_dbs_2
+      name: _die
       rect:
         serializedVersion: 2
         x: 33
         y: 417
         width: 52
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1569,6 +1569,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      _die: -1751004070
       buff mana 1: 302282978
       buff mana 2: 1753667566
       buu_dbs_0: 880887478
@@ -1578,7 +1579,6 @@ TextureImporter:
       buu_dbs_14: 2145438824
       buu_dbs_15: 1940160106
       buu_dbs_16: -66691171
-      buu_dbs_2: -1751004070
       buu_dbs_20: 1772842558
       buu_dbs_24: 1248414794
       buu_dbs_25: -1811746461

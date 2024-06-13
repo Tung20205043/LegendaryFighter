@@ -9,11 +9,13 @@ public class PlayerController : CharacterController {
     [SerializeField] private PunchCombo punchCombo;
     [SerializeField] protected PlayerBuffMana playerBuffMana;
     [SerializeField] protected PlayerTransform playerTransform;
+    [SerializeField] protected PlayerTakeDmg playerTakeDmg;
 
     protected TakeInputButton inputButton;
     private GameObject inputButtonObj;
     public float moveSpeed;
     public static CharacterState playerState;
+    public CharacterState test;
     private void Awake() {
         inputButtonObj = GameObject.Find("ButtonInput");
         inputButton = inputButtonObj.GetComponent<TakeInputButton>();
@@ -25,7 +27,20 @@ public class PlayerController : CharacterController {
         base.OnEnable();
         playerState = CharacterState.Ready;
     }
-    protected void Update() {
+    protected void Update()
+    {
+        test = playerState;
+        if (CharacterStats.Instance.PlayerHp <= 0)
+        {
+            Die();
+            return;
+        }
+
+        if (CharacterStats.Instance.EnemyHp <= 0)
+        {
+            characterAnimator.SetVictory();
+            return;
+        }
         punchCombo.ExitPunchCombo();
         if (CharacterStats.Instance.IsMaxMana(Character.Player) && characterAnimator.currentAnimationState == AnimationState.BuffMana) {
             BuffMana(false);
@@ -109,16 +124,19 @@ public class PlayerController : CharacterController {
 
     #region Take Damage + Die
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.CompareTag("EnemySkill")) {
-            characterAnimator.SetTakeDamage((TakeDamageType)1);
+        if (collision.CompareTag("EnemyNormalSkill")) {
+             playerTakeDmg.DoTakeDamage(TakeDamageType.NormalSkill);
+        }
+        if (collision.CompareTag("EnemyHeavySkill")) {
+            playerTakeDmg.DoTakeDamage(TakeDamageType.HeavySkill);
         }
     }
     protected override void Die() {
-        throw new System.NotImplementedException();
+        characterAnimator.SetDie();
     }
     #endregion
 
-    #region Transform
+    #region Transform, EndGame
     void Transform() {
         if (!IsOnMovement()) return;
         characterAnimator.SetTransform();
@@ -126,6 +144,21 @@ public class PlayerController : CharacterController {
     }
     public void DoTransform() {
         playerTransform.Transform();
+    }
+
+    private void CheckEndGame()
+    {
+        if (CharacterStats.Instance.PlayerHp <= 0)
+        {
+            Die();
+            return;
+        }
+
+        if (CharacterStats.Instance.EnemyHp <= 0)
+        {
+            characterAnimator.SetVictory();
+            return;
+        }
     }
 
     #endregion
@@ -143,11 +176,17 @@ public class PlayerController : CharacterController {
         inputButton.isTransform.AddListener(Transform);
         SpecialUnityEvent.Instance.doComboPunch.AddListener(DoComboPunch);
         SpecialUnityEvent.Instance.readyToFight.AddListener(ChangeState);
+        SpecialUnityEvent.Instance.endGame.AddListener(StopAction);
+    
     }
     void ChangeState() {
         playerState = CharacterState.Fight;
     }
     void Ready() {
         SpecialUnityEvent.Instance.playerIsReady?.Invoke();
+    }
+    private void StopAction()
+    {
+        playerState = CharacterState.Ready;
     }
 }

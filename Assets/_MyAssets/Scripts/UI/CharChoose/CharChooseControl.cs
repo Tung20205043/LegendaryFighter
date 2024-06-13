@@ -50,15 +50,15 @@ public class CharChooseControl : MonoBehaviour {
 
     private void PlayerTurnToPick()
     {
-        GameManager.Instance.playerChosen = this.characterToChoose;
+        GameManager.Instance.ChangePlayerChosen(this.characterToChoose);
         Show(this.blueFrame);
         SpecialUnityEvent.Instance.changePlayerChoose?.Invoke(characterToChoose);
     }
 
     private void EnemyTurnToPick()
     {
-        if (GameManager.Instance.playerChosen == this.characterToChoose) return;
-        GameManager.Instance.enemyChosen = this.characterToChoose;
+        if (GameManager.Instance.PlayerChosen == this.characterToChoose) return;
+        GameManager.Instance.ChangerEnemyChosen(this.characterToChoose);
         Show(this.yellowFrame);
         SpecialUnityEvent.Instance.changePlayerChoose?.Invoke(characterToChoose);
     }

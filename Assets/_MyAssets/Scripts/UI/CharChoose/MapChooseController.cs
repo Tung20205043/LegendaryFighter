@@ -22,7 +22,7 @@ public class MapChooseController : MonoBehaviour
         }
     }
     void ChangerMapChosen() {
-        GameManager.Instance.mapChosen = thisMapToChoose;
+        GameManager.Instance.ChangeMapChosen(thisMapToChoose);
         Show(this.redFrame);
         SpecialUnityEvent.Instance.changeMapToChoose?.Invoke(thisMapToChoose);
     }

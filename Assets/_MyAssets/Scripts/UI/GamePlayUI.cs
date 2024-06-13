@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using static GameUltis;
@@ -8,7 +9,8 @@ public class GamePlayUI : MonoBehaviour
     [SerializeField] GameObject ui;
     public bool playerIsReady = false;
     public bool enemyIsReady = false;
-    Animator animator;
+    [SerializeField] private GameObject victoryPanel;
+    private Animator animator;
     private void Awake() {
         pauseButton.onClick.AddListener(SetPauseGame);
         animator = GetComponent<Animator>();
@@ -20,6 +22,15 @@ public class GamePlayUI : MonoBehaviour
         playerIsReady = false;
         enemyIsReady = false;
     }
+
+    private void Update()
+    {
+        if (CharacterStats.Instance.PlayerHp <= 0 || CharacterStats.Instance.EnemyHp <= 0)
+        {
+            Show(victoryPanel);
+        }
+    }
+
     void SetPauseGame() {
         Show(pausePanel);
         Time.timeScale = 0f;

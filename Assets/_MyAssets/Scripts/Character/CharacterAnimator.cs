@@ -103,6 +103,12 @@ public class CharacterAnimator : MonoBehaviour {
         SetTrigger("Die");
         currentAnimationState = AnimationState.Die;
     }
+
+    public void SetVictory()
+    {
+        SetTrigger("Victory");
+        currentAnimationState = AnimationState.Idle;
+    }
     //--------------------------------------------------
     public void Play(string nameAnim) {
         Debug.Log(nameAnim);

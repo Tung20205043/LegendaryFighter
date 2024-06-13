@@ -1055,15 +1055,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_ssj_god_45
+      name: _die
       rect:
         serializedVersion: 2
         x: 263
         y: 256
         width: 55
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1989,6 +1989,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      _die: 1320115606
       buff mana: -1234245218
       buff mana 2: 535839347
       buff mana 3: -446701491
@@ -2020,7 +2021,6 @@ TextureImporter:
       goku_ssj_god_4: 1275110526
       goku_ssj_god_42: -867155430
       goku_ssj_god_43: 249433895
-      goku_ssj_god_45: 1320115606
       goku_ssj_god_47: 753203400
       goku_ssj_god_48: -758903172
       goku_ssj_god_49: -175959860

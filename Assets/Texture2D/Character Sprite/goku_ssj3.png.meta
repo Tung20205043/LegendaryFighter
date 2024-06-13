@@ -1706,15 +1706,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goku_ssj3_85
+      name: _die
       rect:
         serializedVersion: 2
         x: 255
         y: 60
         width: 46
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1926,6 +1926,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      _die: 1164280518
       a - transform 3: -831495918
       a - transform 4: 2011125617
       a transform 1: -637796685
@@ -1984,7 +1985,6 @@ TextureImporter:
       goku_ssj3_8: -873811114
       goku_ssj3_80: 502998851
       goku_ssj3_82: 1044239194
-      goku_ssj3_85: 1164280518
       goku_ssj3_86: -257024198
       goku_ssj3_87: 1075463474
       goku_ssj3_9: -1738335392

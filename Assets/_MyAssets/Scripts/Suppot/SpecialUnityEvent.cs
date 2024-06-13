@@ -27,4 +27,6 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
 
     public UnityEvent<int> setActiveUnlockPanel;
     public UnityEvent<CharacterToChoose> unlockCharacter;
+
+    public UnityEvent endGame;
 }

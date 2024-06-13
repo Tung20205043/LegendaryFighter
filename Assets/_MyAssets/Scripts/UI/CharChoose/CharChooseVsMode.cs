@@ -26,8 +26,8 @@ public class CharChooseVsMode : MonoBehaviour {
     private void OnEnable() {
         CharChooseUI.SetPlayerChooseTurn();
         Hide(undoButton.gameObject);
-        charChooseControls[(int)GameManager.Instance.playerChosen].ChangePlayerChosen();
-        ShowObjInArray((int)GameManager.Instance.playerChosen, playerUi);
+        charChooseControls[(int)GameManager.Instance.PlayerChosen].ChangePlayerChosen();
+        ShowObjInArray((int)GameManager.Instance.PlayerChosen, playerUi);
         SetDefaultEnemyUI();
     }
     void OnclickNextButton() {
@@ -37,7 +37,7 @@ public class CharChooseVsMode : MonoBehaviour {
             PickRamdomEnemy();
         } else {
             // Test
-            if (GameManager.Instance.gameMode != GameMode.Train) return;
+            if (GameManager.Instance.GameMode != GameMode.Train) return;
 
             SceneManager.LoadScene(1);
             
@@ -68,7 +68,7 @@ public class CharChooseVsMode : MonoBehaviour {
 
     private int[] CharacterCannotRandom()
     {
-        int playerChosenInt = (int)GameManager.Instance.playerChosen;
+        int playerChosenInt = (int)GameManager.Instance.PlayerChosen;
         List<int> characterNotUnlockedIntList = CharUnlockManager.Instance.CharacterNotUnlocked.Select(character => (int)character).ToList();
         int[] combinedArray = new int[characterNotUnlockedIntList.Count + 1];
         combinedArray[0] = playerChosenInt;

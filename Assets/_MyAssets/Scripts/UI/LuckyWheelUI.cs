@@ -55,7 +55,7 @@ public class LuckyWheelUI : UIParent
     void TakeResult(int result) {
         notice.SetActive(true);
         rewardValue.text = GameConstant.rewardValue[result - 1].ToString();
-        CurrencyManager.Instance.plusCoin = GameConstant.rewardValue[result - 1];
+        CoinText.plusCoin = GameConstant.rewardValue[result - 1];
     }
 
 }

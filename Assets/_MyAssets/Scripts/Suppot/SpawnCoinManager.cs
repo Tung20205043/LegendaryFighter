@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SpawnCoinManager : MonoBehaviourSingleton<SpawnCoinManager> 
 {
@@ -11,6 +13,7 @@ public class SpawnCoinManager : MonoBehaviourSingleton<SpawnCoinManager>
     private void Start() {
         SpecialUnityEvent.Instance.spawnCoin.AddListener(SpawnCoin);
     }
+
     protected void SpawnCoin() {  
         StartCoroutine(SpawnObjects());
     }

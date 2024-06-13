@@ -7,7 +7,7 @@ public class EnemyTransform : MonoBehaviour
     [SerializeField] CharacterAnimator characterAnimator;
     [SerializeField] AnimatorOverrideController[] overrideController;
     private void OnEnable() {
-        int charChooseValue = (int)GameManager.Instance.enemyChosen;
+        int charChooseValue = (int)GameManager.Instance.EnemyChosen;
         characterAnimator.UpdateAnimator(overrideController[charChooseValue]);
         StartCoroutine(UpdateValue(charChooseValue));
     }

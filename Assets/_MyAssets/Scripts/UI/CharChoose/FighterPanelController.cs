@@ -21,7 +21,7 @@ public class FighterPanelController : MonoBehaviour
     }
     private void OnEnable() {
         CharChooseUI.SetPlayerChooseTurn();
-        charChooseControls[(int)GameManager.Instance.playerChosen].ChangePlayerChosen();
+        charChooseControls[(int)GameManager.Instance.PlayerChosen].ChangePlayerChosen();
         Hide(tourPanelBackButton.gameObject);
     }
     void ChangeImg(CharacterToChoose characterToChoose) {

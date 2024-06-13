@@ -31,12 +31,12 @@ public class CharToBuy : MonoBehaviour
         else
         {
             Show(yellowFrame);
+            SpecialUnityEvent.Instance.charPrice?.Invoke(this.characterUnlockData.Price);
         }
     }
 
     void ChangeCharBuy() {
         SpecialUnityEvent.Instance.changeCharToBuy?.Invoke(this.characterUnlockData.Character);
-        SpecialUnityEvent.Instance.charPrice?.Invoke(this.characterUnlockData.Price);
     }
 
 

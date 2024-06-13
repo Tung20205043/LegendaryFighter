@@ -44270,12 +44270,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910351980}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1197826023}
+  m_Father: {fileID: 1453736275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &910351982
 MonoBehaviour:
@@ -44289,9 +44289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3774d5751e566d34bbebd6f641a39e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plusCoin: 0
-  coinText: {fileID: 1002068048}
-  timeChangeValue: 1
 --- !u!1 &911140021
 GameObject:
   m_ObjectHideFlags: 0
@@ -57871,6 +57868,7 @@ GameObject:
   - component: {fileID: 1167775291}
   - component: {fileID: 1167775290}
   - component: {fileID: 1167775289}
+  - component: {fileID: 1167775292}
   m_Layer: 5
   m_Name: PlusCoinButton
   m_TagString: Untagged
@@ -57981,6 +57979,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167775287}
   m_CullTransparentMesh: 1
+--- !u!114 &1167775292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167775287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77658d7a865164947ad5773bb98fb5e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 1002068048}
+  timeChangeValue: 0.8
 --- !u!1 &1178113909
 GameObject:
   m_ObjectHideFlags: 0
@@ -58879,7 +58891,6 @@ Transform:
   m_Children:
   - {fileID: 1905307121}
   - {fileID: 649887304}
-  - {fileID: 910351981}
   - {fileID: 1368676607}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73226,7 +73237,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 910351981}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1453736276

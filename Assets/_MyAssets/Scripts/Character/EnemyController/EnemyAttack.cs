@@ -5,7 +5,7 @@ public class EnemyAttack : PlayerAttack
 {
     [SerializeField] private PunchComboAI punchComboAI;
     private void OnEnable() {
-        StartComboTypeA();
+        //StartComboTypeA();
     }
     public void StartComboTypeA() {
         punchComboAI.Attack();

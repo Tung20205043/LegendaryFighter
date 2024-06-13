@@ -26,13 +26,30 @@ public class EnemyController : CharacterController {
     private void Start() {
         inputButton.isDefending.AddListener(BuffMana);
         SpecialUnityEvent.Instance.readyToFight.AddListener(ChangeState);
+        SpecialUnityEvent.Instance.endGame.AddListener(StopAction);
+    }
+
+    private void StopAction()
+    {
+        enemyState = CharacterState.Ready;
     }
     private void Update() {
+        if (CharacterStats.Instance.EnemyHp <= 0)
+        {
+            Die();
+            return;
+        }
+
+        if (CharacterStats.Instance.PlayerHp <= 0)
+        {
+            characterAnimator.SetVictory();
+            return;
+        } 
+        if (enemyState == CharacterState.Ready) return;
         CannotExitScreen();
         manaAura.SetActive(characterAnimator.currentAnimationState == AnimationState.BuffMana);
-        if (GameModeManager.Instance.currentGameMode == GameMode.Train) return;
-
-        if (enemyState == CharacterState.Ready) return;
+        if (GameManager.Instance.GameMode == GameMode.Train) return;
+        
         if (characterAnimator.currentAnimationState == AnimationState.TakeDamage) {
             return; 
         }
@@ -95,9 +112,7 @@ public class EnemyController : CharacterController {
         }
     }
     protected override void Die() {
-        if (CharacterStats.Instance.EnemyHp <= 0) {
-            characterAnimator.SetDie();
-        }
+        characterAnimator.SetDie();
     }
     bool IsOnMovement() {
         return (characterAnimator.currentAnimationState == AnimationState.Idle ||
