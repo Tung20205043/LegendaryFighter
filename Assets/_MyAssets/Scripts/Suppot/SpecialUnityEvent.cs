@@ -29,4 +29,6 @@ public class SpecialUnityEvent : MonoBehaviourSingleton<SpecialUnityEvent>
     public UnityEvent<CharacterToChoose> unlockCharacter;
 
     public UnityEvent endGame;
+    public UnityEvent<bool> playerIsVictory;
+    public UnityEvent<bool> enemyIsVictory;
 }

@@ -13,7 +13,7 @@ public abstract class CharacterController : MonoBehaviour {
     protected abstract void BuffMana(bool buff);
     protected abstract void Attack(AttackType type);
     protected abstract void Defend(bool defending);
-    protected abstract void Die();
+    protected abstract void EndGame(bool isVictory);
 
     protected bool CanCastSkill(Character character, AttackType type) {
         float manaRequired;

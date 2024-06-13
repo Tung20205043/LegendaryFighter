@@ -15,7 +15,6 @@ public class PlayerController : CharacterController {
     private GameObject inputButtonObj;
     public float moveSpeed;
     public static CharacterState playerState;
-    public CharacterState test;
     private void Awake() {
         inputButtonObj = GameObject.Find("ButtonInput");
         inputButton = inputButtonObj.GetComponent<TakeInputButton>();
@@ -29,18 +28,6 @@ public class PlayerController : CharacterController {
     }
     protected void Update()
     {
-        test = playerState;
-        if (CharacterStats.Instance.PlayerHp <= 0)
-        {
-            Die();
-            return;
-        }
-
-        if (CharacterStats.Instance.EnemyHp <= 0)
-        {
-            characterAnimator.SetVictory();
-            return;
-        }
         punchCombo.ExitPunchCombo();
         if (CharacterStats.Instance.IsMaxMana(Character.Player) && characterAnimator.currentAnimationState == AnimationState.BuffMana) {
             BuffMana(false);
@@ -131,8 +118,11 @@ public class PlayerController : CharacterController {
             playerTakeDmg.DoTakeDamage(TakeDamageType.HeavySkill);
         }
     }
-    protected override void Die() {
-        characterAnimator.SetDie();
+    protected override void EndGame(bool isVictory) {
+        if (isVictory)
+            characterAnimator.SetVictory();
+        else
+            characterAnimator.SetDie();
     }
     #endregion
 
@@ -144,21 +134,6 @@ public class PlayerController : CharacterController {
     }
     public void DoTransform() {
         playerTransform.Transform();
-    }
-
-    private void CheckEndGame()
-    {
-        if (CharacterStats.Instance.PlayerHp <= 0)
-        {
-            Die();
-            return;
-        }
-
-        if (CharacterStats.Instance.EnemyHp <= 0)
-        {
-            characterAnimator.SetVictory();
-            return;
-        }
     }
 
     #endregion
@@ -177,7 +152,7 @@ public class PlayerController : CharacterController {
         SpecialUnityEvent.Instance.doComboPunch.AddListener(DoComboPunch);
         SpecialUnityEvent.Instance.readyToFight.AddListener(ChangeState);
         SpecialUnityEvent.Instance.endGame.AddListener(StopAction);
-    
+        SpecialUnityEvent.Instance.playerIsVictory.AddListener(EndGame);
     }
     void ChangeState() {
         playerState = CharacterState.Fight;

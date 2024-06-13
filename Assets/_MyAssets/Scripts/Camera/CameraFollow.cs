@@ -28,11 +28,16 @@ public class CameraFollow : MonoBehaviour {
     }
     void UpdateOfset() {
         float targetOffset;
+        float targetOffsetY;
         CinemachineFramingTransposer framingTransposer = _camera.GetCinemachineComponent<CinemachineFramingTransposer>();
         if (GameObjectManager.Instance.DistanceBetweenEnemyPlayer() <= maxDistanceScaleOffset) {
             targetOffset = GameObjectManager.Instance.DistanceBetweenEnemyPlayer() / maxDistanceScaleOffset * maxOffset;
-        } else 
+        }
+        else
+        {
             targetOffset = maxOffset;
-        framingTransposer.m_TrackedObjectOffset = new Vector3(targetOffset, 0, 0);
+        }
+
+        framingTransposer.m_TrackedObjectOffset = new Vector3(targetOffset, 0.37f, 0);
     }
 }

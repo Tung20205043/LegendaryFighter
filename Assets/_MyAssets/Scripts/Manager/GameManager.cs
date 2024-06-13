@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviourSingletonPersistent<GameManager>
     public bool onHaptic = false;
     public CharacterToChoose PlayerChosen { get; private set; }
 
-    public CharacterToChoose EnemyChosen { get; private set; }
-    public MapToChoose MapChosen { get; private set; }
+    public CharacterToChoose EnemyChosen { get; private set; } = CharacterToChoose.MabuForm1;
+    public MapToChoose MapChosen { get; private set; } = MapToChoose.Wasteland;
 
     public void ChangeGameMode(GameMode newMode)
     {

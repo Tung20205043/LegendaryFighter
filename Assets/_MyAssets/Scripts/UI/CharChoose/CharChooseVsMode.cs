@@ -36,11 +36,8 @@ public class CharChooseVsMode : MonoBehaviour {
             CharChooseUI.isPlayerChooseTurn = false;
             PickRamdomEnemy();
         } else {
-            // Test
-            if (GameManager.Instance.GameMode != GameMode.Train) return;
-
+            GameRewardManager.Instance.UpdateRewardValue(GameConstant.rewardDifficult[(int)GameManager.Instance.GameDifficult]);
             SceneManager.LoadScene(1);
-            
         }
     }
     void OnclickUndoButton() {

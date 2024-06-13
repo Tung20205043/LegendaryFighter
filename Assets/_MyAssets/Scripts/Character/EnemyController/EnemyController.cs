@@ -27,6 +27,7 @@ public class EnemyController : CharacterController {
         inputButton.isDefending.AddListener(BuffMana);
         SpecialUnityEvent.Instance.readyToFight.AddListener(ChangeState);
         SpecialUnityEvent.Instance.endGame.AddListener(StopAction);
+        SpecialUnityEvent.Instance.enemyIsVictory.AddListener(EndGame);
     }
 
     private void StopAction()
@@ -34,17 +35,6 @@ public class EnemyController : CharacterController {
         enemyState = CharacterState.Ready;
     }
     private void Update() {
-        if (CharacterStats.Instance.EnemyHp <= 0)
-        {
-            Die();
-            return;
-        }
-
-        if (CharacterStats.Instance.PlayerHp <= 0)
-        {
-            characterAnimator.SetVictory();
-            return;
-        } 
         if (enemyState == CharacterState.Ready) return;
         CannotExitScreen();
         manaAura.SetActive(characterAnimator.currentAnimationState == AnimationState.BuffMana);
@@ -111,9 +101,13 @@ public class EnemyController : CharacterController {
             enemyTakeDamage.DoTakeDamage(TakeDamageType.HeavySkill);
         }
     }
-    protected override void Die() {
-        characterAnimator.SetDie();
+    protected override void EndGame(bool isVictory) {
+        if (isVictory) 
+            characterAnimator.SetVictory();
+        else 
+            characterAnimator.SetDie();
     }
+    
     bool IsOnMovement() {
         return (characterAnimator.currentAnimationState == AnimationState.Idle ||
             characterAnimator.currentAnimationState == AnimationState.Movement);

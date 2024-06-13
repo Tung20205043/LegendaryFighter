@@ -69,10 +69,12 @@ public static class GameUltis {
         obj.transform.SetParent(parent, false);
     }
     public static void Hide(GameObject obj) {
-        obj.gameObject.SetActive(false);
+        if (obj.activeSelf)
+            obj.gameObject.SetActive(false);
     }
     public static void Show(GameObject obj) {
-        obj.gameObject.SetActive(true);
+        if (!obj.activeSelf)
+            obj.gameObject.SetActive(true);
     }
     public static bool ExitScreen(Vector3 currentPosition) {
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(currentPosition);

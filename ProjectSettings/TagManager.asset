@@ -12,6 +12,8 @@ TagManager:
   - EnemyForward
   - PlayerNormalSkill
   - PlayerHeavySkill
+  - EnemyNormalSkill
+  - EnemyHeavySkill
   layers:
   - Default
   - TransparentFX

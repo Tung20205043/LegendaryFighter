@@ -11,6 +11,7 @@ public class GamePlayUI : MonoBehaviour
     public bool enemyIsReady = false;
     [SerializeField] private GameObject victoryPanel;
     private Animator animator;
+    [SerializeField] private GameObject[] maps;
     private void Awake() {
         pauseButton.onClick.AddListener(SetPauseGame);
         animator = GetComponent<Animator>();
@@ -21,13 +22,14 @@ public class GamePlayUI : MonoBehaviour
         Hide(pauseButton.gameObject);
         playerIsReady = false;
         enemyIsReady = false;
+        ShowObjInArray((int)GameManager.Instance.MapChosen, maps);
     }
 
     private void Update()
     {
         if (CharacterStats.Instance.PlayerHp <= 0 || CharacterStats.Instance.EnemyHp <= 0)
         {
-            Show(victoryPanel);
+            SpecialUnityEvent.Instance.endGame?.Invoke();
         }
     }
 
